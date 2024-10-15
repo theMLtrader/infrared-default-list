@@ -1,0 +1,155 @@
+{
+  "name": "Berachain Bartio Default Token List",
+  "logoURI": "ipfs://QmUSNbwUxUYNMvMksKypkgWs8unSm8dX2GjCPBVGZ7GGMr",
+  "keywords": ["bartio"],
+  "tags": {
+    "stablecoin": {
+      "name": "Stablecoin",
+      "description": "Tokens that are fixed to an external asset, e.g. the US dollar"
+    },
+    "collateral": {
+      "name": "Collateral",
+      "description": "Tokens that are used to mint Honey"
+    },
+    "defaultCollateral": {
+      "name": "Default Collateral",
+      "description": "default token used in Honey"
+    },
+    "featured": {
+      "name": "Featured",
+      "description": "Tokens that are featured"
+    },
+    "debt": {
+      "name": "Debt Token",
+      "description": "Tokens that are representing debt"
+    },
+    "supply": {
+      "name": "Supply Token",
+      "description": "Tokens that are representing honey supply"
+    },
+    "deposit": {
+      "name": "Deposit Token",
+      "description": "Tokens that can be deposited in Bend"
+    },
+    "rewardToken": {
+      "name": "Reward Token",
+      "description": "Tokens that are used for vault deposits to earn BGT rewards"
+    }
+  },
+
+  "tokens": [
+    {
+      "chainId": 80084,
+      "address": "0x7507c1dc16935B82698e4C63f2746A2fCf994dF8",
+      "symbol": "WBERA",
+      "name": "Wrapped Berachain Token",
+      "decimals": 18,
+      "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/wbera.png",
+      "tags": ["featured"]
+    },
+    {
+      "chainId": 80084,
+      "address": "0x0000000000000000000000000000000000000000",
+      "symbol": "BERA",
+      "name": "Berachain Token",
+      "decimals": 18,
+      "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/bera.png",
+      "tags": ["featured"]
+    },
+    {
+      "chainId": 80084,
+      "address": "0xbDa130737BDd9618301681329bF2e46A016ff9Ad",
+      "symbol": "BGT",
+      "name": "Bera Governance Token",
+      "decimals": 18,
+      "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/bgt.png",
+      "tags": ["featured"]
+    },
+    {
+      "chainId": 80084,
+      "address": "0x0E4aaF1351de4c0264C5c7056Ef3777b41BD8e03",
+      "symbol": "HONEY",
+      "name": "Honey",
+      "decimals": 18,
+      "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/honey.png",
+      "tags": ["stablecoin", "featured"]
+    },
+    {
+      "chainId": 80084,
+      "address": "0xd6D83aF58a19Cd14eF3CF6fe848C9A4d21e5727c",
+      "symbol": "STGUSDC",
+      "name": "Stable Collateral USD Coin",
+      "decimals": 6,
+      "logoURI": "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png?1547042389",
+      "tags": ["stablecoin", "collateral", "featured", "defaultCollateral"]
+    },
+    {
+      "chainId": 80084,
+      "address": "0x286F1C3f0323dB9c91D1E8f45c8DF2d065AB5fae",
+      "symbol": "WBTC",
+      "name": "WBTC",
+      "decimals": 8,
+      "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/btc.png",
+      "tags": ["featured", "deposit"]
+    },
+    {
+      "chainId": 80084,
+      "address": "0x6E1E9896e93F7A71ECB33d4386b49DeeD67a231A",
+      "symbol": "WETH",
+      "name": "WETH",
+      "decimals": 18,
+      "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/eth.png",
+      "tags": ["featured", "deposit"]
+    },
+    {
+      "chainId": 80084,
+      "address": "0x0bF0Eb9aE016A624E2149D4C5F47fD9276285C82",
+      "symbol": "vdHONEY",
+      "name": "Honey Variable Debt Token",
+      "decimals": 18,
+      "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/honey.png",
+      "tags": ["debt"]
+    },
+    {
+      "chainId": 80084,
+      "address": "0xD08391c5977ebF1a09bB5915908EF5cd95Edb7E0",
+      "symbol": "aHONEY",
+      "name": "Honey aToken",
+      "decimals": 18,
+      "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/honey.png",
+      "tags": ["supply"]
+    },
+    {
+      "chainId": 80084,
+      "address": "0x8Ce5C1c42CD58B7aE61512790e514a82d84375Ed",
+      "symbol": "aWETH",
+      "name": "WETH aToken",
+      "decimals": 18,
+      "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/eth.png",
+      "tags": ["aToken"]
+    },
+    {
+      "chainId": 80084,
+      "address": "0x0ddb38F7D473e8040985Fa3B4116FDeEF89778bc",
+      "symbol": "aWBTC",
+      "name": "WBTC aToken",
+      "decimals": 8,
+      "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/btc.png",
+      "tags": ["aToken"]
+    },
+    {
+      "chainId": 80084,
+      "address": "0x1306D3c36eC7E38dd2c128fBe3097C2C2449af64",
+      "symbol": "bHONEY",
+      "name": "Honey bToken",
+      "decimals": 18,
+      "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/bhoney.png",
+      "tags": ["supply"]
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
