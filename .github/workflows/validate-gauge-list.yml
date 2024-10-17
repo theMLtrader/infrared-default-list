@@ -1,4 +1,4 @@
-name: Validate gauge list
+name: Validate gauges and tokens
 
 on:
   pull_request:
