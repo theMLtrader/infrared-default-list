@@ -1,42 +1,29 @@
 {
-  "name": "@berachain/default-token-list",
+  "name": "@infrared-dao/default-lists",
   "version": "1.0.0",
-  "description": "The Berachain default token list",
-  "main": "build/berachain-default.tokenlist.json",
+  "description": "Default lists for Berachain interfaces including tokens, gauges, and validators",
   "scripts": {
-    "test": "mocha",
-    "build": "rimraf build && mkdir -p build",
-    "prepublishOnly": "npm test && npm run build",
-    "lint": "prettier --write src/"
+    "lint": "prettier --write src/",
+    "validate": "node scripts/validate-gauge-list.js"
   },
-  "files": [
-    "build/berachain-default.tokenlist.json"
-  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Berachain/default-token-list.git"
+    "url": "git+https://github.com/infrared-dao/infrared-default-list.git"
   },
   "keywords": [
     "berachain",
     "default",
     "token",
+    "gauge",
+    "validator",
     "list"
   ],
-  "author": "reeeee",
+  "author": "Berachain",
   "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/Berachain/default-token-list/issues"
-  },
-  "homepage": "https://github.com/Berachain/default-token-list#readme",
+  "homepage": "https://github.com/infrared-dao/infrared-default-list#readme",
   "devDependencies": {
-    "@ethersproject/address": "^5.0.2",
-    "@uniswap/token-list-bridge-utils": "^2.0.0",
-    "ajv": "^6.12.3",
-    "chai": "^4.2.0",
-    "mocha": "^8.0.1",
-    "rimraf": "^3.0.2"
-  },
-  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
     "prettier": "^3.3.1"
   }
 }
