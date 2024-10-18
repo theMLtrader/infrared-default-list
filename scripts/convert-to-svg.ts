@@ -7,9 +7,8 @@ import {
 import { readFile, writeFile } from 'node:fs/promises'
 import path from 'path'
 
-import { ASSETS_FOLDER } from './_/constants'
-
 const file = process.argv[2]
+const outputFolder = process.argv[3]
 
 const convertToSVG = async () => {
   if (!file) {
@@ -35,7 +34,7 @@ const convertToSVG = async () => {
   })
 
   await writeFile(
-    `${ASSETS_FOLDER}/${path.basename(file).replace('.png', '.svg')}`,
+    `${outputFolder}/${path.basename(file).replace('.png', '.svg')}`,
     svg,
   )
 }

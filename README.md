@@ -20,8 +20,8 @@ You only need to provide assets if they're not already in the `src/assets` folde
 Add any new token assets to `/src/assets/tokens` and new protocol assets to `src/assets/protocols`.
 
 - You should use an SVG file.
-- If you absolutely do not have an SVG file add the png to `src/assets/tokens/original` or `src/assets/protocols/original`. Ensure it is larger than 128x128 and is very high quality.
-  - (Optional) If you are technical enough please modify the `convert-to-svg` script in [package.json](./package.json) by replacing `ASSET` with the name of your asset and run `pnpm convert-to-svg`. If the resulting svg is of decent quality and is a smaller size than the png file use that instead of the png. If you do not do this step we will try it ourselves which can slow down the review process.
+- If you absolutely do not have an SVG file add a png to `src/assets/tokens/original` or `src/assets/protocols/original`. Ensure it is larger than 128x128 and is very high quality.
+  - (Optional) If you are technical enough please run `tsx scripts/convert-to-svg.ts src/assets/protocols/original/PROTOCOL.png src/assets/protocols && pnpm clean-assets:svg`, replacing `PROTOCOL` with the protocol name for protocol assets or `tsx scripts/convert-to-svg.ts src/assets/tokens/original/TOKEN.png src/assets/tokens && pnpm clean-assets:svg`, replacing `TOKEN` with the token name for token assets. If the resulting svg is of decent quality and is a smaller size than the png file please include it in the PR. If you do not do this step we will try it ourselves which can slow down the review process.
 
 ### 2. Update JSON files
 
@@ -111,4 +111,4 @@ Thank you for contributing to our ecosystem!
 
 If a `png`/`webp` image is submitted try to convert it to a `svg`.
 
-Modify the `convert-to-svg` script in [package.json](./package.json) by replacing `ASSET` with the name of your asset and run `pnpm convert-to-svg`. If the resulting svg is of decent quality and is <25 kb use that instead of the png.
+Run `tsx scripts/convert-to-svg.ts src/assets/protocols/original/PROTOCOL.png src/assets/protocols && pnpm clean-assets:svg`, replacing `PROTOCOL` with the protocol name for protocol assets or `tsx scripts/convert-to-svg.ts src/assets/tokens/original/TOKEN.png src/assets/tokens && pnpm clean-assets:svg`, replacing `TOKEN` with the token name for token assets.
