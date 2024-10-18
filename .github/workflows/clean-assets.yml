@@ -1,4 +1,4 @@
-name: Clean assets
+name: Handle new assets
 
 on:
   pull_request:
@@ -47,6 +47,10 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Convert new assets to svg
+        if: ${{ !cancelled() }}
+        run: pnpm convert-new-assets-to-svg
 
       - name: Clean assets
         if: ${{ !cancelled() }}
