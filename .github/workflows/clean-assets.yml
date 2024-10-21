@@ -1,13 +1,17 @@
-name: Validate gauges and tokens
+name: Handle new assets
 
 on:
   pull_request:
     paths:
-      - 'src/gauges/**/*.json'
-      - 'src/tokens/**/*.json'
+      - src/assets/**
+
+permissions:
+  checks: write
+  contents: write
 
 jobs:
-  validate:
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
 
     steps:
@@ -44,5 +48,16 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Validate JSON schema and rules
-        run: pnpm validate
+      - name: Convert new assets to svg
+        if: ${{ !cancelled() }}
+        run: pnpm convert-new-assets-to-svg
+
+      - name: Clean assets
+        if: ${{ !cancelled() }}
+        run: pnpm clean-assets
+
+      - name: Commit lint fixes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Clean assets"
+          commit_options: '--no-verify'

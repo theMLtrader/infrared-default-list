@@ -2,15 +2,15 @@ import { glob } from 'glob'
 import path from 'path'
 import sharp from 'sharp'
 
-import { ASSETS_FOLDER } from './_/constants'
+import {
+  PROTOCOLS_FOLDER,
+  PROTOCOLS_ORIGINAL_FOLDER,
+  TOKENS_FOLDER,
+  TOKENS_ORIGINAL_FOLDER,
+} from './_/constants'
 
 const IMAGE_HEIGHT = 128
 const IMAGE_WIDTH = 128
-
-const PROTOCOLS_FOLDER = `${ASSETS_FOLDER}/protocols`
-const PROTOCOLS_ORIGINAL_FOLDER = `${PROTOCOLS_FOLDER}/original`
-const TOKENS_FOLDER = `${ASSETS_FOLDER}/tokens`
-const TOKENS_ORIGINAL_FOLDER = `${TOKENS_FOLDER}/original`
 
 const cleanFileName = (fileName: string) =>
   `${fileName.replace('.png', '.webp').replace(/\s|_/g, '-').toLowerCase()}`
@@ -37,7 +37,7 @@ const resizeFolder = async ({
   console.log(`resized all pngs in ${originalFolder}`)
 }
 
-const resizeImages = async () => {
+const resizeImages = () => {
   resizeFolder({
     newFolder: PROTOCOLS_FOLDER,
     originalFolder: PROTOCOLS_ORIGINAL_FOLDER,
