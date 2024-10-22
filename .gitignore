@@ -1,4 +1,5 @@
 .idea
 build
+.eslintcache
 node_modules
 tsconfig.tsbuildinfo
