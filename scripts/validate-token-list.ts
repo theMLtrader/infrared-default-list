@@ -1,6 +1,7 @@
 import { readdirSync } from 'node:fs'
 
-import type { TokenListSchema } from '../src/types/token-list'
+import type { TokenListSchema } from '@/types/token-list'
+
 import { getListFile } from './_/get-list-file'
 import { getSchemaFile } from './_/get-schema-file'
 import { outputScriptStatus } from './_/output-script-status'

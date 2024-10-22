@@ -1,6 +1,7 @@
 import { readdirSync } from 'node:fs'
 
-import type { ValidatorListSchema } from '../src/types/validator-list'
+import type { ValidatorListSchema } from '@/types/validator-list'
+
 import { getListFile } from './_/get-list-file'
 import { getSchemaFile } from './_/get-schema-file'
 import { outputScriptStatus } from './_/output-script-status'

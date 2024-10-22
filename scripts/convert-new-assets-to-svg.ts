@@ -18,12 +18,12 @@ import {
 } from './_/constants'
 
 const convertAssetToSvg = async ({
-  image,
   folder,
+  image,
   originalFolder,
 }: {
-  image: string
   folder: string
+  image: string
   originalFolder: string
 }) => {
   const src = await readFile(image)
@@ -63,7 +63,7 @@ const convertFolder = async ({
   const pngs = await glob(`${newFolder}/*.png`)
   if (pngs.length > 0) {
     pngs.forEach((image) => {
-      convertAssetToSvg({ image, folder, originalFolder })
+      convertAssetToSvg({ folder, image, originalFolder })
     })
     console.log(`converted all pngs in ${originalFolder}`)
   } else {

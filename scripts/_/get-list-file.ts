@@ -8,7 +8,7 @@ export const getListFile = ({
 }: {
   listPath: string
   network: string
-}): any => {
+}) => {
   try {
     return JSON.parse(readFileSync(listPath, 'utf-8'))
   } catch (error) {
