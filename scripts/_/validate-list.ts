@@ -1,6 +1,10 @@
 import Ajv from 'ajv'
 import addFormats from 'ajv-formats'
 
+import type { GaugeListSchema } from '@/types/gauge-list'
+import type { TokenListSchema } from '@/types/token-list'
+import type { ValidatorListSchema } from '@/types/validator-list'
+
 const ajv = new Ajv({ allErrors: true })
 addFormats(ajv)
 
@@ -10,7 +14,8 @@ export const validateList = ({
   schema,
 }: {
   errors: Array<string>
-  list: any
+  list: GaugeListSchema | TokenListSchema | ValidatorListSchema
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   schema: any
 }) => {
   // Validate the overall structure

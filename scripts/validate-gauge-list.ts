@@ -1,6 +1,7 @@
 import { readdirSync } from 'node:fs'
 
-import type { GaugeListSchema } from '../src/types/gauge-list'
+import type { GaugeListSchema } from '@/types/gauge-list'
+
 import { getListFile } from './_/get-list-file'
 import { getSchemaFile } from './_/get-schema-file'
 import { outputScriptStatus } from './_/output-script-status'

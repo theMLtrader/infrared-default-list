@@ -1,4 +1,4 @@
-type ErrorWithMessage = {
+interface ErrorWithMessage {
   message: string
 }
 
@@ -9,7 +9,9 @@ const isErrorWithMessage = (error: unknown): error is ErrorWithMessage =>
   typeof (error as Record<string, unknown>).message === 'string'
 
 const toErrorWithMessage = (maybeError: unknown): ErrorWithMessage => {
-  if (isErrorWithMessage(maybeError)) return maybeError
+  if (isErrorWithMessage(maybeError)) {
+    return maybeError
+  }
 
   try {
     return new Error(JSON.stringify(maybeError))

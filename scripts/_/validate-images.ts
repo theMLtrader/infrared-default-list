@@ -1,6 +1,9 @@
 import { existsSync } from 'node:fs'
 import path from 'path'
 
+import { type GaugeListSchema } from '@/types/gauge-list'
+import { type TokenListSchema } from '@/types/token-list'
+
 import { checkImageSize } from './check-image-size'
 import { ASSETS_FOLDER } from './constants'
 
@@ -10,7 +13,7 @@ export const validateImages = async ({
   type,
 }: {
   errors: Array<string>
-  listItem: any
+  listItem: GaugeListSchema['protocols'] | TokenListSchema['tokens']
   type: string
 }) => {
   for (const item of listItem) {
