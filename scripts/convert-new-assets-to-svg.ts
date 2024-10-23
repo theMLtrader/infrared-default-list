@@ -65,9 +65,9 @@ const convertFolder = async ({
     pngs.forEach((image) => {
       convertAssetToSvg({ folder, image, originalFolder })
     })
-    console.log(`converted all pngs in ${originalFolder}`)
+    console.log(`converted all pngs in ${newFolder}`)
   } else {
-    console.log(`no pngs in ${originalFolder}`)
+    console.log(`no pngs in ${newFolder}`)
   }
 }
 
