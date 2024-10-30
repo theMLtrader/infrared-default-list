@@ -139,6 +139,13 @@
   "name": "Infrared Bartio Default Gauge List",
   "protocols": [
     {
+      "description": "Infrared is focused on building infrastructure around the Proof of Liquidity (PoL) mechanism pioneered by Berachain",
+      "id": "infrared",
+      "image": "infrared.svg",
+      "name": "Infrared Finance",
+      "url": "https://infrared.finance/"
+    },
+    {
       "description": "The premier GambleFi protocol on Berachain.",
       "id": "junkyursas",
       "image": "junky.svg",
