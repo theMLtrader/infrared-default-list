@@ -139,6 +139,13 @@
   "name": "Infrared Bartio Default Gauge List",
   "protocols": [
     {
+      "description": "Infrared simplifies interacting with Proof of Liquidity with our liquid staking products.",
+      "id": "infrared",
+      "image": "infrared.svg",
+      "name": "Infrared Finance",
+      "url": "https://infrared.finance"
+    },
+    {
       "description": "The premier GambleFi protocol on Berachain.",
       "id": "junkyursas",
       "image": "junky.svg",
