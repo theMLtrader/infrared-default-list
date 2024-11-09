@@ -1,5 +1,6 @@
+.DS_STORE
+.eslintcache
 .idea
 build
-.eslintcache
 node_modules
 tsconfig.tsbuildinfo
