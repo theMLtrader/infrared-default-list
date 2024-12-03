@@ -40,9 +40,9 @@
       "address": "0x46eFC86F0D7455F135CC9df501673739d513E982",
       "chainId": 80084,
       "decimals": 18,
-      "image": "ibera.svg",
+      "image": "ibgt.svg",
       "name": "Infrared BGT",
-      "symbol": "IBGT",
+      "symbol": "iBGT",
       "tags": ["featured"]
     },
     {
