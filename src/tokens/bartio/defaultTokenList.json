@@ -179,6 +179,15 @@
       "name": "ZERU",
       "symbol": "ZERU",
       "tags": ["featured"]
+    },
+    {
+      "address": "0x08B918dD18E087893bb9d711d9E0BBaA7a63Ef63",
+      "chainId": 80084,
+      "decimals": 18,
+      "image": "mim.svg",
+      "name": "Magic Internet Money",
+      "symbol": "MIM",
+      "tags": []
     }
   ],
   "version": {

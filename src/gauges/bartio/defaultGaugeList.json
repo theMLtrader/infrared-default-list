@@ -155,6 +155,18 @@
         "0x23bc120feA570576E6D7bAe5195c9D7CD3bB6615",
         "0x0E4aaF1351de4c0264C5c7056Ef3777b41BD8e03"
       ]
+    },
+    {
+      "beraRewardsVault": "0xdca3c519825714a87867839fe20d410ac755d0ff",
+      "lpTokenAddress": "0x74e852a4f88bfbeff01275bb95d5ed77f2967d12",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/islands/0x74e852a4f88bfbeff01275bb95d5ed77f2967d12?chain=berachain_bartio",
+      "name": "MIM-HONEY",
+      "protocol": "kodiak",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x08B918dD18E087893bb9d711d9E0BBaA7a63Ef63",
+        "0x0E4aaF1351de4c0264C5c7056Ef3777b41BD8e03"
+      ]
     }
   ],
   "name": "Infrared Bartio Default Gauge List",
