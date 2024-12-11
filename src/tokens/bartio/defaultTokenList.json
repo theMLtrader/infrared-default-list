@@ -133,7 +133,7 @@
       "image": "thpot.svg",
       "name": "Test Honeypot Finance",
       "symbol": "tHPOT",
-      "tags": ["featured"]
+      "tags": []
     },
     {
       "address": "0x1740F679325ef3686B2f574e392007A92e4BeD41",
@@ -151,7 +151,7 @@
       "image": "junky.svg",
       "name": "Junky Ursas LFG",
       "symbol": "JNKY",
-      "tags": ["featured"]
+      "tags": []
     },
     {
       "address": "0xf5AFCF50006944d17226978e594D4D25f4f92B40",
@@ -178,7 +178,7 @@
       "image": "zeru.svg",
       "name": "ZERU",
       "symbol": "ZERU",
-      "tags": ["featured"]
+      "tags": []
     },
     {
       "address": "0x08B918dD18E087893bb9d711d9E0BBaA7a63Ef63",
@@ -196,7 +196,7 @@
       "image": "buds.svg",
       "name": "Buds",
       "symbol": "BUDS",
-      "tags": ["featured"]
+      "tags": []
     }
   ],
   "version": {
