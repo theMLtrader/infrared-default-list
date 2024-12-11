@@ -1,6 +1,15 @@
 {
   "gauges": [
     {
+      "beraRewardsVault": "0xd351940fd17c33BB18B6fA7982e376aa8f3d29ab",
+      "lpTokenAddress": "0x1Afe9c399B40A65C783049E732d7Ad5D37e68F78",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/islands/0x1afe9c399b40a65c783049e732d7ad5d37e68f78?chain=berachain_bartio",
+      "name": "HONEY-DIRAC",
+      "protocol": "kodiak",
+      "types": ["amm"],
+      "underlyingTokens": ["0x0E4aaF1351de4c0264C5c7056Ef3777b41BD8e03", "0x277aaDBd9ea3dB8Fe9eA40eA6E09F6203724BdaE"]
+    },
+    {
       "beraRewardsVault": "0xC5Cb3459723B828B3974f7E58899249C2be3B33d",
       "lpTokenAddress": "0x1306D3c36eC7E38dd2c128fBe3097C2C2449af64",
       "mintUrl": "https://bartio.berps.berachain.com/vault",
@@ -183,6 +192,13 @@
   ],
   "name": "Infrared Bartio Default Gauge List",
   "protocols": [
+    {
+      "description": "Earn yield through decentralized derivatives strategies, inspired by TradFi and adapted to DeFi",
+      "id": "diracfinance",
+      "image": "dirac.svg",
+      "name": "Dirac",
+      "url": "https://dirac.finance"
+    },
     {
       "description": "Infrared simplifies interacting with Proof of Liquidity with our liquid staking products.",
       "id": "infrared",
