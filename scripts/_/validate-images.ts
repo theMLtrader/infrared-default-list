@@ -1,8 +1,8 @@
 import { existsSync } from 'node:fs'
 import path from 'path'
 
-import { type GaugeListSchema } from '@/types/gauge-list'
-import { type TokenListSchema } from '@/types/token-list'
+import type { GaugeListSchema } from '@/types/gauge-list'
+import type { TokenListSchema } from '@/types/token-list'
 
 import { checkImageSize } from './check-image-size'
 import { ASSETS_FOLDER } from './constants'
