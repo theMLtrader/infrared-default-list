@@ -37,6 +37,15 @@
   },
   "tokens": [
     {
+      "address": "0x277aaDBd9ea3dB8Fe9eA40eA6E09F6203724BdaE",
+      "chainId": 80084,
+      "decimals": 18,
+      "image": "dirac.svg",
+      "name": "Dirac Finance Token",
+      "symbol": "DIRAC",
+      "tags": []
+    },
+    {
       "address": "0x46eFC86F0D7455F135CC9df501673739d513E982",
       "chainId": 80084,
       "decimals": 18,
@@ -133,7 +142,7 @@
       "image": "thpot.svg",
       "name": "Test Honeypot Finance",
       "symbol": "tHPOT",
-      "tags": ["featured"]
+      "tags": []
     },
     {
       "address": "0x1740F679325ef3686B2f574e392007A92e4BeD41",
@@ -151,7 +160,7 @@
       "image": "junky.svg",
       "name": "Junky Ursas LFG",
       "symbol": "JNKY",
-      "tags": ["featured"]
+      "tags": []
     },
     {
       "address": "0xf5AFCF50006944d17226978e594D4D25f4f92B40",
@@ -163,22 +172,13 @@
       "tags": []
     },
     {
-      "address": "0x12Afd7A3324B689e32eEa71902DCbA5ED72Ee67E",
-      "chainId": 80084,
-      "decimals": 18,
-      "image": "zberaHONEY.svg",
-      "name": "zberaHONEY",
-      "symbol": "zberaHONEY",
-      "tags": ["rewardToken"]
-    },
-    {
       "address": "0x23bc120feA570576E6D7bAe5195c9D7CD3bB6615",
       "chainId": 80084,
       "decimals": 18,
       "image": "zeru.svg",
       "name": "ZERU",
       "symbol": "ZERU",
-      "tags": ["featured"]
+      "tags": []
     },
     {
       "address": "0x08B918dD18E087893bb9d711d9E0BBaA7a63Ef63",
@@ -187,6 +187,15 @@
       "image": "mim.svg",
       "name": "Magic Internet Money",
       "symbol": "MIM",
+      "tags": []
+    },
+    {
+      "address": "0x9F43e40093327697Ff92d4b353D0A7B88b0DbBb6",
+      "chainId": 80084,
+      "decimals": 18,
+      "image": "buds.svg",
+      "name": "Buds",
+      "symbol": "BUDS",
       "tags": []
     }
   ],
