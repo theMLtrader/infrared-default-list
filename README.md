@@ -10,13 +10,14 @@ Before you begin, ensure you have:
 2. Basic knowledge of JSON and Git
 3. Details for your gauge, token, or validator
 
-Please make sure that the respective beraRewardsVault is friendoftheChef. In order to check that please follow the guideline: 
+Please make sure that the respective beraRewardsVault is friendoftheChef. In order to check that please follow the guideline:
+
 1. Go to Berachef’s contract on beratrail & select “Read Contract“
 2. Go to function 9. isFriendoftheChef
-3. Under reciever parameter put the beraRewardsVault address
+3. Under receiver parameter put the beraRewardsVault address
 4. Click “Query“
-   5. If bool is returning “true”, vault is yielding BGT(desired path)
-   6. If bool is returning “false”, vault is not yielding BGT. In this case, please refer to Berachain team, their governance & their documentation
+5. If the boolean is “true”, the vault is yielding BGT (desired path)
+6. If the boolean is “false”, the vault is not yielding BGT. In this case, please refer to the Berachain team, their governance, and their documentation
 
 ## Steps to add
 
