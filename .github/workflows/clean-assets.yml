@@ -1,4 +1,4 @@
-name: Handle new assets
+name: autofix.ci
 
 on:
   pull_request:
@@ -17,9 +17,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Cache dependencies
         uses: actions/cache@v4
