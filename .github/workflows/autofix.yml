@@ -1,25 +1,20 @@
-name: Lint
+name: autofix.ci
 
 on:
   pull_request:
-    branches:
-      - '**'
 
 permissions:
   checks: write
   contents: write
 
 jobs:
-  lint:
-    name: Lint
+  autofix:
+    name: Lints, handles new assets, and commits changes
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Cache dependencies
         uses: actions/cache@v4
@@ -48,6 +43,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Convert new assets to svg
+        if: ${{ !cancelled() }}
+        run: pnpm convert-new-assets-to-svg
+
+      - name: Clean assets
+        if: ${{ !cancelled() }}
+        run: pnpm clean-assets
+
       - name: Prettier
         if: ${{ !cancelled() }}
         run: pnpm format
@@ -55,3 +58,7 @@ jobs:
       - name: Type check
         if: ${{ !cancelled() }}
         run: pnpm type-check
+
+
+      - name: Commit clean assets
+        uses: autofix-ci/action@ff86a557419858bb967097bfc916833f5647fa8c
