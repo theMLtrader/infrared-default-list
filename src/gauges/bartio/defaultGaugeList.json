@@ -85,7 +85,7 @@
       "beraRewardsVault": "0x175e2429bcb92643255abcbcdf47fff63f7990cc",
       "lpTokenAddress": "0xe5a2ab5d2fb268e5ff43a5564e44c3309609aff9",
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xe5a2ab5d2fb268e5ff43a5564e44c3309609aff9?chain=berachain_bartio",
-      "name": "YEET-BERA",
+      "name": "YEET-WBERA",
       "protocol": "kodiak",
       "types": ["amm"],
       "underlyingTokens": [
