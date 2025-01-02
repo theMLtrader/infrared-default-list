@@ -52,7 +52,7 @@
     "typescript": "^5.7.2",
     "viem": "^2.22.1"
   },
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@9.15.2",
   "engines": {
     "node": ">=20.5.1",
     "npm": "please-use-pnpm",
