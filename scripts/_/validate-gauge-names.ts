@@ -31,10 +31,23 @@ export const validateGaugeNames = async ({
         })
       }),
     )
-    const name = symbols.join('-')
+    const underlyingTokenSymbols = symbols.join('-')
 
-    if (gauge.name !== name) {
-      errors.push(`${gauge.name} does not match ${name}.`)
+    if (gauge.name !== underlyingTokenSymbols) {
+      rpcLookupCount += 1
+      if (rpcLookupCount % RPC_REQUESTS_PER_SECOND === 0) {
+        await delay(ONE_SECOND)
+      }
+      const lpTokenSymbol = await getTokenSymbol({
+        errors,
+        token: gauge.lpTokenAddress as Address,
+      })
+
+      if (gauge.name !== lpTokenSymbol) {
+        errors.push(
+          `${gauge.name} does not match ${lpTokenSymbol} or ${underlyingTokenSymbols}.`,
+        )
+      }
     }
   }
 }
