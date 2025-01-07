@@ -43,6 +43,13 @@
       "tags": ["stablecoin", "featured"]
     },
     {
+      "address": "0x1306D3c36eC7E38dd2c128fBe3097C2C2449af64",
+      "decimals": 18,
+      "image": "bhoney.svg",
+      "symbol": "bHONEY",
+      "tags": ["stablecoin"]
+    },
+    {
       "address": "0xd6D83aF58a19Cd14eF3CF6fe848C9A4d21e5727c",
       "decimals": 6,
       "image": "usdc.svg",
