@@ -76,6 +76,13 @@
       "image": "zeru.svg",
       "name": "Zeru",
       "url": "https://zeru.finance"
+    },
+    {
+      "description": "WeBera is a permissionless yield abstraction layer designed to simplify participation in DeFi on the Berachain ecosystem.",
+      "id": "webera",
+      "image": "webera.svg",
+      "name": "Webera",
+      "url": "https://webera.finance"
     }
   ]
 }

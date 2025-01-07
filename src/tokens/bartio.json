@@ -132,6 +132,13 @@
       "image": "buds.svg",
       "symbol": "BUDS",
       "tags": []
+    },
+    {
+      "address": "0x556b758AcCe5c4F2E1B57821E2dd797711E790F4",
+      "decimals": 18,
+      "image": "wehoney.svg",
+      "symbol": "weHONEY",
+      "tags": []
     }
   ]
 }
