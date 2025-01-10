@@ -1,16 +1,12 @@
-import { type Address, createPublicClient, erc20Abi, http } from 'viem'
-import { berachainTestnetbArtio } from 'viem/chains'
-
-const publicClient = createPublicClient({
-  chain: berachainTestnetbArtio,
-  transport: http(),
-})
+import { type Address, erc20Abi, type PublicClient } from 'viem'
 
 export const getTokenSymbol = async ({
   errors,
+  publicClient,
   token,
 }: {
   errors: Array<string>
+  publicClient: PublicClient
   token: Address
 }) => {
   const symbol = await publicClient.readContract({

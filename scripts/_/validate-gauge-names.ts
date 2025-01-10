@@ -1,4 +1,4 @@
-import type { Address } from 'viem'
+import type { Address, PublicClient } from 'viem'
 
 import type { GaugeListSchema } from '@/types/gauge-list'
 
@@ -11,9 +11,11 @@ const ONE_SECOND = 1000
 export const validateGaugeNames = async ({
   errors,
   list,
+  publicClient,
 }: {
   errors: Array<string>
   list: GaugeListSchema
+  publicClient: PublicClient
 }) => {
   const gauges: GaugeListSchema['gauges'] = list.gauges
   let rpcLookupCount = 0
@@ -27,6 +29,7 @@ export const validateGaugeNames = async ({
         }
         return await getTokenSymbol({
           errors,
+          publicClient,
           token: underlyingToken as Address,
         })
       }),
@@ -40,6 +43,7 @@ export const validateGaugeNames = async ({
       }
       const lpTokenSymbol = await getTokenSymbol({
         errors,
+        publicClient,
         token: gauge.lpTokenAddress as Address,
       })
 
