@@ -5,6 +5,7 @@ import type { GaugeListSchema } from '@/types/gauge-list'
 
 import { getFile } from './_/get-file'
 import { getListFile } from './_/get-list-file'
+import { isValidNetwork } from './_/is-valid-network'
 import { outputScriptStatus } from './_/output-script-status'
 import { validateGaugeNames } from './_/validate-gauge-names'
 import { validateList } from './_/validate-list'
@@ -30,9 +31,9 @@ const validateGaugeList = async ({
 }
 
 readdirSync('src/gauges').forEach(async (file) => {
-  const network = file.replace('.json', '') as keyof typeof supportedChains
+  const network = file.replace('.json', '')
 
-  if (!Object.keys(supportedChains).includes(network)) {
+  if (!isValidNetwork(network)) {
     throw new Error(`Unsupported network: ${network}`)
   }
 
