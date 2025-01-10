@@ -1,24 +1,14 @@
-import {
-  type Address,
-  type Chain,
-  createPublicClient,
-  erc20Abi,
-  http,
-} from 'viem'
+import { type Address, erc20Abi, type PublicClient } from 'viem'
 
 export const getTokenSymbol = async ({
-  chain,
   errors,
+  publicClient,
   token,
 }: {
-  chain: Chain
   errors: Array<string>
+  publicClient: PublicClient
   token: Address
 }) => {
-  const publicClient = createPublicClient({
-    chain,
-    transport: http(),
-  })
   const symbol = await publicClient.readContract({
     abi: erc20Abi,
     address: token,

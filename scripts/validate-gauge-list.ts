@@ -1,4 +1,5 @@
 import { readdirSync } from 'node:fs'
+import { createPublicClient, http } from 'viem'
 
 import { supportedChains } from '@/config/chains'
 import type { GaugeListSchema } from '@/types/gauge-list'
@@ -24,9 +25,13 @@ const validateGaugeList = async ({
   })
 
   const chain = supportedChains[network]
+  const publicClient = createPublicClient({
+    chain,
+    transport: http(),
+  })
 
   validateList({ errors, list, schema })
-  await validateGaugeNames({ chain, errors, list })
+  await validateGaugeNames({ errors, list, publicClient })
   outputScriptStatus({ errors, network, type: 'Gauge' })
 }
 
