@@ -1,4 +1,4 @@
-import type { Address } from 'viem'
+import type { Address, Chain } from 'viem'
 
 import type { GaugeListSchema } from '@/types/gauge-list'
 
@@ -9,9 +9,11 @@ const RPC_REQUESTS_PER_SECOND = 10
 const ONE_SECOND = 1000
 
 export const validateGaugeNames = async ({
+  chain,
   errors,
   list,
 }: {
+  chain: Chain
   errors: Array<string>
   list: GaugeListSchema
 }) => {
@@ -26,6 +28,7 @@ export const validateGaugeNames = async ({
           await delay(ONE_SECOND)
         }
         return await getTokenSymbol({
+          chain,
           errors,
           token: underlyingToken as Address,
         })
@@ -39,6 +42,7 @@ export const validateGaugeNames = async ({
         await delay(ONE_SECOND)
       }
       const lpTokenSymbol = await getTokenSymbol({
+        chain,
         errors,
         token: gauge.lpTokenAddress as Address,
       })
