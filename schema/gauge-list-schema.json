@@ -27,7 +27,6 @@
         "required": [
           "beraRewardsVault",
           "lpTokenAddress",
-          "mintUrl",
           "name",
           "protocol",
           "types",
