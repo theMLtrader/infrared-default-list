@@ -81,16 +81,12 @@ const validateProtocol = ({
 const validateToken = ({
   errors,
   gauge,
-  network,
+  tokensList,
 }: {
   errors: Array<string>
   gauge: GaugeListSchema['gauges'][number]
-  network: keyof typeof supportedChains
+  tokensList: TokenListSchema
 }) => {
-  const tokensList: TokenListSchema = getListFile({
-    listPath: `src/tokens/${network}.json`,
-    network,
-  })
   for (const underlyingToken of gauge.underlyingTokens) {
     const matchingToken = tokensList.tokens.find(
       ({ address }) => address === underlyingToken,
@@ -115,9 +111,14 @@ export const validateGaugeDetails = async ({
   const gauges: GaugeListSchema['gauges'] = list.gauges
   let rpcLookupCount = { value: 0 }
 
+  const tokensList: TokenListSchema = getListFile({
+    listPath: `src/tokens/${network}.json`,
+    network,
+  })
+
   for (const gauge of gauges) {
     await validateName({ errors, gauge, publicClient, rpcLookupCount })
     validateProtocol({ errors, gauge })
-    validateToken({ errors, gauge, network })
+    validateToken({ errors, gauge, tokensList })
   }
 }
