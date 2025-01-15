@@ -1,6 +1,6 @@
 import type { Address, PublicClient } from 'viem'
 
-import { supportedChains } from '@/config/chains'
+import type { supportedChains } from '@/config/chains'
 import type { GaugeListSchema } from '@/types/gauge-list'
 import type { ProtocolsSchema } from '@/types/protocols'
 import type { TokenListSchema } from '@/types/token-list'
@@ -13,7 +13,9 @@ import { getTokenSymbol } from './get-token-symbol'
 const RPC_REQUESTS_PER_SECOND = 10
 const ONE_SECOND = 1000
 
-type Counter = { value: number }
+interface Counter {
+  value: number
+}
 
 const validateName = async ({
   errors,
@@ -109,7 +111,7 @@ export const validateGaugeDetails = async ({
   publicClient: PublicClient
 }) => {
   const gauges: GaugeListSchema['gauges'] = list.gauges
-  let rpcLookupCount = { value: 0 }
+  const rpcLookupCount = { value: 0 }
 
   const tokensList: TokenListSchema = getListFile({
     listPath: `src/tokens/${network}.json`,
