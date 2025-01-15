@@ -2,8 +2,8 @@ import type { Address, PublicClient } from 'viem'
 
 import { supportedChains } from '@/config/chains'
 import type { GaugeListSchema } from '@/types/gauge-list'
-import { ProtocolsSchema } from '@/types/protocols'
-import { TokenListSchema } from '@/types/token-list'
+import type { ProtocolsSchema } from '@/types/protocols'
+import type { TokenListSchema } from '@/types/token-list'
 
 import { delay } from './delay'
 import { getFile } from './get-file'
