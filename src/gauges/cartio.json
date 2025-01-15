@@ -36,12 +36,12 @@
     {
       "beraRewardsVault": "0xb9a3fc508dE5Bc8D027b9c11ACb7a71ed3807205",
       "lpTokenAddress": "0xd75ab18f4422282562fb27d79cb90c6ccfddac3b",
-      "name": "HONEY-USDC-BEE",
+      "name": "HONEY-USDC-aUSD₮",
       "protocol": "bex",
       "types": ["amm"],
       "underlyingTokens": [
-        "0x6969696969696969696969696969696969696969",
-        "0x2d93FbcE4CffC15DD385A80B3f4CC1D4E76C38b3",
+        "0xd137593CDB341CcC78426c54Fb98435C60Da193c",
+        "0x015fd589F4f1A33ce4487E12714e1B15129c9329",
         "0x164A2dE1bc5dc56F329909F7c97Bae929CaE557B"
       ]
     }
