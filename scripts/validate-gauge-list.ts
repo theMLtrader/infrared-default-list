@@ -31,7 +31,7 @@ const validateGaugeList = async ({
   })
 
   validateList({ errors, list, schema })
-  await validateGaugeDetails({ errors, list, publicClient })
+  await validateGaugeDetails({ errors, list, publicClient, network })
   outputScriptStatus({ errors, network, type: 'Gauge' })
 }
 

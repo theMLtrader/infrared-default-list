@@ -1,10 +1,13 @@
 import type { Address, PublicClient } from 'viem'
 
+import { supportedChains } from '@/config/chains'
 import type { GaugeListSchema } from '@/types/gauge-list'
 import { ProtocolsSchema } from '@/types/protocols'
+import { TokenListSchema } from '@/types/token-list'
 
 import { delay } from './delay'
 import { getFile } from './get-file'
+import { getListFile } from './get-list-file'
 import { getTokenSymbol } from './get-token-symbol'
 
 const RPC_REQUESTS_PER_SECOND = 10
@@ -57,7 +60,7 @@ const validateName = async ({
 
 const protocolsList: ProtocolsSchema = getFile('src/protocols.json')
 
-const validateProtocol = async ({
+const validateProtocol = ({
   errors,
   gauge,
 }: {
@@ -73,13 +76,38 @@ const validateProtocol = async ({
   }
 }
 
+const validateToken = ({
+  errors,
+  gauge,
+  network,
+}: {
+  errors: Array<string>
+  gauge: GaugeListSchema['gauges'][number]
+  network: keyof typeof supportedChains
+}) => {
+  const tokensList: TokenListSchema = getListFile({
+    listPath: `src/tokens/${network}.json`,
+    network,
+  })
+  for (const underlyingToken of gauge.underlyingTokens) {
+    const matchingToken = tokensList.tokens.find(
+      ({ address }) => address === underlyingToken,
+    )
+    if (!matchingToken) {
+      errors.push(`${gauge.name} does not have a token for ${underlyingToken}.`)
+    }
+  }
+}
+
 export const validateGaugeDetails = async ({
   errors,
   list,
+  network,
   publicClient,
 }: {
   errors: Array<string>
   list: GaugeListSchema
+  network: keyof typeof supportedChains
   publicClient: PublicClient
 }) => {
   const gauges: GaugeListSchema['gauges'] = list.gauges
@@ -87,6 +115,7 @@ export const validateGaugeDetails = async ({
 
   for (const gauge of gauges) {
     await validateName({ errors, gauge, publicClient, rpcLookupCount })
-    await validateProtocol({ errors, gauge })
+    validateProtocol({ errors, gauge })
+    validateToken({ errors, gauge, network })
   }
 }
