@@ -1,8 +1,10 @@
 import type { Address, PublicClient } from 'viem'
 
 import type { GaugeListSchema } from '@/types/gauge-list'
+import { ProtocolsSchema } from '@/types/protocols'
 
 import { delay } from './delay'
+import { getFile } from './get-file'
 import { getTokenSymbol } from './get-token-symbol'
 
 const RPC_REQUESTS_PER_SECOND = 10
@@ -53,6 +55,24 @@ const validateName = async ({
   }
 }
 
+const protocolsList: ProtocolsSchema = getFile('src/protocols.json')
+
+const validateProtocol = async ({
+  errors,
+  gauge,
+}: {
+  errors: Array<string>
+  gauge: GaugeListSchema['gauges'][number]
+}) => {
+  const matchingProtocol = protocolsList.protocols.find(
+    ({ id }) => id === gauge.protocol,
+  )
+
+  if (!matchingProtocol) {
+    errors.push(`${gauge.name} does not have a protocol for ${gauge.protocol}.`)
+  }
+}
+
 export const validateGaugeDetails = async ({
   errors,
   list,
@@ -67,5 +87,6 @@ export const validateGaugeDetails = async ({
 
   for (const gauge of gauges) {
     await validateName({ errors, gauge, publicClient, rpcLookupCount })
+    await validateProtocol({ errors, gauge })
   }
 }
