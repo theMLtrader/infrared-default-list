@@ -8,7 +8,7 @@ import { getFile } from './_/get-file'
 import { getListFile } from './_/get-list-file'
 import { isValidNetwork } from './_/is-valid-network'
 import { outputScriptStatus } from './_/output-script-status'
-import { validateGaugeNames } from './_/validate-gauge-names'
+import { validateGaugeDetails } from './_/validate-gauge-details'
 import { validateList } from './_/validate-list'
 
 const schema = getFile('schema/gauge-list-schema.json')
@@ -31,7 +31,7 @@ const validateGaugeList = async ({
   })
 
   validateList({ errors, list, schema })
-  await validateGaugeNames({ errors, list, publicClient })
+  await validateGaugeDetails({ errors, list, network, publicClient })
   outputScriptStatus({ errors, network, type: 'Gauge' })
 }
 
