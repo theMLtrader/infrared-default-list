@@ -13,6 +13,8 @@ import { getTokenSymbol } from './get-token-symbol'
 const RPC_REQUESTS_PER_SECOND = 10
 const ONE_SECOND = 1000
 
+type Counter = { value: number }
+
 const validateName = async ({
   errors,
   gauge,
@@ -22,12 +24,12 @@ const validateName = async ({
   errors: Array<string>
   gauge: GaugeListSchema['gauges'][number]
   publicClient: PublicClient
-  rpcLookupCount: number
+  rpcLookupCount: Counter
 }) => {
   const symbols = await Promise.all(
     gauge.underlyingTokens.map(async (underlyingToken) => {
-      rpcLookupCount += 1
-      if (rpcLookupCount % RPC_REQUESTS_PER_SECOND === 0) {
+      rpcLookupCount.value += 1
+      if (rpcLookupCount.value % RPC_REQUESTS_PER_SECOND === 0) {
         await delay(ONE_SECOND)
       }
       return await getTokenSymbol({
@@ -40,8 +42,8 @@ const validateName = async ({
   const underlyingTokenSymbols = symbols.join('-')
 
   if (gauge.name !== underlyingTokenSymbols) {
-    rpcLookupCount += 1
-    if (rpcLookupCount % RPC_REQUESTS_PER_SECOND === 0) {
+    rpcLookupCount.value += 1
+    if (rpcLookupCount.value % RPC_REQUESTS_PER_SECOND === 0) {
       await delay(ONE_SECOND)
     }
     const lpTokenSymbol = await getTokenSymbol({
@@ -111,7 +113,7 @@ export const validateGaugeDetails = async ({
   publicClient: PublicClient
 }) => {
   const gauges: GaugeListSchema['gauges'] = list.gauges
-  let rpcLookupCount = 0
+  let rpcLookupCount = { value: 0 }
 
   for (const gauge of gauges) {
     await validateName({ errors, gauge, publicClient, rpcLookupCount })
