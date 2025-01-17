@@ -1,6 +1,20 @@
 {
   "tokens": [
     {
+      "address": "0x5bDc3CAE6fB270ef07579c428bb630E73C8d623b",
+      "decimals": 18,
+      "image": "ibera.svg",
+      "symbol": "iBERA",
+      "tags": ["featured"]
+    },
+    {
+      "address": "0x7D6e08fe0d56A7e8f9762E9e65daaC491A0B475b",
+      "decimals": 18,
+      "image": "ibgt.svg",
+      "symbol": "iBGT",
+      "tags": ["featured"]
+    },
+    {
       "address": "0xd137593CDB341CcC78426c54Fb98435C60Da193c",
       "decimals": 18,
       "image": "honey.svg",
