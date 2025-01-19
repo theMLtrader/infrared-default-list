@@ -181,18 +181,6 @@
       ]
     },
     {
-      "beraRewardsVault": "0x76f36Cc45478F3f84574937976168af0cbD44F02",
-      "lpTokenAddress": "0x760a5Cb9C84C16264A819A43C6c57F8dcE13662d",
-      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x970f463a7a61068dda84aa9e2ce895bc867283bd?chain=berachain_bartio",
-      "name": "BUDS-WBERA",
-      "protocol": "kodiak",
-      "types": ["amm"],
-      "underlyingTokens": [
-        "0x9F43e40093327697Ff92d4b353D0A7B88b0DbBb6",
-        "0x7507c1dc16935B82698e4C63f2746A2fCf994dF8"
-      ]
-    },
-    {
       "beraRewardsVault": "0x86DA232f6A4d146151755Ccf3e4555eadCc24cCF",
       "lpTokenAddress": "0x556b758AcCe5c4F2E1B57821E2dd797711E790F4",
       "mintUrl": "https://testnet.webera.finance",
