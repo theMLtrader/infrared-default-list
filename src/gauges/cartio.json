@@ -32,6 +32,17 @@
         "0x6969696969696969696969696969696969696969",
         "0x2d93FbcE4CffC15DD385A80B3f4CC1D4E76C38b3"
       ]
+    },
+    {
+      "beraRewardsVault": "0x7d949a79259d55da7da18ef947468b6e0b34f5cf",
+      "lpTokenAddress": "0xf7f214a9543c1153ef5df2edcd839074615f248c",
+      "name": "USDC-HONEY",
+      "protocol": "bex",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x015fd589F4f1A33ce4487E12714e1B15129c9329",
+        "0xd137593CDB341CcC78426c54Fb98435C60Da193c"
+      ]
     }
   ]
 }
