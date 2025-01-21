@@ -90,11 +90,19 @@ const validateToken = ({
   tokensList: TokenListSchema
 }) => {
   for (const underlyingToken of gauge.underlyingTokens) {
-    const matchingToken = tokensList.tokens.find(
-      ({ address }) => address === underlyingToken,
-    )
-    if (!matchingToken) {
-      errors.push(`${gauge.name} does not have a token for ${underlyingToken}.`)
+    if (underlyingToken === '0x0000000000000000000000000000000000000000') {
+      errors.push(
+        '0x0000000000000000000000000000000000000000 is not a valid underlying token.',
+      )
+    } else {
+      const matchingToken = tokensList.tokens.find(
+        ({ address }) => address === underlyingToken,
+      )
+      if (!matchingToken) {
+        errors.push(
+          `${gauge.name} does not have a token for ${underlyingToken}.`,
+        )
+      }
     }
   }
 }
