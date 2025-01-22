@@ -5,6 +5,7 @@ import type { GaugeListSchema } from '@/types/gauge-list'
 import type { ProtocolsSchema } from '@/types/protocols'
 import type { TokenListSchema } from '@/types/token-list'
 
+import { ETH_ADDRESS } from './constants'
 import { delay } from './delay'
 import { getFile } from './get-file'
 import { getListFile } from './get-list-file'
@@ -90,10 +91,8 @@ const validateToken = ({
   tokensList: TokenListSchema
 }) => {
   for (const underlyingToken of gauge.underlyingTokens) {
-    if (underlyingToken === '0x0000000000000000000000000000000000000000') {
-      errors.push(
-        '0x0000000000000000000000000000000000000000 is not a valid underlying token.',
-      )
+    if (underlyingToken === ETH_ADDRESS) {
+      errors.push(`${ETH_ADDRESS} is not a valid underlying token.`)
     } else {
       const matchingToken = tokensList.tokens.find(
         ({ address }) => address === underlyingToken,

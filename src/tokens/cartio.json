@@ -29,7 +29,7 @@
       "tags": ["stablecoin", "collateral", "featured", "defaultCollateral"]
     },
     {
-      "address": "0x0000000000000000000000000000000000000000",
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       "decimals": 18,
       "image": "bera.svg",
       "symbol": "BERA",
