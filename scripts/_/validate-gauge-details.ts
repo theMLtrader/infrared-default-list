@@ -5,6 +5,7 @@ import type { GaugeListSchema } from '@/types/gauge-list'
 import type { ProtocolsSchema } from '@/types/protocols'
 import type { TokenListSchema } from '@/types/token-list'
 
+import { ETH_ADDRESS } from './constants'
 import { delay } from './delay'
 import { getFile } from './get-file'
 import { getListFile } from './get-list-file'
@@ -90,11 +91,17 @@ const validateToken = ({
   tokensList: TokenListSchema
 }) => {
   for (const underlyingToken of gauge.underlyingTokens) {
-    const matchingToken = tokensList.tokens.find(
-      ({ address }) => address === underlyingToken,
-    )
-    if (!matchingToken) {
-      errors.push(`${gauge.name} does not have a token for ${underlyingToken}.`)
+    if (underlyingToken === ETH_ADDRESS) {
+      errors.push(`${ETH_ADDRESS} is not a valid underlying token.`)
+    } else {
+      const matchingToken = tokensList.tokens.find(
+        ({ address }) => address === underlyingToken,
+      )
+      if (!matchingToken) {
+        errors.push(
+          `${gauge.name} does not have a token for ${underlyingToken}.`,
+        )
+      }
     }
   }
 }
