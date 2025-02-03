@@ -21,6 +21,10 @@ export const berachainMainnet = defineChain({
     symbol: 'BERA',
   },
   rpcUrls: {
-    default: { http: ['https://frosty-cosmopolitan-vineyard.furtim-network.quiknode.pro/086110f727c512b759cabb81560528ff964653aa'] },
+    default: {
+      http: [
+        'https://frosty-cosmopolitan-vineyard.furtim-network.quiknode.pro/086110f727c512b759cabb81560528ff964653aa',
+      ],
+    },
   },
 })

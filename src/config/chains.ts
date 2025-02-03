@@ -1,7 +1,8 @@
 import { berachainTestnetbArtio } from 'viem/chains'
 
-import { berachainTestnetcArtio } from './berachain-testnet-cartio'
 import { berachainMainnet } from '@/config/berachain-mainnet'
+
+import { berachainTestnetcArtio } from './berachain-testnet-cartio'
 
 export const supportedChains = {
   bartio: berachainTestnetbArtio,
