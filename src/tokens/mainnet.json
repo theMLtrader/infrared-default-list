@@ -25,7 +25,7 @@
       "address": "0x549943e04f40284185054145c6E4e9568C1D3241",
       "decimals": 6,
       "image": "usdce.svg",
-      "symbol": "USDCe",
+      "symbol": "USDC.e",
       "tags": ["stablecoin", "collateral", "featured", "defaultCollateral"]
     },
     {
@@ -52,7 +52,7 @@
     {
       "address": "0x688e72142674041f8f6Af4c808a4045cA1D6aC82",
       "decimals": 6,
-      "image": "byusd.svg",
+      "image": "unknown.svg",
       "symbol": "BYUSD",
       "tags": ["stablecoin"]
     }
