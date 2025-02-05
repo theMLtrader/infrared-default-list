@@ -66,7 +66,7 @@
     {
       "beraRewardsVault": "0xeFFD92E7435Dc32995b5b4BFf32b6451d685Fc2e",
       "lpTokenAddress": "0xF2d2d55Daf93b0660297eaA10969eBe90ead5CE8",
-      "name": "USDT",
+      "name": "USD₮0",
       "protocol": "dolomite",
       "types": ["cdp"],
       "underlyingTokens": ["0x779Ded0c9e1022225f8E0630b35a9b54bE713736"]
@@ -123,7 +123,7 @@
     {
       "beraRewardsVault": "0x315D38ee321608cB8520D563750D64aC1BB17344",
       "lpTokenAddress": "0xb73deE52F38539bA854979eab6342A60dD4C8c03",
-      "name": "USDC-HONEY",
+      "name": "USDC.e-HONEY",
       "protocol": "kodiak",
       "types": ["amm"],
       "underlyingTokens": [
@@ -134,7 +134,7 @@
     {
       "beraRewardsVault": "0x37eE07f45593762dee5f90A0B77e9e3baDf5B1ac",
       "lpTokenAddress": "0x12C195768f65F282EA5F1B5C42755FBc910B0D8F",
-      "name": "USDT-HONEY",
+      "name": "USD₮0-HONEY",
       "protocol": "kodiak",
       "types": ["amm"],
       "underlyingTokens": [
@@ -145,7 +145,7 @@
     {
       "beraRewardsVault": "0x75Da1D58A8d97f7b626224E7E71fa44DB13689f2",
       "lpTokenAddress": "0xE5A2ab5D2fb268E5fF43A5564e44c3309609aFF9",
-      "name": "USDE-HONEY",
+      "name": "USDe-HONEY",
       "protocol": "kodiak",
       "types": ["amm"],
       "underlyingTokens": [
@@ -167,7 +167,7 @@
     {
       "beraRewardsVault": "0x09b113Ae50B5AF0988B9a1Dc50BFE602e7C24Ef7",
       "lpTokenAddress": "0xD5B6EA3544a51BfdDa7E6926BdF778339801dFe8",
-      "name": "sUSDE-HONEY",
+      "name": "sUSDe-HONEY",
       "protocol": "kodiak",
       "types": ["amm"],
       "underlyingTokens": [
@@ -189,7 +189,7 @@
     {
       "beraRewardsVault": "0xedD27cE3793d655E3d15E29e297F4848De1EF092",
       "lpTokenAddress": "0x03bCcF796cDef61064c4a2EffdD21f1AC8C29E92",
-      "name": "WETH-BERAETH",
+      "name": "WETH-beraETH",
       "protocol": "kodiak",
       "types": ["amm"],
       "underlyingTokens": [
@@ -200,7 +200,7 @@
     {
       "beraRewardsVault": "0x19Ecf480652A7DE3A60dd7fd7012dAeD6C79E3E9",
       "lpTokenAddress": "0x57161d6272F47cd48BA165646c802f001040C2E0",
-      "name": "BERAETH-STONE",
+      "name": "beraETH-STONE",
       "protocol": "kodiak",
       "types": ["amm"],
       "underlyingTokens": [
