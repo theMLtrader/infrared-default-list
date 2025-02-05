@@ -201,7 +201,7 @@
       "protocol": "kodiak",
       "types": ["amm"],
       "underlyingTokens": [
-        "",
+        "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
         "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"
       ]
     },
