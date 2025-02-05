@@ -61,9 +61,7 @@
       "name": "HONEY",
       "protocol": "dolomite",
       "types": ["cdp"],
-      "underlyingTokens": [
-        "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"
-      ]
+      "underlyingTokens": ["0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"]
     },
     {
       "beraRewardsVault": "0xeFFD92E7435Dc32995b5b4BFf32b6451d685Fc2e",
@@ -71,9 +69,7 @@
       "name": "USDT",
       "protocol": "dolomite",
       "types": ["cdp"],
-      "underlyingTokens": [
-        "0x779Ded0c9e1022225f8E0630b35a9b54bE713736"
-      ]
+      "underlyingTokens": ["0x779Ded0c9e1022225f8E0630b35a9b54bE713736"]
     },
     {
       "beraRewardsVault": "0xd134a653E00f752b59597BFBc18AA0583232f109",
@@ -81,9 +77,7 @@
       "name": "WETH",
       "protocol": "dolomite",
       "types": ["cdp"],
-      "underlyingTokens": [
-        "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"
-      ]
+      "underlyingTokens": ["0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"]
     },
     {
       "beraRewardsVault": "0xC43aA390773914CEcA3f35a0c013c5B89Ca73ca0",
@@ -91,9 +85,7 @@
       "name": "WBTC",
       "protocol": "dolomite",
       "types": ["cdp"],
-      "underlyingTokens": [
-        "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
-      ]
+      "underlyingTokens": ["0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"]
     },
     {
       "beraRewardsVault": "0xC6506D205C92F9Acd69779eD0C547557F3AD4607",
