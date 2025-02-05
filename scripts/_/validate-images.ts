@@ -20,7 +20,7 @@ export const validateImages = async ({
     const imagePath = path.join(`${ASSETS_FOLDER}/${type}`, item.image)
     if (!existsSync(imagePath)) {
       errors.push(
-        `Image file "${item.image}" not found for ${type} "${item.name}"`,
+        `Image file "${item.image}" not found for ${type} "${item.name}" at ${imagePath}`,
       )
     } else if (path.extname(imagePath).toLowerCase() === '.png') {
       const isCorrectSize = await checkImageSize(imagePath)
