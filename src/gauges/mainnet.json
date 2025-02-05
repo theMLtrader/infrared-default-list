@@ -206,14 +206,14 @@
       ]
     },
     {
-      "beraRewardsVault": "",
-      "lpTokenAddress": "",
+      "beraRewardsVault": "0x19Ecf480652A7DE3A60dd7fd7012dAeD6C79E3E9",
+      "lpTokenAddress": "0x57161d6272F47cd48BA165646c802f001040C2E0",
       "name": "BERAETH-STONE",
       "protocol": "kodiak",
       "types": ["amm"],
       "underlyingTokens": [
-        "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
-        "0x6fc6545d5cDE268D5C7f1e476D444F39c995120d"
+        "0x6fc6545d5cDE268D5C7f1e476D444F39c995120d",
+        "0xEc901DA9c68E90798BbBb74c11406A32A70652C3"
       ]
     },
     {
