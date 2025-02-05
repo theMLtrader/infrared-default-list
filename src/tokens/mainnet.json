@@ -62,6 +62,48 @@
       "image": "unknown.svg",
       "symbol": "BYUSD",
       "tags": ["stablecoin"]
+    },
+    {
+      "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+      "decimals": 6,
+      "image": "usdt.svg",
+      "symbol": "USDT",
+      "tags": ["stablecoin"]
+    },
+    {
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "decimals": 18,
+      "image": "usde.svg",
+      "symbol": "USDE",
+      "tags": ["stablecoin"]
+    },
+    {
+      "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "decimals": 18,
+      "image": "susde.svg",
+      "symbol": "SUSDE",
+      "tags": []
+    },
+    {
+      "address": "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a",
+      "decimals": 18,
+      "image": "mim.svg",
+      "symbol": "MIM",
+      "tags": []
+    },
+    {
+      "address": "0x6fc6545d5cDE268D5C7f1e476D444F39c995120d",
+      "decimals": 18,
+      "image": "beraeth.svg",
+      "symbol": "BERAETH",
+      "tags": []
+    },
+    {
+      "address": "0xEc901DA9c68E90798BbBb74c11406A32A70652C3",
+      "decimals": 18,
+      "image": "stone.svg",
+      "symbol": "STONE",
+      "tags": []
     }
   ]
 }
