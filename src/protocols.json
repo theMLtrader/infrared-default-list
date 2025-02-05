@@ -90,6 +90,13 @@
       "image": "webera.svg",
       "name": "Webera",
       "url": "https://webera.finance"
+    },
+    {
+      "description": "Dolomite is a lending and borrowing platform that can support over 1,000 unique assets.",
+      "id": "dolomite",
+      "image": "dolomite.svg",
+      "name": "Dolomite",
+      "url": "https://dolomite.io/"
     }
   ]
 }
