@@ -37,6 +37,13 @@
     },
     {
       "description": "Swap a variety of tokens effortlessly on our decentralized platform. Provide liquidity to pools and earn BGT rewards.",
+      "id": "beraswap",
+      "image": "beraswap.svg",
+      "name": "Beraswap",
+      "url": "https://beraswap.fi"
+    },
+    {
+      "description": "Swap a variety of tokens effortlessly on our decentralized platform. Provide liquidity to pools and earn BGT rewards.",
       "id": "bex",
       "image": "bex.svg",
       "name": "BEX",
