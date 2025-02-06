@@ -154,17 +154,6 @@
       ]
     },
     {
-      "beraRewardsVault": "0xC6506D205C92F9Acd69779eD0C547557F3AD4607",
-      "lpTokenAddress": "0xf6c6Be0FF6d6F70A04dBE4F1aDE62cB23053Bd95",
-      "name": "WETH-HONEY",
-      "protocol": "kodiak",
-      "types": ["amm"],
-      "underlyingTokens": [
-        "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
-        "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"
-      ]
-    },
-    {
       "beraRewardsVault": "0x09b113Ae50B5AF0988B9a1Dc50BFE602e7C24Ef7",
       "lpTokenAddress": "0xD5B6EA3544a51BfdDa7E6926BdF778339801dFe8",
       "name": "sUSDe-HONEY",
