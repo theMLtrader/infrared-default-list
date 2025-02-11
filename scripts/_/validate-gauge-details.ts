@@ -1,4 +1,4 @@
-import { Address, PublicClient, zeroAddress } from 'viem'
+import { type Address, type PublicClient, zeroAddress } from 'viem'
 
 import type { supportedChains } from '@/config/chains'
 import type { GaugeListSchema } from '@/types/gauge-list'

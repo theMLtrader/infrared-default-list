@@ -29,32 +29,11 @@
       "url": "https://www.beraborrow.com"
     },
     {
-      "description": "A stablecoin that's integral to the Berachain ecosystem. Utilize HONEY for seamless trading, ensuring value consistency.",
-      "id": "honey",
-      "image": "honey.svg",
-      "name": "HONEY",
-      "url": "https://bartio.honey.berachain.com"
-    },
-    {
       "description": "Swap a variety of tokens effortlessly on our decentralized platform. Provide liquidity to pools and earn BGT rewards.",
       "id": "bex",
       "image": "bex.svg",
       "name": "BEX",
       "url": "https://hub.berachain.com/swap"
-    },
-    {
-      "description": "Supply assets and unlock the potential to borrow HONEY. Earn BGT rewards while you supply and borrow.",
-      "id": "bend",
-      "image": "bend.svg",
-      "name": "BEND",
-      "url": "https://bartio.bend.berachain.com"
-    },
-    {
-      "description": "Experience the thrill of high leverage trading, tailored for both novices and seasoned traders. With an impressive 100x leverage.",
-      "id": "berps",
-      "image": "berps.svg",
-      "name": "BERPS",
-      "url": "https://bartio.berps.berachain.com"
     },
     {
       "description": "Kodiak, is a vertically-integrated liquidity hub on Berachain",
@@ -89,7 +68,7 @@
       "id": "dolomite",
       "image": "dolomite.svg",
       "name": "Dolomite",
-      "url": "https://dolomite.io/"
+      "url": "https://dolomite.io"
     }
   ]
 }
