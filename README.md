@@ -34,7 +34,7 @@ Add any new token assets to `/src/assets/tokens` and new protocol assets to `src
 
 ### 3. Update JSON files
 
-1. Navigate to `src/gauges/{network}.json` where `{network}` is the network you're adding to (e.g., "bartio" for the Bartio testnet).
+1. Navigate to `src/gauges/{network}.json` where `{network}` is the network you're adding to (e.g., "mainnet" for the Berachain mainnet).
 
 2. Add your gauge to the `gauges` array in the JSON file. Follow this structure:
 

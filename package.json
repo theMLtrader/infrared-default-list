@@ -49,7 +49,7 @@
     "svgo": "^3.3.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "viem": "^2.22.1"
+    "viem": "^2.23.1"
   },
   "packageManager": "pnpm@9.15.2",
   "engines": {
