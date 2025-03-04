@@ -226,6 +226,15 @@
       ]
     },
     {
+      "beraRewardsVault": "0xb8fF36Ba70aD9eab492bD538b9B00350D53c59e2",
+      "lpTokenAddress": "0x6751C09113a83a83a43829fD0b3BC0D7bdbe07bf",
+      "mintUrl": "https://app.beraborrow.com/den/borrow/wBERA",
+      "name": "WBERA",
+      "protocol": "beraborrow",
+      "types": ["cdp"],
+      "underlyingTokens": ["0x6969696969696969696969696969696969696969"]
+    },
+    {
       "beraRewardsVault": "0x8431b9A8fe5FcC36C406d41110D86744bdecDAAE",
       "lpTokenAddress": "0x1207C619086A52edEf4a4b7Af881B5dDd367a919",
       "mintUrl": "https://hub.berachain.com/pools/0x1207c619086a52edef4a4b7af881b5ddd367a919000200000000000000000006/details/",
