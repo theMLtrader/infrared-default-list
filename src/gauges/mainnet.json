@@ -276,7 +276,7 @@
       "lpTokenAddress": "0xe3eeb9e48934634d8b5b39a0d15dd89ee0f969c4",
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xe3eeb9e48934634d8b5b39a0d15dd89ee0f969c4?chain=berachain_mainnet",
       "name": "WBERA-iBERA",
-      "protocol": "bex",
+      "protocol": "kodiak",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
