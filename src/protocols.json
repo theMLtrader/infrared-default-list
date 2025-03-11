@@ -1,28 +1,12 @@
 {
   "protocols": [
     {
-      "description": "Earn yield through decentralized derivatives strategies, inspired by TradFi and adapted to DeFi",
-      "id": "diracfinance",
-      "imageDark": "dirac.svg",
-      "imageLight": "dirac.svg",
-      "name": "Dirac",
-      "url": "https://dirac.finance"
-    },
-    {
       "description": "Infrared simplifies interacting with Proof of Liquidity with our liquid staking products.",
       "id": "infrared",
       "imageDark": "infrared.svg",
       "imageLight": "infrared.svg",
       "name": "Infrared",
       "url": "https://infrared.finance"
-    },
-    {
-      "description": "The premier GambleFi protocol on Berachain.",
-      "id": "junkyursas",
-      "imageDark": "junky.svg",
-      "imageLight": "junky.svg",
-      "name": "Junky Ursas",
-      "url": "https://betabersion.junkyursas.com/"
     },
     {
       "description": "Unlocking Instant liquidity for Berachain assets through the first PoL powered stablecoin NECT.",
@@ -47,30 +31,6 @@
       "imageLight": "kodiak-light.svg",
       "name": "Kodiak",
       "url": "https://app.kodiak.finance"
-    },
-    {
-      "description": "Honeypot Finance a community-run DeFi Hub on Berachain that integrates a unique AMM model to unite a community-led launchpad and DEX",
-      "id": "honeypot",
-      "imageDark": "honeypot.svg",
-      "imageLight": "honeypot.svg",
-      "name": "Honeypot",
-      "url": "https://honeypotfinance.xyz"
-    },
-    {
-      "description": "Zeru is a Decentralized Credit Infrastructure powered by eigen layer with vertically integrated lending protocol",
-      "id": "zeru",
-      "imageDark": "zeru.svg",
-      "imageLight": "zeru.svg",
-      "name": "Zeru",
-      "url": "https://zeru.finance"
-    },
-    {
-      "description": "WeBera is a permissionless yield abstraction layer designed to simplify participation in DeFi on the Berachain ecosystem.",
-      "id": "webera",
-      "imageDark": "webera.svg",
-      "imageLight": "webera.svg",
-      "name": "Webera",
-      "url": "https://webera.finance"
     },
     {
       "description": "Dolomite is a lending and borrowing platform that can support over 1,000 unique assets.",
