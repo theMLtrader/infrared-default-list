@@ -139,6 +139,13 @@
       "image": "dusdt.svg",
       "symbol": "dUSD₮0",
       "tags": []
+    },
+    {
+      "address": "0x6751c09113a83a83a43829fd0b3bc0d7bdbe07bf",
+      "decimals": 18,
+      "image": "bwbera.svg",
+      "symbol": "bWBERA",
+      "tags": []
     }
   ]
 }
