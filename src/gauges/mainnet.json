@@ -63,7 +63,7 @@
     {
       "beraRewardsVault": "0x0ec12590CBb9280ab22b81F62be587c5200A9711",
       "lpTokenAddress": "0x7f2B60fDff1494A0E3e060532c9980d7fad0404B",
-      "name": "HONEY",
+      "name": "dHONEY",
       "protocol": "dolomite",
       "types": ["cdp"],
       "underlyingTokens": ["0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"]
@@ -71,7 +71,7 @@
     {
       "beraRewardsVault": "0x9c3110123c515CAF1866B28C031dFeb5ed8EbF0C",
       "lpTokenAddress": "0xF2d2d55Daf93b0660297eaA10969eBe90ead5CE8",
-      "name": "USD₮0",
+      "name": "dUSD₮0",
       "protocol": "dolomite",
       "types": ["cdp"],
       "underlyingTokens": ["0x779Ded0c9e1022225f8E0630b35a9b54bE713736"]
@@ -79,7 +79,7 @@
     {
       "beraRewardsVault": "0xdb2f42BEDC87586C6E4b510CFC4675d6D86Ff886",
       "lpTokenAddress": "0xf7b5127B510E568fdC39e6Bb54e2081BFaD489AF",
-      "name": "WETH",
+      "name": "dWETH",
       "protocol": "dolomite",
       "types": ["cdp"],
       "underlyingTokens": ["0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"]
@@ -87,7 +87,7 @@
     {
       "beraRewardsVault": "0x7D960f4D9534aCb6f0fc963CC807b21655f35C76",
       "lpTokenAddress": "0x29cF6e8eCeFb8d3c9dd2b727C1b7d1df1a754F6f",
-      "name": "WBTC",
+      "name": "dWBTC",
       "protocol": "dolomite",
       "types": ["cdp"],
       "underlyingTokens": ["0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"]
@@ -229,7 +229,7 @@
       "beraRewardsVault": "0xb8fF36Ba70aD9eab492bD538b9B00350D53c59e2",
       "lpTokenAddress": "0x6751C09113a83a83a43829fD0b3BC0D7bdbe07bf",
       "mintUrl": "https://app.beraborrow.com/den/borrow/wBERA",
-      "name": "WBERA",
+      "name": "bWBERA",
       "protocol": "beraborrow",
       "types": ["cdp"],
       "underlyingTokens": ["0x6969696969696969696969696969696969696969"]
