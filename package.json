@@ -6,6 +6,7 @@
     "berachain",
     "default",
     "token",
+    "vaults",
     "vault",
     "validator",
     "list"
@@ -19,9 +20,12 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
-    "./gauges/mainnet": "./src/gauges/mainnet.json",
     "./protocols": "./src/protocols.json",
-    "./tokens/mainnet": "./src/tokens/mainnet.json"
+    "./tokens/mainnet": "./src/tokens/mainnet.json",
+    "./types/protocols": "./src/types/protocols.d.ts",
+    "./types/tokens": "./src/types/tokens.d.ts",
+    "./types/vaults": "./src/types/vaults.d.ts",
+    "./vaults/mainnet": "./src/vaults/mainnet.json"
   },
   "scripts": {
     "check": "concurrently \"pnpm schemas-to-typescript\" \"pnpm sort\" \"pnpm validate\" && pnpm lint",

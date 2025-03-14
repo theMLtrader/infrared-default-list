@@ -9,6 +9,14 @@
       "url": "https://www.beraborrow.com"
     },
     {
+      "description": "An EVM-identical L1 aligning security and liquidity powered by Proof Of Liquidity",
+      "id": "berachain",
+      "imageDark": "berachain.svg",
+      "imageLight": "berachain.svg",
+      "name": "Berachain",
+      "url": "https://berachain.com"
+    },
+    {
       "description": "Swap a variety of tokens effortlessly on our decentralized platform. Provide liquidity to pools and earn BGT rewards.",
       "id": "bex",
       "imageDark": "bex.svg",

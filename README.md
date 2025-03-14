@@ -41,13 +41,8 @@ Add any new token assets to `/src/assets/tokens` and new protocol assets to `src
    ```json
    {
      "beraRewardsVault": "0x...",
-     "lpTokenAddress": "0x...",
-     "mintUrl": "https://your-protocol-url.com/provide-liquidity",
-     "name": "HONEY-WBERA",
-     "protocol": "your_protocol_id",
-     "slug": "protocol_id-name(lowercase)",
-     "types": ["type1", "type2"],
-     "underlyingTokens": ["0x...", "0x..."]
+     "slug": "protocol-stake-token-name",
+     "stakeTokenAddress": "0x..."
    }
    ```
 
@@ -85,12 +80,21 @@ Add any new token assets to `/src/assets/tokens` and new protocol assets to `src
      "address": "0x...",
      "decimals": 18,
      "image": "your-token-image.svg",
+     "mintUrl": "https://your-protocol-url.com/provide-liquidity",
+     "name": "XYZ",
+     "protocol": "your_protocol_id",
      "symbol": "XYZ",
-     "tags": ["tag1", "tag2"]
+     "type": "amm",
+     "underlyingTokens": ["0x...", "0x..."]
    }
    ```
 
-   Add the token image to the `src/assets/tokens` folder if it's not already present.
+   Ensure that:
+
+   - The `mintUrl` field is a direct link to provide liquidity for the LP token
+   - The `name` field only uses the symbols of the underlying tokens with a dash between. Example: `HONEY-WBERA`.
+   - `protocol` matches an `id` in the `protocols` array
+   - You've added the token image to the `src/assets/tokens` folder if it's not already there.
 
 5. Commit your changes and push to your forked repository.
 

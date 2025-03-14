@@ -1,124 +1,44 @@
 import slug from 'slug'
-import { type Address, type PublicClient, zeroAddress } from 'viem'
 
 import type { supportedChains } from '@/config/chains'
-import type { ProtocolsSchema } from '@/types/protocols'
 import type { TokensSchema } from '@/types/tokens'
 import type { VaultsSchema } from '@/types/vaults'
 
-import { delay } from './delay'
-import { getFile } from './get-file'
 import { getJsonFile } from './get-json-file'
-import { getTokenSymbol } from './get-token-symbol'
-
-const RPC_REQUESTS_PER_SECOND = 10
-const ONE_SECOND = 1000
-
-interface Counter {
-  value: number
-}
 
 slug.charmap['.'] = '.' // allow periods in urls. They are valid
 slug.charmap['₮'] = '₮' // allow some unicode characters
 
-const validateName = async ({
+const validateStakeTokenAndSlug = ({
   errors,
-  publicClient,
-  rpcLookupCount,
-  vault,
-}: {
-  errors: Array<string>
-  publicClient: PublicClient
-  rpcLookupCount: Counter
-  vault: VaultsSchema['vaults'][number]
-}) => {
-  const symbols = await Promise.all(
-    vault.underlyingTokens.map(async (underlyingToken) => {
-      rpcLookupCount.value += 1
-      if (rpcLookupCount.value % RPC_REQUESTS_PER_SECOND === 0) {
-        await delay(ONE_SECOND)
-      }
-      return await getTokenSymbol({
-        errors,
-        publicClient,
-        tokenAddress: underlyingToken as Address,
-      })
-    }),
-  )
-  const underlyingTokenSymbols = symbols.join('-')
-
-  if (vault.name !== underlyingTokenSymbols) {
-    rpcLookupCount.value += 1
-    if (rpcLookupCount.value % RPC_REQUESTS_PER_SECOND === 0) {
-      await delay(ONE_SECOND)
-    }
-    const lpTokenSymbol = await getTokenSymbol({
-      errors,
-      publicClient,
-      tokenAddress: vault.lpTokenAddress as Address,
-    })
-
-    if (vault.name !== lpTokenSymbol) {
-      errors.push(
-        `${vault.name} does not match ${lpTokenSymbol} or ${underlyingTokenSymbols}`,
-      )
-    }
-  }
-}
-
-const protocolsList: ProtocolsSchema = getFile('src/protocols.json')
-
-const validateProtocol = ({
-  errors,
-  vault,
-}: {
-  errors: Array<string>
-  vault: VaultsSchema['vaults'][number]
-}) => {
-  const matchingProtocol = protocolsList.protocols.find(
-    ({ id }) => id === vault.protocol,
-  )
-
-  if (!matchingProtocol) {
-    errors.push(`${vault.name} does not have a protocol for ${vault.protocol}`)
-  }
-}
-
-const validateToken = ({
-  errors,
+  slugs,
   tokens,
   vault,
 }: {
   errors: Array<string>
-  tokens: TokensSchema['tokens']
-  vault: VaultsSchema['vaults'][number]
-}) => {
-  for (const underlyingToken of vault.underlyingTokens) {
-    if (underlyingToken === zeroAddress) {
-      errors.push(`${zeroAddress} is not a valid underlying token`)
-    } else {
-      const matchingToken = tokens.find(
-        ({ address }) => address === underlyingToken,
-      )
-      if (!matchingToken) {
-        errors.push(
-          `${vault.name} does not have a token for ${underlyingToken}`,
-        )
-      }
-    }
-  }
-}
-
-const validateStakeTokenAndSlug = ({
-  errors,
-  slugs,
-  vault,
-                                   }: {
-  errors: Array<string>
   slugs: Array<string>
+  tokens: TokensSchema
   vault: VaultsSchema['vaults'][number]
 }) => {
-  const expectedSlug = `${slug(vault.protocol)}-${slug(vault.name)}`
+  const stakeToken = tokens.tokens.find(
+    ({ address }) => address === vault.stakeTokenAddress,
+  )
+
+  if (!stakeToken) {
+    errors.push(
+      `${vault.slug} does not have a token for ${vault.stakeTokenAddress}`,
+    )
+    return
+  }
+
+  if (!('protocol' in stakeToken)) {
+    errors.push(
+      `${stakeToken.name} does not have a protocol (vault validation)`,
+    )
+    return
+  }
+
+  const expectedSlug = `${slug(stakeToken.protocol)}-${slug(stakeToken.name)}`
 
   if (vault.slug !== expectedSlug) {
     if (slugs.includes(expectedSlug)) {
@@ -138,19 +58,15 @@ const validateStakeTokenAndSlug = ({
   slugs.push(vault.slug)
 }
 
-export const validateVaultDetails = async ({
+export const validateVaultDetails = ({
   errors,
   network,
-  publicClient,
   vaults,
 }: {
   errors: Array<string>
   network: keyof typeof supportedChains
-  publicClient: PublicClient
   vaults: VaultsSchema['vaults']
 }) => {
-  const rpcLookupCount = { value: 0 }
-
   const tokens: TokensSchema = getJsonFile({
     network,
     path: `src/tokens/${network}.json`,
@@ -158,9 +74,6 @@ export const validateVaultDetails = async ({
   const slugs: Array<string> = []
 
   for (const vault of vaults) {
-    await validateName({ errors, publicClient, rpcLookupCount, vault })
-    validateProtocol({ errors, vault })
-    validateToken({ errors, tokens: tokens.tokens, vault })
-    validateStakeTokenAndSlug({ errors, slugs, vault })
+    validateStakeTokenAndSlug({ errors, slugs, tokens, vault })
   }
 }

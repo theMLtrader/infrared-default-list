@@ -8,13 +8,8 @@
 export interface VaultsSchema {
   vaults: {
     beraRewardsVault: string
-    lpTokenAddress: string
-    mintUrl?: string
-    name: string
-    protocol: string
     slug: string
-    types: string[]
-    underlyingTokens: string[]
+    stakeTokenAddress: string
   }[]
   [k: string]: unknown
 }
