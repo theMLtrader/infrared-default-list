@@ -293,6 +293,18 @@
         "0x6969696969696969696969696969696969696969",
         "0x9b6761bf2397Bb5a6624a856cC84A3A14Dcd3fe5"
       ]
+    },
+    {
+      "beraRewardsVault": "0xde9d49a63fbb7c7d211b26a7d0dabdf8e0d4b4fe",
+      "lpTokenAddress": "0xc227c8639a41db8393dd1b4eac41464a62d64fb4",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xc227c8639a41db8393dd1b4eac41464a62d64fb4?farm=0x3c8e4d4324f7ab2e3238c23a2838a762ecb7051d&chain=berachain_mainnet",
+      "name": "OHM-WBERA",
+      "protocol": "kodiak",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x18878df23e2a36f81e820e4b47b4a40576d3159c",
+        "0x6969696969696969696969696969696969696969"
+      ]
     }
   ]
 }
