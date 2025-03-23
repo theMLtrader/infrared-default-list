@@ -146,6 +146,13 @@
       "image": "bwbera.svg",
       "symbol": "bWBERA",
       "tags": []
+    },
+    {
+      "address": "0x6d4223dae2a8744a85a6d44e97f3f61679f87ee6",
+      "decimals": 18,
+      "image": "usdbr.svg",
+      "symbol": "USDbr",
+      "tags": ["stablecoin"]
     }
   ]
 }
