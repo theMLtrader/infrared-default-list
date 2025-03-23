@@ -30,7 +30,7 @@ const validateGauges = async ({
     transport: http(),
   })
 
-  validateList({ errors, list: gauges, schema })
+  validateList({ errors, list: gauges, schema, type: 'gauges' })
   await validateGaugeDetails({
     errors,
     gauges: gauges.gauges,

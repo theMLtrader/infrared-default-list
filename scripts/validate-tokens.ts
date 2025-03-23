@@ -30,7 +30,7 @@ const validateTokens = async ({
     transport: http(),
   })
 
-  validateList({ errors, list: tokens, schema })
+  validateList({ errors, list: tokens, schema, type: 'tokens' })
   await validateTokenDetails({ errors, publicClient, tokens: tokens.tokens })
   outputScriptStatus({ errors, network, type: 'Token' })
 }

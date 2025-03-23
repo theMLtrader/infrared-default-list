@@ -1,5 +1,5 @@
-import Ajv from 'ajv'
 import addFormats from 'ajv-formats'
+import Ajv from 'ajv/dist/2020'
 
 import type { GaugeTypesSchema } from '@/types/gauge-types'
 import type { GaugesSchema } from '@/types/gauges'
@@ -14,6 +14,7 @@ export const validateList = ({
   errors,
   list,
   schema,
+  type,
 }: {
   errors: Array<string>
   list:
@@ -24,6 +25,7 @@ export const validateList = ({
     | ValidatorsSchema
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   schema: any
+  type: string
 }) => {
   // Validate the overall structure
   const validate = ajv.compile(schema)
@@ -31,7 +33,7 @@ export const validateList = ({
 
   if (!valid) {
     validate.errors?.forEach((error) => {
-      errors.push(`Error in list: ${error.message} at ${error.instancePath}`)
+      errors.push(`Error in ${type}: ${error.message} at ${error.instancePath}`)
     })
   }
 }

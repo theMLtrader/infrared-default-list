@@ -16,7 +16,7 @@ const validatorValidatorList = async ({ network }: { network: string }) => {
     path: `src/validators/${network}.json`,
   })
 
-  validateList({ errors, list: validators, schema })
+  validateList({ errors, list: validators, schema, type: 'validators' })
   outputScriptStatus({ errors, network, type: 'Validator' })
 }
 
