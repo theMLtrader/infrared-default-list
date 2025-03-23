@@ -339,6 +339,19 @@
       ]
     },
     {
+      "beraRewardsVault": "0x6b23e121c6a13c959d69493ea5ca015a5847596a",
+      "lpTokenAddress": "0x93a913351cae2d8c82c4b85f699726947eb76d32",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x93a913351cae2d8c82c4b85f699726947eb76d32?chain=berachain_mainnet",
+      "name": "WBERA-RAMEN",
+      "protocol": "kodiak",
+      "slug": "kodiak-wbera-ramen",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x6969696969696969696969696969696969696969",
+        "0xb8B1Af593Dc37B33a2c87C8Db1c9051FC32858B7"
+      ]
+    },
+    {
       "beraRewardsVault": "0x9Df027Ed06635ecDfe811009f2291d347eA90357",
       "lpTokenAddress": "0xf6b16E73d3b0e2784AAe8C4cd06099BE65d092Bf",
       "name": "WBTC-HONEY",
