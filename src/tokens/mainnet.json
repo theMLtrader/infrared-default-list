@@ -15,6 +15,13 @@
       "tags": []
     },
     {
+      "address": "0x6B26f778bfae56CFb4Bf9b62c678d9D40e725227",
+      "decimals": 8,
+      "image": "bitcoin.svg",
+      "symbol": "BITCOIN",
+      "tag": []
+    },
+    {
       "address": "0x6751c09113a83a83a43829fd0b3bc0d7bdbe07bf",
       "decimals": 18,
       "image": "bwbera.svg",
