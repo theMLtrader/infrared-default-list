@@ -15,7 +15,6 @@ export interface GaugesSchema {
     slug: string
     types: string[]
     underlyingTokens: string[]
-    [k: string]: unknown
   }[]
   [k: string]: unknown
 }

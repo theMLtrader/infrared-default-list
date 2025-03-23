@@ -13,7 +13,6 @@ export interface ValidatorsSchema {
     name: string
     twitter?: string
     website?: string
-    [k: string]: unknown
   }[]
   [k: string]: unknown
 }

@@ -3,6 +3,7 @@
   "properties": {
     "protocols": {
       "items": {
+        "additionalProperties": false,
         "properties": {
           "description": { "type": "string" },
           "id": { "type": "string" },
