@@ -1,3 +1,4 @@
+import slug from 'slug'
 import { type Address, type PublicClient, zeroAddress } from 'viem'
 
 import type { supportedChains } from '@/config/chains'
@@ -16,6 +17,9 @@ const ONE_SECOND = 1000
 interface Counter {
   value: number
 }
+
+slug.charmap['.'] = '.' // allow periods in urls. They are valid
+slug.charmap['₮'] = '₮' // allow some unicode characters
 
 const validateName = async ({
   errors,
@@ -105,6 +109,35 @@ const validateToken = ({
   }
 }
 
+const validateStakeTokenAndSlug = ({
+  errors,
+  gauge,
+  slugs,
+}: {
+  errors: Array<string>
+  gauge: GaugesSchema['gauges'][number]
+  slugs: Array<string>
+}) => {
+  const expectedSlug = `${slug(gauge.protocol)}-${slug(gauge.name)}`
+
+  if (gauge.slug !== expectedSlug) {
+    if (slugs.includes(expectedSlug)) {
+      if (!gauge.slug.startsWith(expectedSlug)) {
+        errors.push(`${gauge.slug}’s slug does not start with ${expectedSlug}`)
+      }
+    } else {
+      errors.push(`${gauge.slug}’s slug does not match ${expectedSlug}`)
+    }
+  }
+
+  if (slugs.includes(gauge.slug)) {
+    errors.push(
+      `Slug "${gauge.slug}" is not unique. Gauge slugs must be unique.`,
+    )
+  }
+  slugs.push(gauge.slug)
+}
+
 export const validateGaugeDetails = async ({
   errors,
   gauges,
@@ -122,10 +155,12 @@ export const validateGaugeDetails = async ({
     network,
     path: `src/tokens/${network}.json`,
   })
+  const slugs: Array<string> = []
 
   for (const gauge of gauges) {
     await validateName({ errors, gauge, publicClient, rpcLookupCount })
     validateProtocol({ errors, gauge })
     validateToken({ errors, gauge, tokens: tokens.tokens })
+    validateStakeTokenAndSlug({ errors, gauge, slugs })
   }
 }

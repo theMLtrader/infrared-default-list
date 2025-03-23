@@ -45,6 +45,7 @@ Add any new token assets to `/src/assets/tokens` and new protocol assets to `src
      "mintUrl": "https://your-protocol-url.com/provide-liquidity",
      "name": "HONEY-WBERA",
      "protocol": "your_protocol_id",
+     "slug": "protocol_id-name(lowercase)",
      "types": ["type1", "type2"],
      "underlyingTokens": ["0x...", "0x..."]
    }

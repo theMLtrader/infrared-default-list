@@ -12,6 +12,7 @@ export interface GaugesSchema {
     mintUrl?: string
     name: string
     protocol: string
+    slug: string
     types: string[]
     underlyingTokens: string[]
     [k: string]: unknown

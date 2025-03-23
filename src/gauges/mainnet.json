@@ -5,6 +5,7 @@
       "lpTokenAddress": "0x57161d6272F47cd48BA165646c802f001040C2E0",
       "name": "beraETH-STONE",
       "protocol": "kodiak",
+      "slug": "kodiak-beraeth-stone",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6fc6545d5cDE268D5C7f1e476D444F39c995120d",
@@ -17,6 +18,7 @@
       "mintUrl": "https://app.beraborrow.com/den/borrow/wBERA",
       "name": "bWBERA",
       "protocol": "beraborrow",
+      "slug": "beraborrow-bwbera",
       "types": ["cdp"],
       "underlyingTokens": ["0x6969696969696969696969696969696969696969"]
     },
@@ -26,6 +28,7 @@
       "mintUrl": "https://hub.berachain.com/pools/0xde04c469ad658163e2a5e860a03a86b52f6fa8c8000000000000000000000000/details",
       "name": "BYUSD-HONEY",
       "protocol": "bex",
+      "slug": "bex-byusd-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x688e72142674041f8f6Af4c808a4045cA1D6aC82",
@@ -37,6 +40,7 @@
       "lpTokenAddress": "0x7f2B60fDff1494A0E3e060532c9980d7fad0404B",
       "name": "dHONEY",
       "protocol": "dolomite",
+      "slug": "dolomite-dhoney",
       "types": ["cdp"],
       "underlyingTokens": ["0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"]
     },
@@ -45,6 +49,7 @@
       "lpTokenAddress": "0xF2d2d55Daf93b0660297eaA10969eBe90ead5CE8",
       "name": "dUSD₮0",
       "protocol": "dolomite",
+      "slug": "dolomite-dusd₮0",
       "types": ["cdp"],
       "underlyingTokens": ["0x779Ded0c9e1022225f8E0630b35a9b54bE713736"]
     },
@@ -53,6 +58,7 @@
       "lpTokenAddress": "0x29cF6e8eCeFb8d3c9dd2b727C1b7d1df1a754F6f",
       "name": "dWBTC",
       "protocol": "dolomite",
+      "slug": "dolomite-dwbtc",
       "types": ["cdp"],
       "underlyingTokens": ["0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"]
     },
@@ -61,6 +67,7 @@
       "lpTokenAddress": "0xf7b5127B510E568fdC39e6Bb54e2081BFaD489AF",
       "name": "dWETH",
       "protocol": "dolomite",
+      "slug": "dolomite-dweth",
       "types": ["cdp"],
       "underlyingTokens": ["0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"]
     },
@@ -69,6 +76,7 @@
       "lpTokenAddress": "0x933b2e6a71edBF11BBA75C5Ad241D246b145E0b0",
       "name": "MIM-HONEY",
       "protocol": "kodiak",
+      "slug": "kodiak-mim-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a",
@@ -81,6 +89,7 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xef8c3239e0d8be9d58f145e18f5909ddad681365?chain=berachain_mainnet",
       "name": "NAV-WBERA",
       "protocol": "nav",
+      "slug": "nav-nav-wbera",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6536cEAD649249cae42FC9bfb1F999429b3ec755",
@@ -93,6 +102,7 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x98bdeede9a45c28d229285d9d6e9139e9f505391?chain=berachain_mainnet",
       "name": "OHM-HONEY",
       "protocol": "kodiak",
+      "slug": "kodiak-ohm-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x18878Df23e2a36f81e820e4b47b4A40576D3159C",
@@ -105,6 +115,7 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xc227c8639a41db8393dd1b4eac41464a62d64fb4?farm=0x3c8e4d4324f7ab2e3238c23a2838a762ecb7051d&chain=berachain_mainnet",
       "name": "OHM-WBERA",
       "protocol": "kodiak",
+      "slug": "kodiak-ohm-wbera",
       "types": ["amm"],
       "underlyingTokens": [
         "0x18878Df23e2a36f81e820e4b47b4A40576D3159C",
@@ -116,6 +127,7 @@
       "lpTokenAddress": "0x7fd165B73775884a38AA8f2B384A53A3Ca7400E6",
       "name": "rUSD-HONEY",
       "protocol": "kodiak",
+      "slug": "kodiak-rusd-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x09D4214C03D01F49544C0448DBE3A27f768F2b34",
@@ -128,6 +140,7 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x43e487126c4f37d1915cf02a90b5c5295afb1790?chain=berachain_mainnet",
       "name": "SolvBTC-SolvBTC.BBN",
       "protocol": "kodiak",
+      "slug": "kodiak-solvbtc-solvbtc.bbn",
       "types": ["amm"],
       "underlyingTokens": [
         "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77",
@@ -139,6 +152,7 @@
       "lpTokenAddress": "0xD5B6EA3544a51BfdDa7E6926BdF778339801dFe8",
       "name": "sUSDe-HONEY",
       "protocol": "kodiak",
+      "slug": "kodiak-susde-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
@@ -150,6 +164,7 @@
       "lpTokenAddress": "0x12C195768f65F282EA5F1B5C42755FBc910B0D8F",
       "name": "USD₮0-HONEY",
       "protocol": "kodiak",
+      "slug": "kodiak-usd₮0-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
@@ -162,6 +177,7 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x28a54EaeEc63fBb1175d13466a9ada5f3175D577?chain=berachain_mainnet",
       "name": "USDbr-HONEY",
       "protocol": "kodiak",
+      "slug": "kodiak-usdbr-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6d4223dae2a8744a85a6d44e97f3f61679f87ee6",
@@ -174,6 +190,7 @@
       "mintUrl": "https://hub.berachain.com/pools/0xf961a8f6d8c69e7321e78d254ecafbcc3a637621000000000000000000000001/details",
       "name": "USDC.e-HONEY",
       "protocol": "bex",
+      "slug": "bex-usdc.e-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x549943e04f40284185054145c6E4e9568C1D3241",
@@ -185,6 +202,7 @@
       "lpTokenAddress": "0xb73deE52F38539bA854979eab6342A60dD4C8c03",
       "name": "USDC.e-HONEY",
       "protocol": "kodiak",
+      "slug": "kodiak-usdc.e-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x549943e04f40284185054145c6E4e9568C1D3241",
@@ -196,6 +214,7 @@
       "lpTokenAddress": "0xE5A2ab5D2fb268E5fF43A5564e44c3309609aFF9",
       "name": "USDe-HONEY",
       "protocol": "kodiak",
+      "slug": "kodiak-usde-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
@@ -208,6 +227,7 @@
       "mintUrl": "https://hub.berachain.com/pools/0x2c4a603a2aa5596287a06886862dc29d56dbc354000200000000000000000002/details",
       "name": "WBERA-HONEY",
       "protocol": "bex",
+      "slug": "bex-wbera-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
@@ -220,6 +240,7 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x4a254B11810B8EBb63C5468E438FC561Cb1bB1da?chain=berachain_mainnet",
       "name": "WBERA-HONEY",
       "protocol": "kodiak",
+      "slug": "kodiak-wbera-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
@@ -232,6 +253,7 @@
       "mintUrl": "https://hub.berachain.com/pools/0x4d0ac0ea757f0bb338457c7a135c41fc732ca67d000200000000000000000005/details/",
       "name": "WBERA-iBERA",
       "protocol": "bex",
+      "slug": "bex-wbera-ibera-legacy-1",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
@@ -244,6 +266,7 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xe3eeb9e48934634d8b5b39a0d15dd89ee0f969c4?chain=berachain_mainnet",
       "name": "WBERA-iBERA",
       "protocol": "kodiak",
+      "slug": "kodiak-wbera-ibera",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
@@ -256,6 +279,7 @@
       "mintUrl": "https://hub.berachain.com/pools/0x62c030b29a6fef1b32677499e4a1f1852a8808c00000000000000000000000c6/details/",
       "name": "WBERA-iBERA",
       "protocol": "bex",
+      "slug": "bex-wbera-ibera",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
@@ -268,6 +292,7 @@
       "mintUrl": "https://hub.berachain.com/pools/0x1207c619086a52edef4a4b7af881b5ddd367a919000200000000000000000006/details/",
       "name": "WBERA-iBGT",
       "protocol": "bex",
+      "slug": "bex-wbera-ibgt",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
@@ -280,6 +305,7 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x564f011d557aad1ca09bfc956eb8a17c35d490e0?chain=berachain_mainnet",
       "name": "WBERA-iBGT",
       "protocol": "kodiak",
+      "slug": "kodiak-wbera-ibgt",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
@@ -292,6 +318,7 @@
       "mintUrl": "https://hub.berachain.com/pools/0x38fdd999fe8783037db1bbfe465759e312f2d809000200000000000000000004/details",
       "name": "WBERA-WBTC",
       "protocol": "bex",
+      "slug": "bex-wbera-wbtc",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
@@ -304,6 +331,7 @@
       "mintUrl": "https://hub.berachain.com/pools/0xdd70a5ef7d8cfe5c5134b5f9874b09fb5ce812b4000200000000000000000003/details",
       "name": "WBERA-WETH",
       "protocol": "bex",
+      "slug": "bex-wbera-weth",
       "types": ["amm"],
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
@@ -315,6 +343,7 @@
       "lpTokenAddress": "0xf6b16E73d3b0e2784AAe8C4cd06099BE65d092Bf",
       "name": "WBTC-HONEY",
       "protocol": "kodiak",
+      "slug": "kodiak-wbtc-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
@@ -327,6 +356,7 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x3879451f4f69f0c2d37cad45319cff2e7d29c596?chain=berachain_mainnet",
       "name": "WBTC-SolvBTC",
       "protocol": "kodiak",
+      "slug": "kodiak-wbtc-solvbtc",
       "types": ["amm"],
       "underlyingTokens": [
         "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
@@ -339,6 +369,7 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xf06ea29fcf4765200742d29e685973a1870eac98?chain=berachain_mainnet",
       "name": "WBTC-WBERA",
       "protocol": "kodiak",
+      "slug": "kodiak-wbtc-wbera",
       "types": ["amm"],
       "underlyingTokens": [
         "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
@@ -350,6 +381,7 @@
       "lpTokenAddress": "0x58FDB6EEbf7df7Ce4137994436fb0e629Bb84b84",
       "name": "WBTC-WETH",
       "protocol": "kodiak",
+      "slug": "kodiak-wbtc-weth",
       "types": ["amm"],
       "underlyingTokens": [
         "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
@@ -361,6 +393,7 @@
       "lpTokenAddress": "0x03bCcF796cDef61064c4a2EffdD21f1AC8C29E92",
       "name": "WETH-beraETH",
       "protocol": "kodiak",
+      "slug": "kodiak-weth-beraeth",
       "types": ["amm"],
       "underlyingTokens": [
         "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
@@ -372,6 +405,7 @@
       "lpTokenAddress": "0xf6c6Be0FF6d6F70A04dBE4F1aDE62cB23053Bd95",
       "name": "WETH-HONEY",
       "protocol": "kodiak",
+      "slug": "kodiak-weth-honey",
       "types": ["amm"],
       "underlyingTokens": [
         "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
@@ -383,6 +417,7 @@
       "lpTokenAddress": "0x97431F104be73FC0e6fc731cE84486DA05C48871",
       "name": "WETH-STONE",
       "protocol": "kodiak",
+      "slug": "kodiak-weth-stone",
       "types": ["amm"],
       "underlyingTokens": [
         "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
@@ -395,6 +430,7 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x9659dc8c1565E0bd82627267e3b4eEd1a377ebE6?chain=berachain_mainnet",
       "name": "WETH-WBERA",
       "protocol": "kodiak",
+      "slug": "kodiak-weth-wbera",
       "types": ["amm"],
       "underlyingTokens": [
         "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
