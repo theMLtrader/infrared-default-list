@@ -9,9 +9,9 @@ export const sortVaults = async ({
   vaults,
 }: {
   path: string
-  vaults: VaultsSchema['gauges']
+  vaults: VaultsSchema['vaults']
 }) => {
   const sortedVaults = vaults.sort((a, b) => a.slug.localeCompare(b.slug))
 
-  await writeFile(path, formatDataToJson({ data: { gauges: sortedVaults } }))
+  await writeFile(path, formatDataToJson({ data: { vaults: sortedVaults } }))
 }

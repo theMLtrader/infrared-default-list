@@ -12,7 +12,7 @@ import { validateList } from './_/validate-list'
 import { validateVaultDetails } from './_/validate-vault-details'
 
 const schema = getFile('schema/vaults-schema.json')
-const folderPath = 'src/gauges'
+const folderPath = 'src/vaults'
 
 const validateVaults = async ({
   network,
@@ -37,7 +37,7 @@ const validateVaults = async ({
     errors,
     network,
     publicClient,
-    vaults: vaults.gauges,
+    vaults: vaults.vaults,
   })
   outputScriptStatus({ errors, network, type: 'Vault' })
 }

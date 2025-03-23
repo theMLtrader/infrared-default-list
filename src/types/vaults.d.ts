@@ -6,7 +6,7 @@
  */
 
 export interface VaultsSchema {
-  gauges: {
+  vaults: {
     beraRewardsVault: string
     lpTokenAddress: string
     mintUrl?: string

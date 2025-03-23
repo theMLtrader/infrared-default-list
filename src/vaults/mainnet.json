@@ -1,5 +1,5 @@
 {
-  "gauges": [
+  "vaults": [
     {
       "beraRewardsVault": "0xb8fF36Ba70aD9eab492bD538b9B00350D53c59e2",
       "lpTokenAddress": "0x6751C09113a83a83a43829fD0b3BC0D7bdbe07bf",

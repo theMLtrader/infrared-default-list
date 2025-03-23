@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "properties": {
-    "gauges": {
+    "vaults": {
       "items": {
         "additionalProperties": false,
         "properties": {
@@ -41,6 +41,6 @@
       "type": "array"
     }
   },
-  "required": ["gauges"],
+  "required": ["vaults"],
   "type": "object"
 }

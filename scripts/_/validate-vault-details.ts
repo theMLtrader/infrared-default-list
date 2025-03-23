@@ -30,7 +30,7 @@ const validateName = async ({
   errors: Array<string>
   publicClient: PublicClient
   rpcLookupCount: Counter
-  vault: VaultsSchema['gauges'][number]
+  vault: VaultsSchema['vaults'][number]
 }) => {
   const symbols = await Promise.all(
     vault.underlyingTokens.map(async (underlyingToken) => {
@@ -73,7 +73,7 @@ const validateProtocol = ({
   vault,
 }: {
   errors: Array<string>
-  vault: VaultsSchema['gauges'][number]
+  vault: VaultsSchema['vaults'][number]
 }) => {
   const matchingProtocol = protocolsList.protocols.find(
     ({ id }) => id === vault.protocol,
@@ -91,7 +91,7 @@ const validateToken = ({
 }: {
   errors: Array<string>
   tokens: TokensSchema['tokens']
-  vault: VaultsSchema['gauges'][number]
+  vault: VaultsSchema['vaults'][number]
 }) => {
   for (const underlyingToken of vault.underlyingTokens) {
     if (underlyingToken === zeroAddress) {
@@ -113,10 +113,10 @@ const validateStakeTokenAndSlug = ({
   errors,
   slugs,
   vault,
-}: {
+                                   }: {
   errors: Array<string>
   slugs: Array<string>
-  vault: VaultsSchema['gauges'][number]
+  vault: VaultsSchema['vaults'][number]
 }) => {
   const expectedSlug = `${slug(vault.protocol)}-${slug(vault.name)}`
 
@@ -147,7 +147,7 @@ export const validateVaultDetails = async ({
   errors: Array<string>
   network: keyof typeof supportedChains
   publicClient: PublicClient
-  vaults: VaultsSchema['gauges']
+  vaults: VaultsSchema['vaults']
 }) => {
   const rpcLookupCount = { value: 0 }
 
