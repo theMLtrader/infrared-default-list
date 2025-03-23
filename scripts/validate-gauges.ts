@@ -8,10 +8,12 @@ import { getFile } from './_/get-file'
 import { getJsonFile } from './_/get-json-file'
 import { isValidNetwork } from './_/is-valid-network'
 import { outputScriptStatus } from './_/output-script-status'
+import { sortGauges } from './_/sort-gauges'
 import { validateGaugeDetails } from './_/validate-gauge-details'
 import { validateList } from './_/validate-list'
 
 const schema = getFile('schema/gauges-schema.json')
+const folderPath = 'src/gauges'
 
 const validateGauges = async ({
   network,
@@ -19,9 +21,10 @@ const validateGauges = async ({
   network: keyof typeof supportedChains
 }) => {
   const errors: Array<string> = []
+  const path = `${folderPath}/${network}.json`
   const gauges: GaugesSchema = getJsonFile({
     network,
-    path: `src/gauges/${network}.json`,
+    path,
   })
 
   const chain = supportedChains[network]
@@ -38,9 +41,13 @@ const validateGauges = async ({
     publicClient,
   })
   outputScriptStatus({ errors, network, type: 'Gauge' })
+  await sortGauges({
+    gauges: gauges.gauges,
+    path,
+  })
 }
 
-readdirSync('src/gauges').forEach(async (file) => {
+readdirSync(folderPath).forEach(async (file) => {
   const network = file.replace('.json', '')
 
   if (!isValidNetwork(network)) {
