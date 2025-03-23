@@ -4,7 +4,8 @@ import { validateList } from './_/validate-list'
 import { validateProtocolImages } from './_/validate-protocol-images'
 
 const schema = getFile('schema/protocols-schema.json')
-const protocols = getFile('src/protocols.json')
+const path = 'src/protocols.json'
+const protocols = getFile(path)
 
 const validateProtocols = async () => {
   const errors: Array<string> = []

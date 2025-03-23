@@ -49,6 +49,10 @@ jobs:
         if: ${{ !cancelled() }}
         run: pnpm clean-assets
 
+      - name: Sort
+        if: ${{ !cancelled() }}
+        run: pnpm sort
+
       - name: Prettier
         if: ${{ !cancelled() }}
         run: pnpm format
@@ -56,7 +60,6 @@ jobs:
       - name: Type check
         if: ${{ !cancelled() }}
         run: pnpm type-check
-
 
       - name: Commit clean assets
         uses: autofix-ci/action@ff86a557419858bb967097bfc916833f5647fa8c

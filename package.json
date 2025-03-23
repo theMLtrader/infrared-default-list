@@ -19,6 +19,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
+    "check": "concurrently \"pnpm schemas-to-typescript\" \"pnpm sort\" \"pnpm validate\" && pnpm lint",
     "clean-assets": "concurrently \"pnpm clean-assets:svg\" \"pnpm clean-assets:png\"",
     "clean-assets:png": "tsx scripts/resize-images.ts",
     "clean-assets:svg": "svgo -rf src -o src",
@@ -26,7 +27,10 @@
     "format": "prettier --cache --log-level warn --write \"**/*.{js,jsx,ts,tsx,mjs,mts,md,mdx,json}\"",
     "lint": "concurrently \"pnpm format\" \"pnpm lint:ts\" \"pnpm type-check\"",
     "lint:ts": "eslint --cache --quiet --fix .",
-    "schemas-to-typescript": "concurrently \"json2ts schema/gauges-schema.json src/types/gauges.d.ts\" \"json2ts schema/gauge-types-schema.json src/types/gauge-types.d.ts\" \"json2ts schema/protocols-schema.json src/types/protocols.d.ts\" \"json2ts schema/tokens-schema.json src/types/tokens.d.ts\" \"json2ts schema/validators-schema.json src/types/validators.d.ts\" && pnpm lint",
+    "schemas-to-typescript": "concurrently \"json2ts schema/gauges-schema.json src/types/gauges.d.ts\" \"json2ts schema/gauge-types-schema.json src/types/gauge-types.d.ts\" \"json2ts schema/protocols-schema.json src/types/protocols.d.ts\" \"json2ts schema/tokens-schema.json src/types/tokens.d.ts\" \"json2ts schema/validators-schema.json src/types/validators.d.ts\"",
+    "schemas-to-typescript-and-lint": "pnpm schemas-to-typescript && pnpm lint",
+    "sort": "concurrently \"tsx scripts/sort-gauges.ts\" \"tsx scripts/sort-protocols.ts\" \"tsx scripts/sort-tokens.ts\" \"tsx scripts/sort-validators.ts\"",
+    "sort-and-format": "pnpm sort && pnpm format",
     "sort-package-json": "pnpm dlx sort-package-json",
     "type-check": "tsc --noEmit",
     "validate": "concurrently \"tsx scripts/validate-gauges.ts\" \"tsx scripts/validate-gauge-types.ts\" \"tsx scripts/validate-protocols.ts\" \"tsx scripts/validate-tokens.ts\" \"tsx scripts/validate-validators.ts\""

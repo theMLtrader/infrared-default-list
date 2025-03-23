@@ -12,6 +12,7 @@ import { validateList } from './_/validate-list'
 import { validateTokenDetails } from './_/validate-token-details'
 
 const schema = getFile('schema/tokens-schema.json')
+const folderPath = 'src/tokens'
 
 const validateTokens = async ({
   network,
@@ -19,9 +20,10 @@ const validateTokens = async ({
   network: keyof typeof supportedChains
 }) => {
   const errors: Array<string> = []
+  const path = `${folderPath}/${network}.json`
   const tokens: TokensSchema = getJsonFile({
     network,
-    path: `src/tokens/${network}.json`,
+    path,
   })
 
   const chain = supportedChains[network]
@@ -35,7 +37,7 @@ const validateTokens = async ({
   outputScriptStatus({ errors, network, type: 'Token' })
 }
 
-readdirSync('src/tokens').forEach(async (file) => {
+readdirSync(folderPath).forEach(async (file) => {
   const network = file.replace('.json', '')
 
   if (!isValidNetwork(network)) {
