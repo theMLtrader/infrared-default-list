@@ -1,13 +1,13 @@
 import { type Address, type PublicClient, zeroAddress } from 'viem'
 
 import type { supportedChains } from '@/config/chains'
-import type { GaugeListSchema } from '@/types/gauge-list'
+import type { GaugesSchema } from '@/types/gauges'
 import type { ProtocolsSchema } from '@/types/protocols'
-import type { TokenListSchema } from '@/types/token-list'
+import type { TokensSchema } from '@/types/tokens'
 
 import { delay } from './delay'
 import { getFile } from './get-file'
-import { getListFile } from './get-list-file'
+import { getJsonFile } from './get-json-file'
 import { getTokenSymbol } from './get-token-symbol'
 
 const RPC_REQUESTS_PER_SECOND = 10
@@ -24,7 +24,7 @@ const validateName = async ({
   rpcLookupCount,
 }: {
   errors: Array<string>
-  gauge: GaugeListSchema['gauges'][number]
+  gauge: GaugesSchema['gauges'][number]
   publicClient: PublicClient
   rpcLookupCount: Counter
 }) => {
@@ -69,7 +69,7 @@ const validateProtocol = ({
   gauge,
 }: {
   errors: Array<string>
-  gauge: GaugeListSchema['gauges'][number]
+  gauge: GaugesSchema['gauges'][number]
 }) => {
   const matchingProtocol = protocolsList.protocols.find(
     ({ id }) => id === gauge.protocol,
@@ -83,17 +83,17 @@ const validateProtocol = ({
 const validateToken = ({
   errors,
   gauge,
-  tokensList,
+  tokens,
 }: {
   errors: Array<string>
-  gauge: GaugeListSchema['gauges'][number]
-  tokensList: TokenListSchema
+  gauge: GaugesSchema['gauges'][number]
+  tokens: TokensSchema['tokens']
 }) => {
   for (const underlyingToken of gauge.underlyingTokens) {
     if (underlyingToken === zeroAddress) {
       errors.push(`${zeroAddress} is not a valid underlying token.`)
     } else {
-      const matchingToken = tokensList.tokens.find(
+      const matchingToken = tokens.find(
         ({ address }) => address === underlyingToken,
       )
       if (!matchingToken) {
@@ -107,26 +107,25 @@ const validateToken = ({
 
 export const validateGaugeDetails = async ({
   errors,
-  list,
+  gauges,
   network,
   publicClient,
 }: {
   errors: Array<string>
-  list: GaugeListSchema
+  gauges: GaugesSchema['gauges']
   network: keyof typeof supportedChains
   publicClient: PublicClient
 }) => {
-  const gauges: GaugeListSchema['gauges'] = list.gauges
   const rpcLookupCount = { value: 0 }
 
-  const tokensList: TokenListSchema = getListFile({
-    listPath: `src/tokens/${network}.json`,
+  const tokens: TokensSchema = getJsonFile({
     network,
+    path: `src/tokens/${network}.json`,
   })
 
   for (const gauge of gauges) {
     await validateName({ errors, gauge, publicClient, rpcLookupCount })
     validateProtocol({ errors, gauge })
-    validateToken({ errors, gauge, tokensList })
+    validateToken({ errors, gauge, tokens: tokens.tokens })
   }
 }

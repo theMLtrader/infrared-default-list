@@ -1,4 +1,4 @@
-# Extending the gauge, token, or validator lists
+# Extending gauges, tokens, or validators
 
 This README provides instructions for third parties on how to add their gauge, token, or validator to our application.
 
@@ -56,7 +56,7 @@ Add any new token assets to `/src/assets/tokens` and new protocol assets to `src
    - The `name` field only uses the symbols of the underlying tokens with a dash between. Example: `HONEY-WBERA`.
    - `protocol` matches an `id` in the `protocols` array
    - `types` contains valid types from the `types` object
-   - All `underlyingTokens` are listed in the token list (`src/tokens/{network}.json`)
+   - All `underlyingTokens` are listed in the tokens (`src/tokens/{network}.json`)
 
 3. If your protocol is not listed in the `protocols` array, add it:
 
@@ -76,7 +76,7 @@ Add any new token assets to `/src/assets/tokens` and new protocol assets to `src
    - The `Name` field is a singular word in most cases. `Kodiak` instead of `Kodiak Finance` for example.
    - You've added the protocol image to the `src/assets/protocols` folder if it's not already there.
 
-4. If your gauge uses tokens not in the token list, add them to `src/tokens/{network}.json`:
+4. If your gauge uses tokens not in the tokens, add them to `src/tokens/{network}.json`:
 
    ```json
    {
@@ -109,7 +109,7 @@ After submitting your PR:
 
 1. Our team will review your submission.
 2. We may request changes or clarifications if needed.
-3. Once approved, your gauge will be merged into the main list and become visible in the app for the specified network.
+3. Once approved, your gauge will be merged and become visible in the app for the specified network.
 
 Thank you for contributing to our ecosystem!
 

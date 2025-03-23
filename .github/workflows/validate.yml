@@ -1,4 +1,4 @@
-name: Validate gauge, token, and validator lists
+name: Validate gauges, tokens, and validators
 
 on:
   pull_request:
@@ -6,10 +6,7 @@ on:
       - src/gauges/**/*.json
       - src/tokens/**/*.json
       - src/validator/**/*.json
-
-env:
-  QUIKNODE_KEY: ${{ vars.QUIKNODE_KEY}}
-  QUIKNODE_SUBDOMAIN: ${{ vars.QUIKNODE_SUBDOMAIN}}
+      - src/schema/*.json
 
 jobs:
   validate:
