@@ -183,10 +183,10 @@
       "tags": ["featured", "deposit"]
     },
     {
-      "address": "0x6B26f778bfae56CFb4Bf9b62c678d9D40e725227",
-      "decimals": 8,
-      "symbol": "BITCOIN",
-      "logoURI": "bitcoin.svg",
+      "address": "0xb8B1Af593Dc37B33a2c87C8Db1c9051FC32858B7",
+      "decimals": 18,
+      "symbol": "RAMEN",
+      "logoURI": "ramen.svg",
       "tag": []
     }
   ]
