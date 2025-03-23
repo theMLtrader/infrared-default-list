@@ -37,7 +37,7 @@ const validateName = async ({
       return await getTokenSymbol({
         errors,
         publicClient,
-        token: underlyingToken as Address,
+        tokenAddress: underlyingToken as Address,
       })
     }),
   )
@@ -51,7 +51,7 @@ const validateName = async ({
     const lpTokenSymbol = await getTokenSymbol({
       errors,
       publicClient,
-      token: gauge.lpTokenAddress as Address,
+      tokenAddress: gauge.lpTokenAddress as Address,
     })
 
     if (gauge.name !== lpTokenSymbol) {
