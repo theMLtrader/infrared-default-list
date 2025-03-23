@@ -163,6 +163,19 @@
       ]
     },
     {
+      "beraRewardsVault": "0x193ff57dc9efa1dec154946c10332ba31c8e72b2",
+      "lpTokenAddress": "0x0fd67ac75f9df51f5d81f582417b318f44b45f5c",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x0fd67ac75f9df51f5d81f582417b318f44b45f5c?chain=berachain_mainnet",
+      "name": "bm-WBERA",
+      "protocol": "kodiak",
+      "slug": "kodiak-bm-wbera",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0xb749584F9fC418Cf905d54f462fdbFdC7462011b",
+        "0x6969696969696969696969696969696969696969"
+      ]
+    },
+    {
       "beraRewardsVault": "0x5EadCCC8153C423f96433da3FA1288cd621CDD52",
       "lpTokenAddress": "0x933b2e6a71edBF11BBA75C5Ad241D246b145E0b0",
       "name": "MIM-HONEY",
