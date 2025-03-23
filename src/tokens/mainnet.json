@@ -99,6 +99,13 @@
       "tags": []
     },
     {
+      "address": "0xb8B1Af593Dc37B33a2c87C8Db1c9051FC32858B7",
+      "decimals": 18,
+      "logoURI": "ramen.svg",
+      "symbol": "RAMEN",
+      "tag": []
+    },
+    {
       "address": "0x09D4214C03D01F49544C0448DBE3A27f768F2b34",
       "decimals": 18,
       "image": "rusd.svg",
@@ -181,13 +188,6 @@
       "image": "weth.svg",
       "symbol": "WETH",
       "tags": ["featured", "deposit"]
-    },
-    {
-      "address": "0xb8B1Af593Dc37B33a2c87C8Db1c9051FC32858B7",
-      "decimals": 18,
-      "symbol": "RAMEN",
-      "logoURI": "ramen.svg",
-      "tag": []
     }
   ]
 }
