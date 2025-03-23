@@ -117,7 +117,7 @@
     {
       "beraRewardsVault": "0x2ee022f42564a6b23231155850acf185da298509",
       "lpTokenAddress": "0xb5d46214f4ec7f910cb433e412d32ee817986e90",
-      "mintUrl": "https://www.bulla.exchange/vault/details/wbera-honey-narrow?returnTo=allPools",
+      "mintUrl": "https://www.bulla.exchange/vault/details/wbera-honey-narrow",
       "name": "WBERA-HONEY",
       "protocol": "bulla",
       "slug": "bulla-wbera-honey",
@@ -130,7 +130,7 @@
     {
       "beraRewardsVault": "0xb4c32fD71C89f0195A8AC0c3fA9ebf2b4774bd26",
       "lpTokenAddress": "0xcffbfd665bedb19b47837461a5abf4388c560d35",
-      "mintUrl": "https://www.bulla.exchange/vault/details/wbera-ibgt-narrow?returnTo=allPools",
+      "mintUrl": "https://www.bulla.exchange/vault/details/wbera-ibgt-narrow",
       "name": "WBERA-iBGT",
       "protocol": "bulla",
       "slug": "bulla-wbera-ibgt",
