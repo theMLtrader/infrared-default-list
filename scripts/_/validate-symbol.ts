@@ -14,7 +14,7 @@ export const validateSymbol = async ({
   token: TokensSchema['tokens'][number]
 }) => {
   if (token.symbol === '') {
-    errors.push(`Missing symbol for ${token.address}.`)
+    errors.push(`Missing symbol for ${token.address}`)
     return
   }
 
@@ -26,7 +26,7 @@ export const validateSymbol = async ({
 
   if (token.symbol !== symbol) {
     errors.push(
-      `${token.symbol}’s symbol does not match the on-chain symbol ${symbol}.`,
+      `${token.symbol}’s symbol does not match the on-chain symbol ${symbol}`,
     )
   }
 }
