@@ -19,7 +19,7 @@ export const getTokenSymbol = async ({
     functionName: 'symbol',
   })
   if (!symbol) {
-    errors.push(`${tokenAddress} does not have a symbol on the contract.`)
+    errors.push(`${tokenAddress} does not have a symbol on the contract`)
   }
   return symbol
 }

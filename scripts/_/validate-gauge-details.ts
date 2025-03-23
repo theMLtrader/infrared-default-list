@@ -60,7 +60,7 @@ const validateName = async ({
 
     if (gauge.name !== lpTokenSymbol) {
       errors.push(
-        `${gauge.name} does not match ${lpTokenSymbol} or ${underlyingTokenSymbols}.`,
+        `${gauge.name} does not match ${lpTokenSymbol} or ${underlyingTokenSymbols}`,
       )
     }
   }
@@ -80,7 +80,7 @@ const validateProtocol = ({
   )
 
   if (!matchingProtocol) {
-    errors.push(`${gauge.name} does not have a protocol for ${gauge.protocol}.`)
+    errors.push(`${gauge.name} does not have a protocol for ${gauge.protocol}`)
   }
 }
 
@@ -95,14 +95,14 @@ const validateToken = ({
 }) => {
   for (const underlyingToken of gauge.underlyingTokens) {
     if (underlyingToken === zeroAddress) {
-      errors.push(`${zeroAddress} is not a valid underlying token.`)
+      errors.push(`${zeroAddress} is not a valid underlying token`)
     } else {
       const matchingToken = tokens.find(
         ({ address }) => address === underlyingToken,
       )
       if (!matchingToken) {
         errors.push(
-          `${gauge.name} does not have a token for ${underlyingToken}.`,
+          `${gauge.name} does not have a token for ${underlyingToken}`,
         )
       }
     }
@@ -132,7 +132,7 @@ const validateStakeTokenAndSlug = ({
 
   if (slugs.includes(gauge.slug)) {
     errors.push(
-      `Slug "${gauge.slug}" is not unique. Gauge slugs must be unique.`,
+      `Slug "${gauge.slug}" is not unique. Gauge slugs must be unique`,
     )
   }
   slugs.push(gauge.slug)

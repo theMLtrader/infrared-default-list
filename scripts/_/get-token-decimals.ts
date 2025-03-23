@@ -21,7 +21,7 @@ export const getTokenDecimals = async ({
     functionName: 'decimals',
   })
   if (!symbol) {
-    errors.push(`${tokenAddress} does not have decimals on the contract.`)
+    errors.push(`${tokenAddress} does not have decimals on the contract`)
   }
   return symbol
 }

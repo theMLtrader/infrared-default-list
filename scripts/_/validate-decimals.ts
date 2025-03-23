@@ -21,7 +21,7 @@ export const validateDecimals = async ({
 
   if (token.decimals !== decimals) {
     errors.push(
-      `${token.symbol}’s decimals does not match the on-chain decimals ${decimals}.`,
+      `${token.symbol}’s decimals does not match the on-chain decimals ${decimals}`,
     )
   }
 }
