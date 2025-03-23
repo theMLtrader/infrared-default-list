@@ -19,14 +19,14 @@
       "decimals": 8,
       "image": "bitcoin.svg",
       "symbol": "BITCOIN",
-      "tag": []
+      "tags": []
     },
     {
       "address": "0xb749584F9fC418Cf905d54f462fdbFdC7462011b",
       "decimals": 18,
       "image": "bm.webp",
       "symbol": "bm",
-      "tag": []
+      "tags": []
     },
     {
       "address": "0x6751c09113a83a83a43829fd0b3bc0d7bdbe07bf",
@@ -117,7 +117,7 @@
       "decimals": 18,
       "image": "ramen.svg",
       "symbol": "RAMEN",
-      "tag": []
+      "tags": []
     },
     {
       "address": "0x09D4214C03D01F49544C0448DBE3A27f768F2b34",
