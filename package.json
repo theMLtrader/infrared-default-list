@@ -1,12 +1,12 @@
 {
   "name": "@infrared-dao/default-list",
   "version": "1.0.0",
-  "description": "Default lists for Infrared interfaces including gauges, tokens, and validators",
+  "description": "Default lists for Infrared interfaces including vaults, tokens, and validators",
   "keywords": [
     "berachain",
     "default",
     "token",
-    "gauge",
+    "vault",
     "validator",
     "list"
   ],
@@ -29,11 +29,11 @@
     "lint:ts": "eslint --cache --quiet --fix .",
     "schemas-to-typescript": "concurrently \"json2ts schema/vaults-schema.json src/types/vaults.d.ts\" \"json2ts schema/protocols-schema.json src/types/protocols.d.ts\" \"json2ts schema/tokens-schema.json src/types/tokens.d.ts\" \"json2ts schema/validators-schema.json src/types/validators.d.ts\"",
     "schemas-to-typescript-and-format": "pnpm schemas-to-typescript && pnpm format",
-    "sort": "concurrently \"tsx scripts/sort-gauges.ts\" \"tsx scripts/sort-protocols.ts\" \"tsx scripts/sort-tokens.ts\" \"tsx scripts/sort-validators.ts\"",
+    "sort": "concurrently \"tsx scripts/sort-vaults.ts\" \"tsx scripts/sort-protocols.ts\" \"tsx scripts/sort-tokens.ts\" \"tsx scripts/sort-validators.ts\"",
     "sort-and-format": "pnpm sort && pnpm format",
     "sort-package-json": "pnpm dlx sort-package-json",
     "type-check": "tsc --noEmit",
-    "validate": "concurrently \"tsx scripts/validate-gauges.ts\" \"tsx scripts/validate-protocols.ts\" \"tsx scripts/validate-tokens.ts\" \"tsx scripts/validate-validators.ts\""
+    "validate": "concurrently \"tsx scripts/validate-vaults.ts\" \"tsx scripts/validate-protocols.ts\" \"tsx scripts/validate-tokens.ts\" \"tsx scripts/validate-validators.ts\""
   },
   "devDependencies": {
     "@infrared-dao/eslint-config": "^0.0.6",

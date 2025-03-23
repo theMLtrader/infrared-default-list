@@ -4,7 +4,7 @@ import { type Address, type PublicClient, zeroAddress } from 'viem'
 import type { supportedChains } from '@/config/chains'
 import type { ProtocolsSchema } from '@/types/protocols'
 import type { TokensSchema } from '@/types/tokens'
-import type { GaugesSchema } from '@/types/vaults'
+import type { VaultsSchema } from '@/types/vaults'
 
 import { delay } from './delay'
 import { getFile } from './get-file'
@@ -23,17 +23,17 @@ slug.charmap['₮'] = '₮' // allow some unicode characters
 
 const validateName = async ({
   errors,
-  gauge,
   publicClient,
   rpcLookupCount,
+  vault,
 }: {
   errors: Array<string>
-  gauge: GaugesSchema['gauges'][number]
   publicClient: PublicClient
   rpcLookupCount: Counter
+  vault: VaultsSchema['gauges'][number]
 }) => {
   const symbols = await Promise.all(
-    gauge.underlyingTokens.map(async (underlyingToken) => {
+    vault.underlyingTokens.map(async (underlyingToken) => {
       rpcLookupCount.value += 1
       if (rpcLookupCount.value % RPC_REQUESTS_PER_SECOND === 0) {
         await delay(ONE_SECOND)
@@ -47,7 +47,7 @@ const validateName = async ({
   )
   const underlyingTokenSymbols = symbols.join('-')
 
-  if (gauge.name !== underlyingTokenSymbols) {
+  if (vault.name !== underlyingTokenSymbols) {
     rpcLookupCount.value += 1
     if (rpcLookupCount.value % RPC_REQUESTS_PER_SECOND === 0) {
       await delay(ONE_SECOND)
@@ -55,12 +55,12 @@ const validateName = async ({
     const lpTokenSymbol = await getTokenSymbol({
       errors,
       publicClient,
-      tokenAddress: gauge.lpTokenAddress as Address,
+      tokenAddress: vault.lpTokenAddress as Address,
     })
 
-    if (gauge.name !== lpTokenSymbol) {
+    if (vault.name !== lpTokenSymbol) {
       errors.push(
-        `${gauge.name} does not match ${lpTokenSymbol} or ${underlyingTokenSymbols}`,
+        `${vault.name} does not match ${lpTokenSymbol} or ${underlyingTokenSymbols}`,
       )
     }
   }
@@ -70,30 +70,30 @@ const protocolsList: ProtocolsSchema = getFile('src/protocols.json')
 
 const validateProtocol = ({
   errors,
-  gauge,
+  vault,
 }: {
   errors: Array<string>
-  gauge: GaugesSchema['gauges'][number]
+  vault: VaultsSchema['gauges'][number]
 }) => {
   const matchingProtocol = protocolsList.protocols.find(
-    ({ id }) => id === gauge.protocol,
+    ({ id }) => id === vault.protocol,
   )
 
   if (!matchingProtocol) {
-    errors.push(`${gauge.name} does not have a protocol for ${gauge.protocol}`)
+    errors.push(`${vault.name} does not have a protocol for ${vault.protocol}`)
   }
 }
 
 const validateToken = ({
   errors,
-  gauge,
   tokens,
+  vault,
 }: {
   errors: Array<string>
-  gauge: GaugesSchema['gauges'][number]
   tokens: TokensSchema['tokens']
+  vault: VaultsSchema['gauges'][number]
 }) => {
-  for (const underlyingToken of gauge.underlyingTokens) {
+  for (const underlyingToken of vault.underlyingTokens) {
     if (underlyingToken === zeroAddress) {
       errors.push(`${zeroAddress} is not a valid underlying token`)
     } else {
@@ -102,7 +102,7 @@ const validateToken = ({
       )
       if (!matchingToken) {
         errors.push(
-          `${gauge.name} does not have a token for ${underlyingToken}`,
+          `${vault.name} does not have a token for ${underlyingToken}`,
         )
       }
     }
@@ -111,43 +111,43 @@ const validateToken = ({
 
 const validateStakeTokenAndSlug = ({
   errors,
-  gauge,
   slugs,
+  vault,
 }: {
   errors: Array<string>
-  gauge: GaugesSchema['gauges'][number]
   slugs: Array<string>
+  vault: VaultsSchema['gauges'][number]
 }) => {
-  const expectedSlug = `${slug(gauge.protocol)}-${slug(gauge.name)}`
+  const expectedSlug = `${slug(vault.protocol)}-${slug(vault.name)}`
 
-  if (gauge.slug !== expectedSlug) {
+  if (vault.slug !== expectedSlug) {
     if (slugs.includes(expectedSlug)) {
-      if (!gauge.slug.startsWith(expectedSlug)) {
-        errors.push(`${gauge.slug}’s slug does not start with ${expectedSlug}`)
+      if (!vault.slug.startsWith(expectedSlug)) {
+        errors.push(`${vault.slug}’s slug does not start with ${expectedSlug}`)
       }
     } else {
-      errors.push(`${gauge.slug}’s slug does not match ${expectedSlug}`)
+      errors.push(`${vault.slug}’s slug does not match ${expectedSlug}`)
     }
   }
 
-  if (slugs.includes(gauge.slug)) {
+  if (slugs.includes(vault.slug)) {
     errors.push(
-      `Slug "${gauge.slug}" is not unique. Gauge slugs must be unique`,
+      `Slug "${vault.slug}" is not unique. Vault slugs must be unique`,
     )
   }
-  slugs.push(gauge.slug)
+  slugs.push(vault.slug)
 }
 
 export const validateVaultDetails = async ({
   errors,
-  gauges,
   network,
   publicClient,
+  vaults,
 }: {
   errors: Array<string>
-  gauges: GaugesSchema['gauges']
   network: keyof typeof supportedChains
   publicClient: PublicClient
+  vaults: VaultsSchema['gauges']
 }) => {
   const rpcLookupCount = { value: 0 }
 
@@ -157,10 +157,10 @@ export const validateVaultDetails = async ({
   })
   const slugs: Array<string> = []
 
-  for (const gauge of gauges) {
-    await validateName({ errors, gauge, publicClient, rpcLookupCount })
-    validateProtocol({ errors, gauge })
-    validateToken({ errors, gauge, tokens: tokens.tokens })
-    validateStakeTokenAndSlug({ errors, gauge, slugs })
+  for (const vault of vaults) {
+    await validateName({ errors, publicClient, rpcLookupCount, vault })
+    validateProtocol({ errors, vault })
+    validateToken({ errors, tokens: tokens.tokens, vault })
+    validateStakeTokenAndSlug({ errors, slugs, vault })
   }
 }

@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface GaugesSchema {
+export interface VaultsSchema {
   gauges: {
     beraRewardsVault: string
     lpTokenAddress: string

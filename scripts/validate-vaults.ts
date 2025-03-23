@@ -2,7 +2,7 @@ import { readdirSync } from 'node:fs'
 import { createPublicClient, http } from 'viem'
 
 import { supportedChains } from '@/config/chains'
-import type { GaugesSchema } from '@/types/vaults'
+import type { VaultsSchema } from '@/types/vaults'
 
 import { getFile } from './_/get-file'
 import { getJsonFile } from './_/get-json-file'
@@ -12,7 +12,7 @@ import { validateList } from './_/validate-list'
 import { validateVaultDetails } from './_/validate-vault-details'
 
 const schema = getFile('schema/vaults-schema.json')
-const folderPath = 'src/vaults'
+const folderPath = 'src/gauges'
 
 const validateVaults = async ({
   network,
@@ -21,7 +21,7 @@ const validateVaults = async ({
 }) => {
   const errors: Array<string> = []
   const path = `${folderPath}/${network}.json`
-  const gauges: GaugesSchema = getJsonFile({
+  const vaults: VaultsSchema = getJsonFile({
     network,
     path,
   })
@@ -32,14 +32,14 @@ const validateVaults = async ({
     transport: http(),
   })
 
-  validateList({ errors, list: gauges, schema, type: 'gauges' })
+  validateList({ errors, list: vaults, schema, type: 'vaults' })
   await validateVaultDetails({
     errors,
-    gauges: gauges.gauges,
     network,
     publicClient,
+    vaults: vaults.gauges,
   })
-  outputScriptStatus({ errors, network, type: 'Gauge' })
+  outputScriptStatus({ errors, network, type: 'Vault' })
 }
 
 readdirSync(folderPath).forEach(async (file) => {
