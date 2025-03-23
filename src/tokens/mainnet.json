@@ -181,6 +181,13 @@
       "image": "weth.svg",
       "symbol": "WETH",
       "tags": ["featured", "deposit"]
+    },
+    {
+      "address": "0x6B26f778bfae56CFb4Bf9b62c678d9D40e725227",
+      "decimals": 8,
+      "symbol": "BITCOIN",
+      "logoURI": "bitcoin.svg",
+      "tag": []
     }
   ]
 }
