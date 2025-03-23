@@ -1,14 +1,6 @@
 {
   "protocols": [
     {
-      "description": "Infrared simplifies interacting with Proof of Liquidity with our liquid staking products.",
-      "id": "infrared",
-      "imageDark": "infrared.svg",
-      "imageLight": "infrared.svg",
-      "name": "Infrared",
-      "url": "https://infrared.finance"
-    },
-    {
       "description": "Unlocking Instant liquidity for Berachain assets through the first PoL powered stablecoin NECT.",
       "id": "beraborrow",
       "imageDark": "beraborrow.webp",
@@ -25,6 +17,22 @@
       "url": "https://hub.berachain.com/swap"
     },
     {
+      "description": "Dolomite is a lending and borrowing platform that can support over 1,000 unique assets.",
+      "id": "dolomite",
+      "imageDark": "dolomite-dark.svg",
+      "imageLight": "dolomite-light.svg",
+      "name": "Dolomite",
+      "url": "https://dolomite.io"
+    },
+    {
+      "description": "Infrared simplifies interacting with Proof of Liquidity with our liquid staking products.",
+      "id": "infrared",
+      "imageDark": "infrared.svg",
+      "imageLight": "infrared.svg",
+      "name": "Infrared",
+      "url": "https://infrared.finance"
+    },
+    {
       "description": "Kodiak, is a vertically-integrated liquidity hub on Berachain",
       "id": "kodiak",
       "imageDark": "kodiak-dark.svg",
@@ -33,12 +41,12 @@
       "url": "https://app.kodiak.finance"
     },
     {
-      "description": "Dolomite is a lending and borrowing platform that can support over 1,000 unique assets.",
-      "id": "dolomite",
-      "imageDark": "dolomite-dark.svg",
-      "imageLight": "dolomite-light.svg",
-      "name": "Dolomite",
-      "url": "https://dolomite.io"
+      "description": "NAV is a decentralized platform for creating and trading synthetic assets.",
+      "id": "nav",
+      "imageDark": "nav.svg",
+      "imageLight": "nav.svg",
+      "name": "NAV",
+      "url": "https://nav.finance"
     }
   ]
 }

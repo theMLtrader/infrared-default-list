@@ -148,6 +148,13 @@
       "tags": []
     },
     {
+      "address": "0x6536cEAD649249cae42FC9bfb1F999429b3ec755",
+      "decimals": 18,
+      "image": "nav.svg",
+      "symbol": "NAV",
+      "tags": []
+    },
+    {
       "address": "0x09D4214C03D01F49544C0448DBE3A27f768F2b34",
       "decimals": 18,
       "image": "rusd.svg",
