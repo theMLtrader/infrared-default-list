@@ -134,6 +134,13 @@
       "tags": []
     },
     {
+      "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+      "decimals": 6,
+      "image": "usdt.svg",
+      "symbol": "USD₮0",
+      "tags": ["stablecoin"]
+    },
+    {
       "address": "0x6d4223dae2a8744a85a6d44e97f3f61679f87ee6",
       "decimals": 18,
       "image": "usdbr.svg",
@@ -146,13 +153,6 @@
       "image": "usdce.svg",
       "symbol": "USDC.e",
       "tags": ["stablecoin", "collateral", "featured", "defaultCollateral"]
-    },
-    {
-      "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
-      "decimals": 6,
-      "image": "usdt.svg",
-      "symbol": "USD₮0",
-      "tags": ["stablecoin"]
     },
     {
       "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",

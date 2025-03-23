@@ -1,20 +1,20 @@
 {
   "protocols": [
     {
-      "description": "Swap a variety of tokens effortlessly on our decentralized platform. Provide liquidity to pools and earn BGT rewards.",
-      "id": "bex",
-      "imageDark": "bex.svg",
-      "imageLight": "bex.svg",
-      "name": "BEX",
-      "url": "https://hub.berachain.com/swap"
-    },
-    {
       "description": "Unlocking Instant liquidity for Berachain assets through the first PoL powered stablecoin NECT.",
       "id": "beraborrow",
       "imageDark": "beraborrow.webp",
       "imageLight": "beraborrow.webp",
       "name": "Beraborrow",
       "url": "https://www.beraborrow.com"
+    },
+    {
+      "description": "Swap a variety of tokens effortlessly on our decentralized platform. Provide liquidity to pools and earn BGT rewards.",
+      "id": "bex",
+      "imageDark": "bex.svg",
+      "imageLight": "bex.svg",
+      "name": "BEX",
+      "url": "https://hub.berachain.com/swap"
     },
     {
       "description": "Dolomite is a lending and borrowing platform that can support over 1,000 unique assets.",
