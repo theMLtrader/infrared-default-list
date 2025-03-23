@@ -26,7 +26,7 @@ const validateProtocol = ({
   )
 
   if (!protocol) {
-    errors.push(`${token.name} does not have a protocol (token validation)`)
+    errors.push(`${token.symbol} does not have a protocol (token validation)`)
   }
 }
 

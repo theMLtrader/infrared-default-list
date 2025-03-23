@@ -20,7 +20,7 @@ export const validateImage = async ({
   if (!item.image) {
     if (required) {
       errors.push(
-        `Image file "${item.image}" not found for ${type} "${item.name}"`,
+        `Image file "${item.image}" not found for ${type} "${item.symbol}"`,
       )
     }
     return
@@ -28,14 +28,14 @@ export const validateImage = async ({
   const imagePath = path.join(`${ASSETS_FOLDER}/${type}`, item.image as string)
   if (!existsSync(imagePath)) {
     errors.push(
-      `Image file "${item.image}" not found for ${type} "${item.name}" at ${imagePath}`,
+      `Image file "${item.image}" not found for ${type} "${item.symbol}" at ${imagePath}`,
     )
   }
   if (path.extname(imagePath).toLowerCase() === '.png') {
     const isCorrectSize = await checkImageSize(imagePath)
     if (!isCorrectSize) {
       errors.push(
-        `Image file "${item.image}" for ${type} "${item.name}" is not 128x128 pixels`,
+        `Image file "${item.image}" for ${type} "${item.symbol}" is not 128x128 pixels`,
       )
     }
   }
