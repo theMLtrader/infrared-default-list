@@ -11,7 +11,7 @@ export const sortGauges = async ({
   gauges: GaugesSchema['gauges']
   path: string
 }) => {
-  const sortedGauges = gauges.sort((a, b) => a.name.localeCompare(b.name))
+  const sortedGauges = gauges.sort((a, b) => a.slug.localeCompare(b.slug))
 
   await writeFile(path, formatDataToJson({ data: { gauges: sortedGauges } }))
 }
