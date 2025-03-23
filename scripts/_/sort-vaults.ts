@@ -1,10 +1,10 @@
 import { writeFile } from 'node:fs/promises'
 
-import type { GaugesSchema } from '@/types/gauges'
+import type { GaugesSchema } from '@/types/vaults'
 
 import { formatDataToJson } from './format-data-to-json'
 
-export const sortGauges = async ({
+export const sortVaults = async ({
   gauges,
   path,
 }: {

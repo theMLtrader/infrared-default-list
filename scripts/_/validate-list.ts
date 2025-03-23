@@ -1,10 +1,10 @@
 import addFormats from 'ajv-formats'
 import Ajv from 'ajv/dist/2020'
 
-import type { GaugesSchema } from '@/types/gauges'
 import type { ProtocolsSchema } from '@/types/protocols'
 import type { TokensSchema } from '@/types/tokens'
 import type { ValidatorsSchema } from '@/types/validators'
+import type { GaugesSchema } from '@/types/vaults'
 
 const ajv = new Ajv({ allErrors: true })
 addFormats(ajv)

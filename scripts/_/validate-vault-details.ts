@@ -2,9 +2,9 @@ import slug from 'slug'
 import { type Address, type PublicClient, zeroAddress } from 'viem'
 
 import type { supportedChains } from '@/config/chains'
-import type { GaugesSchema } from '@/types/gauges'
 import type { ProtocolsSchema } from '@/types/protocols'
 import type { TokensSchema } from '@/types/tokens'
+import type { GaugesSchema } from '@/types/vaults'
 
 import { delay } from './delay'
 import { getFile } from './get-file'
@@ -138,7 +138,7 @@ const validateStakeTokenAndSlug = ({
   slugs.push(gauge.slug)
 }
 
-export const validateGaugeDetails = async ({
+export const validateVaultDetails = async ({
   errors,
   gauges,
   network,
