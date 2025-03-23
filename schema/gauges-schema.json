@@ -15,6 +15,7 @@
           "mintUrl": { "format": "uri", "type": "string" },
           "name": { "type": "string" },
           "protocol": { "type": "string" },
+          "slug": { "type": "string" },
           "types": {
             "items": { "type": "string" },
             "type": "array"
@@ -29,6 +30,7 @@
           "lpTokenAddress",
           "name",
           "protocol",
+          "slug",
           "types",
           "underlyingTokens"
         ],
