@@ -64,7 +64,8 @@ Add any new token assets to `/src/assets/tokens` and new protocol assets to `src
    {
      "description": "A brief description of your protocol.",
      "id": "your_unique_protocol_id",
-     "image": "your-protocol-image.svg",
+     "imageDark": "your-protocol-image.svg",
+     "imageLight": "your-protocol-image.svg",
      "name": "Protocol",
      "url": "https://your-protocol-url.com"
    }
@@ -109,7 +110,7 @@ After submitting your PR:
 
 1. Our team will review your submission.
 2. We may request changes or clarifications if needed.
-3. Once approved, your gauge will be merged and become visible in the app for the specified network.
+3. Once approved, your changes will be merged and become visible in the app for the specified network.
 
 Thank you for contributing to our ecosystem!
 
