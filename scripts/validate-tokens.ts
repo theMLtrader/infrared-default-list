@@ -8,7 +8,6 @@ import { getFile } from './_/get-file'
 import { getJsonFile } from './_/get-json-file'
 import { isValidNetwork } from './_/is-valid-network'
 import { outputScriptStatus } from './_/output-script-status'
-import { sortTokens } from './_/sort-tokens'
 import { validateList } from './_/validate-list'
 import { validateTokenDetails } from './_/validate-token-details'
 
@@ -36,10 +35,6 @@ const validateTokens = async ({
   validateList({ errors, list: tokens, schema, type: 'tokens' })
   await validateTokenDetails({ errors, publicClient, tokens: tokens.tokens })
   outputScriptStatus({ errors, network, type: 'Token' })
-  await sortTokens({
-    path,
-    tokens: tokens.tokens,
-  })
 }
 
 readdirSync(folderPath).forEach(async (file) => {
