@@ -13,6 +13,18 @@
       ]
     },
     {
+      "beraRewardsVault": "0x45325df4a6a6ebd268f4693474aaaa1f3f0ce8ca",
+      "lpTokenAddress": "0x4a254B11810B8EBb63C5468E438FC561Cb1bB1da",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x4a254B11810B8EBb63C5468E438FC561Cb1bB1da?chain=berachain_mainnet",
+      "name": "WBERA-HONEY",
+      "protocol": "kodiak",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x6969696969696969696969696969696969696969",
+        "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"
+      ]
+    },
+    {
       "beraRewardsVault": "0x086f82fa0cA310Cc835a9DB4f53697687ef149c7",
       "lpTokenAddress": "0x38fdD999Fe8783037dB1bBFE465759e312f2d809",
       "mintUrl": "https://hub.berachain.com/pools/0x38fdd999fe8783037db1bbfe465759e312f2d809000200000000000000000004/details",
@@ -115,6 +127,18 @@
       ]
     },
     {
+      "beraRewardsVault": "0xfb657cd154e661ddf3e229529d92545640b19292",
+      "lpTokenAddress": "0x9659dc8c1565E0bd82627267e3b4eEd1a377ebE6",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x9659dc8c1565E0bd82627267e3b4eEd1a377ebE6?chain=berachain_mainnet",
+      "name": "WETH-WBERA",
+      "protocol": "kodiak",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
+        "0x6969696969696969696969696969696969696969"
+      ]
+    },
+    {
       "beraRewardsVault": "0x9Df027Ed06635ecDfe811009f2291d347eA90357",
       "lpTokenAddress": "0xf6b16E73d3b0e2784AAe8C4cd06099BE65d092Bf",
       "name": "WBTC-HONEY",
@@ -123,6 +147,18 @@
       "underlyingTokens": [
         "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
         "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"
+      ]
+    },
+    {
+      "beraRewardsVault": "0xeec2ad7bb37374229860265e644f4e2693b23fdd",
+      "lpTokenAddress": "0xf06ea29fcf4765200742d29e685973a1870eac98",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xf06ea29fcf4765200742d29e685973a1870eac98?chain=berachain_mainnet",
+      "name": "WBTC-WBERA",
+      "protocol": "kodiak",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+        "0x6969696969696969696969696969696969696969"
       ]
     },
     {
