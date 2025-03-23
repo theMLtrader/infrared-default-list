@@ -475,6 +475,32 @@
         "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
         "0x6969696969696969696969696969696969696969"
       ]
+    },
+    {
+      "beraRewardsVault": "0xb4c32fD71C89f0195A8AC0c3fA9ebf2b4774bd26",
+      "lpTokenAddress": "0xcffbfd665bedb19b47837461a5abf4388c560d35",
+      "mintUrl": "https://www.bulla.exchange/vault/details/wbera-ibgt-narrow?returnTo=allPools",
+      "name": "WBERA-iBGT",
+      "protocol": "bulla",
+      "slug": "bulla-wbera-ibgt",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x6969696969696969696969696969696969696969",
+        "0xac03CABA51e17c86c921E1f6CBFBdC91F8BB2E6b"
+      ]
+    },
+    {
+      "beraRewardsVault": "0x2ee022f42564a6b23231155850acf185da298509",
+      "lpTokenAddress": "0xb5d46214f4ec7f910cb433e412d32ee817986e90",
+      "mintUrl": "https://www.bulla.exchange/vault/details/wbera-honey-narrow?returnTo=allPools",
+      "name": "WBERA-HONEY",
+      "protocol": "bulla",
+      "slug": "bulla-wbera-honey",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x6969696969696969696969696969696969696969",
+        "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"
+      ]
     }
   ]
 }
