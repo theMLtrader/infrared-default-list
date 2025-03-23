@@ -101,7 +101,7 @@
     {
       "address": "0xb8B1Af593Dc37B33a2c87C8Db1c9051FC32858B7",
       "decimals": 18,
-      "logoURI": "ramen.svg",
+      "image": "ramen.svg",
       "symbol": "RAMEN",
       "tag": []
     },
