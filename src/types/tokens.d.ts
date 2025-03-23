@@ -12,7 +12,6 @@ export interface TokensSchema {
     image: string
     symbol: string
     tags?: string[]
-    [k: string]: unknown
   }[]
   [k: string]: unknown
 }

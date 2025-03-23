@@ -3,6 +3,7 @@
   "properties": {
     "tokens": {
       "items": {
+        "additionalProperties": false,
         "properties": {
           "address": {
             "pattern": "^0x[a-fA-F0-9]{40}$",

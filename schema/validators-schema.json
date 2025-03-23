@@ -3,6 +3,7 @@
   "properties": {
     "validators": {
       "items": {
+        "additionalProperties": false,
         "properties": {
           "description": { "type": "string" },
           "id": {

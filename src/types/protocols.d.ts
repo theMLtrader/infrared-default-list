@@ -13,7 +13,6 @@ export interface ProtocolsSchema {
     imageLight: string
     name: string
     url: string
-    [k: string]: unknown
   }[]
   [k: string]: unknown
 }

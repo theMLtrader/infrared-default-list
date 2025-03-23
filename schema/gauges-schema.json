@@ -3,6 +3,7 @@
   "properties": {
     "gauges": {
       "items": {
+        "additionalProperties": false,
         "properties": {
           "beraRewardsVault": {
             "pattern": "^0x[a-fA-F0-9]{40}$",
