@@ -11,7 +11,7 @@ import { validateList } from './_/validate-list'
 
 const schema = getFile('schema/validators-schema.json')
 
-const validatorValidatorList = async ({
+const validateValidators = async ({
   network,
 }: {
   network: keyof typeof supportedChains
@@ -33,5 +33,5 @@ readdirSync('src/validators').forEach(async (file) => {
     throw new Error(`Unsupported network: ${network}`)
   }
 
-  await validatorValidatorList({ network })
+  await validateValidators({ network })
 })
