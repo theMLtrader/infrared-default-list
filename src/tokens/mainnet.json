@@ -17,7 +17,7 @@
     {
       "address": "0x6B26f778bfae56CFb4Bf9b62c678d9D40e725227",
       "decimals": 8,
-      "logoURI": "bitcoin.svg",
+      "image": "bitcoin.svg",
       "symbol": "BITCOIN",
       "tag": []
     },
