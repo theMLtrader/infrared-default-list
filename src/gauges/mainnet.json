@@ -300,6 +300,19 @@
       ]
     },
     {
+      "beraRewardsVault": "0x524fc4f013d66e9fed424e58c5ada7d5b139761d",
+      "lpTokenAddress": "0x2cafe99db26cf86ae8587f5934830d25ad5c3cb3",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x2cafe99db26cf86ae8587f5934830d25ad5c3cb3?chain=berachain_mainnet",
+      "name": "WBERA-BITCOIN",
+      "protocol": "kodiak",
+      "slug": "kodiak-wbera-bitcoin",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x6969696969696969696969696969696969696969",
+        "0x6B26f778bfae56CFb4Bf9b62c678d9D40e725227"
+      ]
+    },
+    {
       "beraRewardsVault": "0x45325df4a6a6ebd268f4693474aaaa1f3f0ce8ca",
       "lpTokenAddress": "0x4a254B11810B8EBb63C5468E438FC561Cb1bB1da",
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x4a254B11810B8EBb63C5468E438FC561Cb1bB1da?chain=berachain_mainnet",
@@ -435,19 +448,6 @@
       "underlyingTokens": [
         "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
         "0x6969696969696969696969696969696969696969"
-      ]
-    },
-    {
-      "beraRewardsVault": "0x524fc4f013d66e9fed424e58c5ada7d5b139761d",
-      "lpTokenAddress": "0x2cafe99db26cf86ae8587f5934830d25ad5c3cb3",
-      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x2cafe99db26cf86ae8587f5934830d25ad5c3cb3?chain=berachain_mainnet",
-      "name": "WBERA-BITCOIN",
-      "protocol": "kodiak",
-      "slug": "kodiak-wbera-bitcoin",
-      "types": ["amm"],
-      "underlyingTokens": [
-        "0x6969696969696969696969696969696969696969",
-        "0x6B26f778bfae56CFb4Bf9b62c678d9D40e725227"
       ]
     }
   ]

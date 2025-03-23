@@ -15,6 +15,13 @@
       "tags": []
     },
     {
+      "address": "0x6B26f778bfae56CFb4Bf9b62c678d9D40e725227",
+      "decimals": 8,
+      "logoURI": "bitcoin.svg",
+      "symbol": "BITCOIN",
+      "tag": []
+    },
+    {
       "address": "0x6751c09113a83a83a43829fd0b3bc0d7bdbe07bf",
       "decimals": 18,
       "image": "bwbera.svg",
@@ -181,13 +188,6 @@
       "image": "weth.svg",
       "symbol": "WETH",
       "tags": ["featured", "deposit"]
-    },
-    {
-      "address": "0x6B26f778bfae56CFb4Bf9b62c678d9D40e725227",
-      "decimals": 8,
-      "symbol": "BITCOIN",
-      "logoURI": "bitcoin.svg",
-      "tag": []
     }
   ]
 }
