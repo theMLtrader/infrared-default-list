@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface ValidatorListSchema {
+export interface ValidatorsSchema {
   validators: {
     description: string
     id: string

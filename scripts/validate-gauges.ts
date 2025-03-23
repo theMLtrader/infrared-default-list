@@ -2,26 +2,26 @@ import { readdirSync } from 'node:fs'
 import { createPublicClient, http } from 'viem'
 
 import { supportedChains } from '@/config/chains'
-import type { GaugeListSchema } from '@/types/gauge-list'
+import type { GaugesSchema } from '@/types/gauges'
 
 import { getFile } from './_/get-file'
-import { getListFile } from './_/get-list-file'
+import { getJsonFile } from './_/get-json-file'
 import { isValidNetwork } from './_/is-valid-network'
 import { outputScriptStatus } from './_/output-script-status'
 import { validateGaugeDetails } from './_/validate-gauge-details'
 import { validateList } from './_/validate-list'
 
-const schema = getFile('schema/gauge-list-schema.json')
+const schema = getFile('schema/gauges-schema.json')
 
-const validateGaugeList = async ({
+const validateGauges = async ({
   network,
 }: {
   network: keyof typeof supportedChains
 }) => {
   const errors: Array<string> = []
-  const list: GaugeListSchema = getListFile({
-    listPath: `src/gauges/${network}.json`,
+  const gauges: GaugesSchema = getJsonFile({
     network,
+    path: `src/gauges/${network}.json`,
   })
 
   const chain = supportedChains[network]
@@ -30,8 +30,13 @@ const validateGaugeList = async ({
     transport: http(),
   })
 
-  validateList({ errors, list, schema })
-  await validateGaugeDetails({ errors, list, network, publicClient })
+  validateList({ errors, list: gauges, schema })
+  await validateGaugeDetails({
+    errors,
+    gauges: gauges.gauges,
+    network,
+    publicClient,
+  })
   outputScriptStatus({ errors, network, type: 'Gauge' })
 }
 
@@ -42,7 +47,7 @@ readdirSync('src/gauges').forEach(async (file) => {
     throw new Error(`Unsupported network: ${network}`)
   }
 
-  await validateGaugeList({
+  await validateGauges({
     network,
   })
 })
