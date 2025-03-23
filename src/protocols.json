@@ -39,14 +39,6 @@
       "imageLight": "kodiak-light.svg",
       "name": "Kodiak",
       "url": "https://app.kodiak.finance"
-    },
-    {
-      "description": "NAV is a decentralized platform for creating and trading synthetic assets.",
-      "id": "nav",
-      "imageDark": "nav.svg",
-      "imageLight": "nav.svg",
-      "name": "NAV",
-      "url": "https://nav.finance"
     }
   ]
 }
