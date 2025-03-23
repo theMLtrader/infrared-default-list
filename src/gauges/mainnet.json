@@ -305,6 +305,18 @@
         "0x18878Df23e2a36f81e820e4b47b4A40576D3159C",
         "0x6969696969696969696969696969696969696969"
       ]
+    },
+    {
+      "beraRewardsVault": "0x31a484f7e09513ae9f481eaf8eeea76153184c44",
+      "lpTokenAddress": "0x28a54EaeEc63fBb1175d13466a9ada5f3175D577",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x28a54EaeEc63fBb1175d13466a9ada5f3175D577?chain=berachain_mainnet",
+      "name": "USDbr-HONEY",
+      "protocol": "kodiak",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x6d4223dae2a8744a85a6d44e97f3f61679f87ee6",
+        "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"
+      ]
     }
   ]
 }
