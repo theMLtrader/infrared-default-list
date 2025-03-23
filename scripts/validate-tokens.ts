@@ -8,10 +8,12 @@ import { getFile } from './_/get-file'
 import { getJsonFile } from './_/get-json-file'
 import { isValidNetwork } from './_/is-valid-network'
 import { outputScriptStatus } from './_/output-script-status'
+import { sortTokens } from './_/sort-tokens'
 import { validateList } from './_/validate-list'
 import { validateTokenDetails } from './_/validate-token-details'
 
 const schema = getFile('schema/tokens-schema.json')
+const folderPath = 'src/tokens'
 
 const validateTokens = async ({
   network,
@@ -19,9 +21,10 @@ const validateTokens = async ({
   network: keyof typeof supportedChains
 }) => {
   const errors: Array<string> = []
+  const path = `${folderPath}/${network}.json`
   const tokens: TokensSchema = getJsonFile({
     network,
-    path: `src/tokens/${network}.json`,
+    path,
   })
 
   const chain = supportedChains[network]
@@ -33,9 +36,13 @@ const validateTokens = async ({
   validateList({ errors, list: tokens, schema, type: 'tokens' })
   await validateTokenDetails({ errors, publicClient, tokens: tokens.tokens })
   outputScriptStatus({ errors, network, type: 'Token' })
+  await sortTokens({
+    path,
+    tokens: tokens.tokens,
+  })
 }
 
-readdirSync('src/tokens').forEach(async (file) => {
+readdirSync(folderPath).forEach(async (file) => {
   const network = file.replace('.json', '')
 
   if (!isValidNetwork(network)) {

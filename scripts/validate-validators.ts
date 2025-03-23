@@ -11,7 +11,7 @@ import { sortValidators } from './_/sort-validators'
 import { validateList } from './_/validate-list'
 
 const schema = getFile('schema/validators-schema.json')
-const validatorsFolderPath = 'src/validators'
+const folderPath = 'src/validators'
 
 const validateValidators = async ({
   network,
@@ -19,7 +19,7 @@ const validateValidators = async ({
   network: keyof typeof supportedChains
 }) => {
   const errors: Array<string> = []
-  const path = `${validatorsFolderPath}/${network}.json`
+  const path = `${folderPath}/${network}.json`
   const validators: ValidatorsSchema = getJsonFile({
     network,
     path,
@@ -33,7 +33,7 @@ const validateValidators = async ({
   })
 }
 
-readdirSync(validatorsFolderPath).forEach(async (file) => {
+readdirSync(folderPath).forEach(async (file) => {
   const network = file.replace('.json', '')
 
   if (!isValidNetwork(network)) {
