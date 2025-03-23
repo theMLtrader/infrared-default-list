@@ -1,7 +1,6 @@
 import addFormats from 'ajv-formats'
 import Ajv from 'ajv/dist/2020'
 
-import type { GaugeTypesSchema } from '@/types/gauge-types'
 import type { GaugesSchema } from '@/types/gauges'
 import type { ProtocolsSchema } from '@/types/protocols'
 import type { TokensSchema } from '@/types/tokens'
@@ -17,12 +16,7 @@ export const validateList = ({
   type,
 }: {
   errors: Array<string>
-  list:
-    | GaugesSchema
-    | GaugeTypesSchema
-    | ProtocolsSchema
-    | TokensSchema
-    | ValidatorsSchema
+  list: GaugesSchema | ProtocolsSchema | TokensSchema | ValidatorsSchema
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   schema: any
   type: string
