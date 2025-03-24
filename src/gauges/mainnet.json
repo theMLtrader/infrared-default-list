@@ -39,6 +39,7 @@
     {
       "beraRewardsVault": "0xcb522875373c5db79f4b0816b381b4461d07b1af",
       "lpTokenAddress": "0x2461e93D5963C2bB69de499676763E67A63c7Ba5",
+      "mintUrl": "https://hub.berachain.com/pools/0x2461e93d5963c2bb69de499676763e67a63c7ba50002000000000000000000c2/details",
       "name": "WBERA-DINERO",
       "protocol": "bex",
       "slug": "bex-wbera-dinero",
@@ -64,7 +65,7 @@
     {
       "beraRewardsVault": "0x92aF7d5fcDEF44C3df168ecfDCd03deA1807AF28",
       "lpTokenAddress": "0x62C030B29a6Fef1B32677499e4a1F1852a8808c0",
-      "mintUrl": "https://hub.berachain.com/pools/0x62c030b29a6fef1b32677499e4a1f1852a8808c00000000000000000000000c6/details/",
+      "mintUrl": "https://hub.berachain.com/pools/0x62c030b29a6fef1b32677499e4a1f1852a8808c00000000000000000000000c6/details",
       "name": "WBERA-iBERA",
       "protocol": "bex",
       "slug": "bex-wbera-ibera",
@@ -77,7 +78,7 @@
     {
       "beraRewardsVault": "0x9c392eDdF43CDff2C537Fa94169016Cfa1A1589f",
       "lpTokenAddress": "0x4d0aC0ea757F0bb338457C7A135C41FC732CA67d",
-      "mintUrl": "https://hub.berachain.com/pools/0x4d0ac0ea757f0bb338457c7a135c41fc732ca67d000200000000000000000005/details/",
+      "mintUrl": "https://hub.berachain.com/pools/0x4d0ac0ea757f0bb338457c7a135c41fc732ca67d000200000000000000000005/details",
       "name": "WBERA-iBERA",
       "protocol": "bex",
       "slug": "bex-wbera-ibera-legacy-1",
@@ -90,7 +91,7 @@
     {
       "beraRewardsVault": "0x8431b9A8fe5FcC36C406d41110D86744bdecDAAE",
       "lpTokenAddress": "0x1207C619086A52edEf4a4b7Af881B5dDd367a919",
-      "mintUrl": "https://hub.berachain.com/pools/0x1207c619086a52edef4a4b7af881b5ddd367a919000200000000000000000006/details/",
+      "mintUrl": "https://hub.berachain.com/pools/0x1207c619086a52edef4a4b7af881b5ddd367a919000200000000000000000006/details",
       "name": "WBERA-iBGT",
       "protocol": "bex",
       "slug": "bex-wbera-ibgt",
@@ -129,6 +130,7 @@
     {
       "beraRewardsVault": "0x1932d24df32ec4cfdeca7824f36fd06c1458434c",
       "lpTokenAddress": "0x258d8933B625566fBe057874121783a2808aDafA",
+      "mintUrl": "https://hub.berachain.com/pools/0x258d8933b625566fbe057874121783a2808adafa0000000000000000000000c1/details",
       "name": "WETH-beraETH",
       "protocol": "bex",
       "slug": "bex-weth-beraeth",
@@ -203,6 +205,7 @@
     {
       "beraRewardsVault": "0x19Ecf480652A7DE3A60dd7fd7012dAeD6C79E3E9",
       "lpTokenAddress": "0x57161d6272F47cd48BA165646c802f001040C2E0",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x57161d6272f47cd48ba165646c802f001040c2e0?&chain=berachain_mainnet",
       "name": "beraETH-STONE",
       "protocol": "kodiak",
       "slug": "kodiak-beraeth-stone",
@@ -228,6 +231,7 @@
     {
       "beraRewardsVault": "0x5EadCCC8153C423f96433da3FA1288cd621CDD52",
       "lpTokenAddress": "0x933b2e6a71edBF11BBA75C5Ad241D246b145E0b0",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x933b2e6a71edbf11bba75c5ad241d246b145e0b0?&chain=berachain_mainnet",
       "name": "MIM-HONEY",
       "protocol": "kodiak",
       "slug": "kodiak-mim-honey",
@@ -279,6 +283,7 @@
     {
       "beraRewardsVault": "0x34852c863d266100f573d4d1fd1d0cfe20602da0",
       "lpTokenAddress": "0x7fd165B73775884a38AA8f2B384A53A3Ca7400E6",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x7fd165b73775884a38aa8f2b384a53a3ca7400e6?&chain=berachain_mainnet",
       "name": "rUSD-HONEY",
       "protocol": "kodiak",
       "slug": "kodiak-rusd-honey",
@@ -304,6 +309,7 @@
     {
       "beraRewardsVault": "0x09b113Ae50B5AF0988B9a1Dc50BFE602e7C24Ef7",
       "lpTokenAddress": "0xD5B6EA3544a51BfdDa7E6926BdF778339801dFe8",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xd5b6ea3544a51bfdda7e6926bdf778339801dfe8?&chain=berachain_mainnet",
       "name": "sUSDe-HONEY",
       "protocol": "kodiak",
       "slug": "kodiak-susde-honey",
@@ -316,6 +322,7 @@
     {
       "beraRewardsVault": "0x37eE07f45593762dee5f90A0B77e9e3baDf5B1ac",
       "lpTokenAddress": "0x12C195768f65F282EA5F1B5C42755FBc910B0D8F",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x12c195768f65f282ea5f1b5c42755fbc910b0d8f?&chain=berachain_mainnet",
       "name": "USD₮0-HONEY",
       "protocol": "kodiak",
       "slug": "kodiak-usd₮0-honey",
@@ -341,6 +348,7 @@
     {
       "beraRewardsVault": "0x315D38ee321608cB8520D563750D64aC1BB17344",
       "lpTokenAddress": "0xb73deE52F38539bA854979eab6342A60dD4C8c03",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xb73dee52f38539ba854979eab6342a60dd4c8c03?&chain=berachain_mainnet",
       "name": "USDC.e-HONEY",
       "protocol": "kodiak",
       "slug": "kodiak-usdc.e-honey",
@@ -353,6 +361,7 @@
     {
       "beraRewardsVault": "0x75Da1D58A8d97f7b626224E7E71fa44DB13689f2",
       "lpTokenAddress": "0xE5A2ab5D2fb268E5fF43A5564e44c3309609aFF9",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xe5a2ab5d2fb268e5ff43a5564e44c3309609aff9?&chain=berachain_mainnet",
       "name": "USDe-HONEY",
       "protocol": "kodiak",
       "slug": "kodiak-usde-honey",
@@ -430,6 +439,7 @@
     {
       "beraRewardsVault": "0x9Df027Ed06635ecDfe811009f2291d347eA90357",
       "lpTokenAddress": "0xf6b16E73d3b0e2784AAe8C4cd06099BE65d092Bf",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xf6b16E73d3b0e2784AAe8C4cd06099BE65d092Bf?chain=berachain_mainnet",
       "name": "WBTC-HONEY",
       "protocol": "kodiak",
       "slug": "kodiak-wbtc-honey",
@@ -468,6 +478,7 @@
     {
       "beraRewardsVault": "0x0308f87226efaCC51983bEa842Be57Dc45dE772c",
       "lpTokenAddress": "0x58FDB6EEbf7df7Ce4137994436fb0e629Bb84b84",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x58FDB6EEbf7df7Ce4137994436fb0e629Bb84b84?chain=berachain_mainnet",
       "name": "WBTC-WETH",
       "protocol": "kodiak",
       "slug": "kodiak-wbtc-weth",
@@ -480,6 +491,7 @@
     {
       "beraRewardsVault": "0xedD27cE3793d655E3d15E29e297F4848De1EF092",
       "lpTokenAddress": "0x03bCcF796cDef61064c4a2EffdD21f1AC8C29E92",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x03bCcF796cDef61064c4a2EffdD21f1AC8C29E92?chain=berachain_mainnet",
       "name": "WETH-beraETH",
       "protocol": "kodiak",
       "slug": "kodiak-weth-beraeth",
@@ -492,6 +504,7 @@
     {
       "beraRewardsVault": "0xC6506D205C92F9Acd69779eD0C547557F3AD4607",
       "lpTokenAddress": "0xf6c6Be0FF6d6F70A04dBE4F1aDE62cB23053Bd95",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xf6c6Be0FF6d6F70A04dBE4F1aDE62cB23053Bd95?chain=berachain_mainnet",
       "name": "WETH-HONEY",
       "protocol": "kodiak",
       "slug": "kodiak-weth-honey",
@@ -504,6 +517,7 @@
     {
       "beraRewardsVault": "0xcD1982B07ADFa787a88Dc1157b9fa3221d25fcaF",
       "lpTokenAddress": "0x97431F104be73FC0e6fc731cE84486DA05C48871",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x97431F104be73FC0e6fc731cE84486DA05C48871?chain=berachain_mainnet",
       "name": "WETH-STONE",
       "protocol": "kodiak",
       "slug": "kodiak-weth-stone",
