@@ -50,6 +50,13 @@
       "tags": ["stablecoin"]
     },
     {
+      "address": "0x09D9420332bff75522a45FcFf4855F82a0a3ff50",
+      "decimals": 18,
+      "image": "dinero.svg",
+      "symbol": "DINERO",
+      "tags": []
+    },
+    {
       "address": "0xf2d2d55daf93b0660297eaa10969ebe90ead5ce8",
       "decimals": 6,
       "image": "dusdt.svg",
