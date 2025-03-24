@@ -202,6 +202,13 @@
       "image": "weth.svg",
       "symbol": "WETH",
       "tags": ["featured", "deposit"]
+    },
+    {
+      "address": "0x08A38Caa631DE329FF2DAD1656CE789F31AF3142",
+      "decimals": 18,
+      "image": "yeet.svg",
+      "symbol": "YEET",
+      "tags": []
     }
   ]
 }
