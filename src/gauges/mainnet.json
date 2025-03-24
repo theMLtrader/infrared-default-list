@@ -37,6 +37,18 @@
       ]
     },
     {
+      "beraRewardsVault": "0xcb522875373c5db79f4b0816b381b4461d07b1af",
+      "lpTokenAddress": "0x2461e93D5963C2bB69de499676763E67A63c7Ba5",
+      "name": "WBERA-DINERO",
+      "protocol": "bex",
+      "slug": "bex-wbera-dinero",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x6969696969696969696969696969696969696969",
+        "0x09D9420332bff75522a45FcFf4855F82a0a3ff50"
+      ]
+    },
+    {
       "beraRewardsVault": "0xC2BaA8443cDA8EBE51a640905A8E6bc4e1f9872c",
       "lpTokenAddress": "0x2c4a603A2aA5596287A06886862dc29d56DbC354",
       "mintUrl": "https://hub.berachain.com/pools/0x2c4a603a2aa5596287a06886862dc29d56dbc354000200000000000000000002/details",
@@ -112,6 +124,18 @@
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
         "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"
+      ]
+    },
+    {
+      "beraRewardsVault": "0x1932d24df32ec4cfdeca7824f36fd06c1458434c",
+      "lpTokenAddress": "0x258d8933B625566fBe057874121783a2808aDafA",
+      "name": "WETH-beraETH",
+      "protocol": "bex",
+      "slug": "bex-weth-beraeth",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
+        "0x6fc6545d5cDE268D5C7f1e476D444F39c995120d"
       ]
     },
     {
