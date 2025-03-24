@@ -169,6 +169,7 @@
     {
       "beraRewardsVault": "0x0ec12590CBb9280ab22b81F62be587c5200A9711",
       "lpTokenAddress": "0x7f2B60fDff1494A0E3e060532c9980d7fad0404B",
+      "mintUrl": "https://app.dolomite.io/balances",
       "name": "dHONEY",
       "protocol": "dolomite",
       "slug": "dolomite-dhoney",
@@ -178,6 +179,7 @@
     {
       "beraRewardsVault": "0x9c3110123c515CAF1866B28C031dFeb5ed8EbF0C",
       "lpTokenAddress": "0xF2d2d55Daf93b0660297eaA10969eBe90ead5CE8",
+      "mintUrl": "https://app.dolomite.io/balances",
       "name": "dUSD₮0",
       "protocol": "dolomite",
       "slug": "dolomite-dusd₮0",
@@ -187,6 +189,7 @@
     {
       "beraRewardsVault": "0x7D960f4D9534aCb6f0fc963CC807b21655f35C76",
       "lpTokenAddress": "0x29cF6e8eCeFb8d3c9dd2b727C1b7d1df1a754F6f",
+      "mintUrl": "https://app.dolomite.io/balances",
       "name": "dWBTC",
       "protocol": "dolomite",
       "slug": "dolomite-dwbtc",
@@ -196,6 +199,7 @@
     {
       "beraRewardsVault": "0xdb2f42BEDC87586C6E4b510CFC4675d6D86Ff886",
       "lpTokenAddress": "0xf7b5127B510E568fdC39e6Bb54e2081BFaD489AF",
+      "mintUrl": "https://app.dolomite.io/balances",
       "name": "dWETH",
       "protocol": "dolomite",
       "slug": "dolomite-dweth",
