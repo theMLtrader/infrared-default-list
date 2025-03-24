@@ -47,6 +47,14 @@
       "imageLight": "kodiak-light.svg",
       "name": "Kodiak",
       "url": "https://app.kodiak.finance"
+    },
+    {
+      "description": "The premiere bonzi of Berachain",
+      "id": "yeet",
+      "imageDark": "yeet.svg",
+      "imageLight": "yeet.svg",
+      "name": "YEET",
+      "url": "https://yeetit.xyz"
     }
   ]
 }
