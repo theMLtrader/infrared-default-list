@@ -167,6 +167,72 @@
       ]
     },
     {
+      "beraRewardsVault": "0x82e206a61c026491dee3156fb6589cb786af779f",
+      "lpTokenAddress": "0x7ce7cb1893cfbd680cbfb9dd2a9ae6a62bde66a8",
+      "mintUrl": "https://app.burrbear.io/#/berachain/pool/0x7ce7cb1893cfbd680cbfb9dd2a9ae6a62bde66a800000000000000000000000d/add-liquidity",
+      "name": "iBGT-LBGT",
+      "protocol": "burrbear",
+      "slug": "burrbear-ibgt-lbgt",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0xac03CABA51e17c86c921E1f6CBFBdC91F8BB2E6b",
+        "0xBaadCC2962417C01Af99fb2B7C75706B9bd6Babe"
+      ]
+    },
+    {
+      "beraRewardsVault": "0xf4cd840787ae49c1e6c07e17c99d10adc6b8b7e2",
+      "lpTokenAddress": "0xd170e25f6bcb5ace2108628c647be47d59900ade",
+      "mintUrl": "https://app.burrbear.io/#/berachain/pool/0xd170e25f6bcb5ace2108628c647be47d59900ade00020000000000000000000c/add-liquidity",
+      "name": "NECT-PLUG",
+      "protocol": "burrbear",
+      "slug": "burrbear-nect-plug",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x1ce0a25d13ce4d52071ae7e02cf1f6606f4c79d3",
+        "0x231A6BD8eB88Cfa42776B7Ac575CeCAf82bf1E21"
+      ]
+    },
+    {
+      "beraRewardsVault": "0x436022b9f853bd6cbc168b45fbf12ffa50b6f79c",
+      "lpTokenAddress": "0xd10e65a5f8ca6f835f2b1832e37cf150fb955f23",
+      "mintUrl": "https://app.burrbear.io/#/berachain/pool/0xd10e65a5f8ca6f835f2b1832e37cf150fb955f23000000000000000000000004/add-liquidity",
+      "name": "NECT-USDC.e-HONEY",
+      "protocol": "burrbear",
+      "slug": "burrbear-nect-usdc.e-honey",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x1ce0a25d13ce4d52071ae7e02cf1f6606f4c79d3",
+        "0x549943e04f40284185054145c6E4e9568C1D3241",
+        "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"
+      ]
+    },
+    {
+      "beraRewardsVault": "0x4974ee5f484a3c05f181aeb380cd7c411dd79c0e",
+      "lpTokenAddress": "0xe416c064946112c1626d6700d1081a750b1b1dd7",
+      "mintUrl": "https://app.burrbear.io/#/berachain/pool/0xe416c064946112c1626d6700d1081a750b1b1dd7000200000000000000000008/add-liquidity",
+      "name": "NECT-wgBERA",
+      "protocol": "burrbear",
+      "slug": "burrbear-nect-wgbera",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x1ce0a25d13ce4d52071ae7e02cf1f6606f4c79d3",
+        "0xD77552D3849ab4D8C3b189A9582d0ba4C1F4f912"
+      ]
+    },
+    {
+      "beraRewardsVault": "0x1fe3c13b009ecfce196e480180db5f8990fff5fe",
+      "lpTokenAddress": "0x567f32e86be3e3963cdbc1887b5043b701f113d9",
+      "mintUrl": "https://app.burrbear.io/#/berachain/pool/0x567f32e86be3e3963cdbc1887b5043b701f113d9000000000000000000000006/add-liquidity",
+      "name": "WBERA-wgBERA",
+      "protocol": "burrbear",
+      "slug": "burrbear-wbera-wgbera",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x6969696969696969696969696969696969696969",
+        "0xD77552D3849ab4D8C3b189A9582d0ba4C1F4f912"
+      ]
+    },
+    {
       "beraRewardsVault": "0x0ec12590CBb9280ab22b81F62be587c5200A9711",
       "lpTokenAddress": "0x7f2B60fDff1494A0E3e060532c9980d7fad0404B",
       "mintUrl": "https://app.dolomite.io/balances",

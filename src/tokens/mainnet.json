@@ -106,6 +106,20 @@
       "tags": ["featured"]
     },
     {
+      "address": "0xBaadCC2962417C01Af99fb2B7C75706B9bd6Babe",
+      "decimals": 18,
+      "image": "lbgt.svg",
+      "symbol": "LBGT",
+      "tags": []
+    },
+    {
+      "address": "0xBaadCC2962417C01Af99fb2B7C75706B9bd6Babe",
+      "decimals": 18,
+      "image": "lbgt.svg",
+      "symbol": "LBGT",
+      "tags": []
+    },
+    {
       "address": "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a",
       "decimals": 18,
       "image": "mim.svg",
@@ -120,10 +134,24 @@
       "tags": []
     },
     {
+      "address": "0x1ce0a25d13ce4d52071ae7e02cf1f6606f4c79d3",
+      "decimals": 18,
+      "image": "nect.webp",
+      "symbol": "NECT",
+      "tags": ["stablecoin", "collateral"]
+    },
+    {
       "address": "0x18878Df23e2a36f81e820e4b47b4A40576D3159C",
       "decimals": 9,
       "image": "ohm.svg",
       "symbol": "OHM",
+      "tags": []
+    },
+    {
+      "address": "0x231A6BD8eB88Cfa42776B7Ac575CeCAf82bf1E21",
+      "decimals": 18,
+      "image": "plug.webp",
+      "symbol": "PLUG",
       "tags": []
     },
     {
@@ -216,6 +244,13 @@
       "image": "weth.svg",
       "symbol": "WETH",
       "tags": ["featured", "deposit"]
+    },
+    {
+      "address": "0xD77552D3849ab4D8C3b189A9582d0ba4C1F4f912",
+      "decimals": 18,
+      "image": "wgbera.webp",
+      "symbol": "wgBERA",
+      "tags": []
     },
     {
       "address": "0x08A38Caa631DE329FF2DAD1656CE789F31AF3142",
