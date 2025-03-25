@@ -18,6 +18,11 @@
   "license": "GPL-3.0-or-later",
   "sideEffects": false,
   "type": "module",
+  "exports": {
+    "./gauges/mainnet": "./src/gauges/mainnet.json",
+    "./tokens/mainnet": "./src/gauges/mainnet.json",
+    "./protocols": "./src/protocols.json"
+  },
   "scripts": {
     "check": "concurrently \"pnpm schemas-to-typescript\" \"pnpm sort\" \"pnpm validate\" && pnpm lint",
     "clean-assets": "concurrently \"pnpm clean-assets:svg\" \"pnpm clean-assets:png\"",
