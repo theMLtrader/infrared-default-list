@@ -78,6 +78,13 @@
       "tags": []
     },
     {
+      "address": "0xff0a636dfc44bb0129b631cdd38d21b613290c98",
+      "decimals": 18,
+      "image": "hold.svg",
+      "symbol": "HOLD",
+      "tags": []
+    },
+    {
       "address": "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce",
       "decimals": 18,
       "image": "honey.svg",
