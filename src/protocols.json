@@ -25,6 +25,14 @@
       "url": "https://bulla.exchange"
     },
     {
+      "description": "Swap tokens and manage your assets on BurrBear Protocol.",
+      "id": "burrbear",
+      "imageDark": "burrbear.svg",
+      "imageLight": "burrbear.svg",
+      "name": "BurrBear",
+      "url": "https://burrbear.io"
+    },
+    {
       "description": "Dolomite is a lending and borrowing platform that can support over 1,000 unique assets.",
       "id": "dolomite",
       "imageDark": "dolomite-dark.svg",
