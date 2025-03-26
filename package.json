@@ -20,8 +20,8 @@
   "type": "module",
   "exports": {
     "./gauges/mainnet": "./src/gauges/mainnet.json",
-    "./tokens/mainnet": "./src/gauges/mainnet.json",
-    "./protocols": "./src/protocols.json"
+    "./protocols": "./src/protocols.json",
+    "./tokens/mainnet": "./src/tokens/mainnet.json"
   },
   "scripts": {
     "check": "concurrently \"pnpm schemas-to-typescript\" \"pnpm sort\" \"pnpm validate\" && pnpm lint",
