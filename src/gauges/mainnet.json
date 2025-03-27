@@ -393,7 +393,7 @@
       "beraRewardsVault": "0xCf77d23cFC561E34e3b6137C736EA5CB395BcDA0",
       "lpTokenAddress": "0x8b161685135e9fbc5475169e1addc0f2c4b7c343",
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x8b161685135e9fbc5475169e1addc0f2c4b7c343?chain=berachain_mainnet",
-      "name": "STBGT-WBERA",
+      "name": "stBGT-WBERA",
       "protocol": "kodiak",
       "slug": "kodiak-stbgt-wbera",
       "types": ["amm"],
