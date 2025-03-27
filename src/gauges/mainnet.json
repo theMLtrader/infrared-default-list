@@ -390,6 +390,19 @@
       ]
     },
     {
+      "beraRewardsVault": "0xCf77d23cFC561E34e3b6137C736EA5CB395BcDA0",
+      "lpTokenAddress": "0x8b161685135e9fbc5475169e1addc0f2c4b7c343",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x8b161685135e9fbc5475169e1addc0f2c4b7c343?chain=berachain_mainnet",
+      "name": "STBGT-WBERA",
+      "protocol": "kodiak",
+      "slug": "kodiak-stbgt-wbera",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x2CeC7f1ac87F5345ced3D6c74BBB61bfAE231Ffb",
+        "0x6969696969696969696969696969696969696969"
+      ]
+    },
+    {
       "beraRewardsVault": "0x09b113Ae50B5AF0988B9a1Dc50BFE602e7C24Ef7",
       "lpTokenAddress": "0xD5B6EA3544a51BfdDa7E6926BdF778339801dFe8",
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xd5b6ea3544a51bfdda7e6926bdf778339801dfe8?&chain=berachain_mainnet",
@@ -633,19 +646,6 @@
       "types": ["amm"],
       "underlyingTokens": [
         "0x08A38Caa631DE329FF2DAD1656CE789F31AF3142",
-        "0x6969696969696969696969696969696969696969"
-      ]
-    },
-    {
-      "beraRewardsVault": "0xCf77d23cFC561E34e3b6137C736EA5CB395BcDA0",
-      "lpTokenAddress": "0x8b161685135e9fbc5475169e1addc0f2c4b7c343",
-      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x8b161685135e9fbc5475169e1addc0f2c4b7c343?chain=berachain_mainnet",
-      "name": "STBGT-WBERA",
-      "protocol": "kodiak",
-      "slug": "kodiak-stbgt-wbera",
-      "types": ["amm"],
-      "underlyingTokens": [
-        "0x2CeC7f1ac87F5345ced3D6c74BBB61bfAE231Ffb",
         "0x6969696969696969696969696969696969696969"
       ]
     }
