@@ -258,6 +258,13 @@
       "image": "yeet.svg",
       "symbol": "YEET",
       "tags": []
+    },
+    {
+      "address": "0x2CeC7f1ac87F5345ced3D6c74BBB61bfAE231Ffb",
+      "decimals": 18,
+      "image": "stbgt.svg",
+      "symbol": "STBGT",
+      "tags": []
     }
   ]
 }
