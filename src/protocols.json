@@ -1,6 +1,14 @@
 {
   "protocols": [
     {
+      "description": "AquaBera makes managing, growing, and launching crypto on Berachain simple, safe, and rewarding.",
+      "id": "aquabera",
+      "imageDark": "aquabera.svg",
+      "imageLight": "aquabera.svg",
+      "name": "AquaBera",
+      "url": "https://aquabera.com/"
+    },
+    {
       "description": "Unlocking Instant liquidity for Berachain assets through the first PoL powered stablecoin NECT.",
       "id": "beraborrow",
       "imageDark": "beraborrow.webp",

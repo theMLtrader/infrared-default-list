@@ -1,6 +1,11 @@
 {
   "vaults": [
     {
+      "beraRewardsVault": "0x4796039d56892A324585d77A76059b1cD2b9D02a",
+      "slug": "aquabera-wbera-beramo",
+      "stakeTokenAddress": "0xf9845a03F7e6b06645A03a28b943C8A4B5fE7BCC"
+    },
+    {
       "beraRewardsVault": "0xb8fF36Ba70aD9eab492bD538b9B00350D53c59e2",
       "slug": "beraborrow-bwbera",
       "stakeTokenAddress": "0x6751C09113a83a83a43829fD0b3BC0D7bdbe07bf"

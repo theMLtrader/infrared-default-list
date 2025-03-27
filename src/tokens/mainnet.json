@@ -15,6 +15,13 @@
       "symbol": "beraETH"
     },
     {
+      "address": "0x1F7210257FA157227D09449229a9266b0D581337",
+      "decimals": 18,
+      "image": "beramo.svg",
+      "name": "BERAMO",
+      "symbol": "BERAMO"
+    },
+    {
       "address": "0x656b95E550C07a9ffe548bd4085c72418Ceb1dba",
       "decimals": 18,
       "image": "bgt.svg",
@@ -209,6 +216,19 @@
       "image": "yeet.svg",
       "name": "YEET",
       "symbol": "YEET"
+    },
+    {
+      "address": "0xf9845a03F7e6b06645A03a28b943C8A4B5fE7BCC",
+      "decimals": 18,
+      "mintUrl": "https://app.aquabera.com/vault/0xf9845a03F7e6b06645A03a28b943C8A4B5fE7BCC",
+      "name": "WBERA-BERAMO",
+      "protocol": "aquabera",
+      "symbol": "AB-KODIAK-WBERA-BERAMO-10000",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x6969696969696969696969696969696969696969",
+        "0x1F7210257FA157227D09449229a9266b0D581337"
+      ]
     },
     {
       "address": "0x6751C09113a83a83a43829fD0b3BC0D7bdbe07bf",
