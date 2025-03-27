@@ -176,6 +176,13 @@
       "tags": []
     },
     {
+      "address": "0x2CeC7f1ac87F5345ced3D6c74BBB61bfAE231Ffb",
+      "decimals": 18,
+      "image": "stbgt.svg",
+      "symbol": "stBGT",
+      "tags": []
+    },
+    {
       "address": "0xEc901DA9c68E90798BbBb74c11406A32A70652C3",
       "decimals": 18,
       "image": "stone.svg",
