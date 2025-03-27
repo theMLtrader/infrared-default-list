@@ -10,10 +10,10 @@ Before you begin, ensure you have:
 2. Basic knowledge of JSON and Git
 3. Details for your vault, token, or validator
 
-Please make sure that the respective beraRewardsVault is friendoftheChef. In order to check that please follow the guideline:
+Please make sure that the respective beraRewardsVault is whitelisted. In order to check that please follow the guideline:
 
-1. Go to Berachef’s contract on beratrail & select “Read Contract“
-2. Go to function 9. isFriendoftheChef
+1. Go to Berachef’s contract on Berascan(0xdf960E8F3F19C481dDE769edEDD439ea1a63426a) & select “Read Contract“
+2. Go to function 16. isWhitelistedVault
 3. Under receiver parameter put the beraRewardsVault address
 4. Click “Query“
 5. If the boolean is “true”, the vault is yielding BGT (desired path)
