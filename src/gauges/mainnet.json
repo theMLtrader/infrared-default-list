@@ -102,6 +102,19 @@
       ]
     },
     {
+      "beraRewardsVault": "0xe8ed00b1b142e8d84ef773c4fccaa18682d5a401",
+      "lpTokenAddress": "0x705Fc16BA5A1EB67051934F2Fb17EacaE660F6c7",
+      "mintUrl": "https://hub.berachain.com/pools/0x705fc16ba5a1eb67051934f2fb17eacae660f6c70002000000000000000000d5/details",
+      "name": "WBERA-LBGT",
+      "protocol": "bex",
+      "slug": "bex-wbera-lbgt",
+      "types": ["amm"],
+      "underlyingTokens": [
+        "0x6969696969696969696969696969696969696969",
+        "0xBaadCC2962417C01Af99fb2B7C75706B9bd6Babe"
+      ]
+    },
+    {
       "beraRewardsVault": "0x086f82fa0cA310Cc835a9DB4f53697687ef149c7",
       "lpTokenAddress": "0x38fdD999Fe8783037dB1bBFE465759e312f2d809",
       "mintUrl": "https://hub.berachain.com/pools/0x38fdd999fe8783037db1bbfe465759e312f2d809000200000000000000000004/details",
