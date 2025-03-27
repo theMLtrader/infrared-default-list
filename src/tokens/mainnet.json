@@ -113,13 +113,6 @@
       "tags": []
     },
     {
-      "address": "0xBaadCC2962417C01Af99fb2B7C75706B9bd6Babe",
-      "decimals": 18,
-      "image": "lbgt.svg",
-      "symbol": "LBGT",
-      "tags": []
-    },
-    {
       "address": "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a",
       "decimals": 18,
       "image": "mim.svg",
