@@ -5,10 +5,10 @@ import type { TokensSchema } from '@/types/tokens'
 
 import { delay } from './delay'
 import { getFile } from './get-file'
+import { getTokenName } from './get-token-name'
 import { getTokenSymbol } from './get-token-symbol'
 import { validateDecimals } from './validate-decimals'
 import { validateImage } from './validate-image'
-import { validateSymbol } from './validate-symbol'
 
 const RPC_REQUESTS_PER_SECOND = 10
 const ONE_SECOND = 1000
@@ -17,53 +17,66 @@ interface Counter {
   value: number
 }
 
+const validateSymbol = async ({
+  errors,
+  onChainSymbol,
+  token,
+}: {
+  errors: Array<string>
+  onChainSymbol: string
+  token: TokensSchema['tokens'][number]
+}) => {
+  if (token.symbol !== onChainSymbol) {
+    errors.push(
+      `${token.symbol}’s symbol does not match the on-chain symbol ${onChainSymbol}`,
+    )
+  }
+}
+
 const validateName = async ({
   errors,
+  onChainName,
+  onChainSymbol,
   publicClient,
   rpcLookupCount,
   token,
 }: {
   errors: Array<string>
+  onChainName: string
+  onChainSymbol: string
   publicClient: PublicClient
   rpcLookupCount: Counter
   token: TokensSchema['tokens'][number]
 }) => {
-  const tokenSymbol = await getTokenSymbol({
-    errors,
-    publicClient,
-    tokenAddress: token.address as Address,
-  })
-
-  if (token.name !== tokenSymbol) {
-    if ('underlyingTokens' in token) {
-      const symbols = await Promise.all(
-        token.underlyingTokens.map(async (underlyingToken) => {
-          rpcLookupCount.value += 1
-          if (rpcLookupCount.value % RPC_REQUESTS_PER_SECOND === 0) {
-            await delay(ONE_SECOND)
-          }
-          return await getTokenSymbol({
-            errors,
-            publicClient,
-            tokenAddress: underlyingToken as Address,
-          })
-        }),
-      )
-      const underlyingTokenSymbols = symbols.join('-')
-
-      if (token.name !== underlyingTokenSymbols) {
+  if ('underlyingTokens' in token) {
+    const symbols = await Promise.all(
+      token.underlyingTokens.map(async (underlyingToken) => {
         rpcLookupCount.value += 1
         if (rpcLookupCount.value % RPC_REQUESTS_PER_SECOND === 0) {
           await delay(ONE_SECOND)
         }
+        return await getTokenSymbol({
+          errors,
+          publicClient,
+          tokenAddress: underlyingToken as Address,
+        })
+      }),
+    )
+    const underlyingTokenSymbols = symbols.join('-')
 
-        errors.push(
-          `${token.name} does not match ${tokenSymbol} or ${underlyingTokenSymbols}`,
-        )
+    if (token.name !== underlyingTokenSymbols) {
+      rpcLookupCount.value += 1
+      if (rpcLookupCount.value % RPC_REQUESTS_PER_SECOND === 0) {
+        await delay(ONE_SECOND)
       }
-    } else {
-      errors.push(`${token.name} does not match ${tokenSymbol}`)
+
+      if (token.name !== onChainName && token.name !== onChainSymbol) {
+        // exception for cases like bWBERA
+        errors.push(`${token.name} does not match ${underlyingTokenSymbols}`)
+      }
     }
+  } else if (token.name !== onChainName && token.name !== onChainSymbol) {
+    errors.push(`${token.name} does not match ${onChainName}`)
   }
 }
 
@@ -144,8 +157,27 @@ export const validateTokenDetails = async ({
       type: 'tokens',
     })
     await validateMintUrl({ errors, token })
-    await validateName({ errors, publicClient, rpcLookupCount, token })
     validateProtocol({ errors, token })
-    await validateSymbol({ errors, publicClient, token })
+
+    const onChainSymbol = await getTokenSymbol({
+      errors,
+      publicClient,
+      tokenAddress: token.address as Address,
+    })
+    const onChainName = await getTokenName({
+      errors,
+      publicClient,
+      tokenAddress: token.address as Address,
+    })
+
+    await validateSymbol({ errors, onChainSymbol, token })
+    await validateName({
+      errors,
+      onChainName,
+      onChainSymbol,
+      publicClient,
+      rpcLookupCount,
+      token,
+    })
   }
 }

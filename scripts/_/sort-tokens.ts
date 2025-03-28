@@ -15,12 +15,14 @@ export const sortTokens = async ({
     a.hasOwnProperty('underlyingTokens')
       ? b.hasOwnProperty('underlyingTokens')
         ? 'protocol' in a && 'protocol' in b
-          ? a.protocol.localeCompare(b.protocol)
-          : 1
+          ? a.protocol.localeCompare(b.protocol) ||
+            a.name.localeCompare(b.name) ||
+            a.address.localeCompare(b.address)
+          : 1 // we will never get here
         : 1
       : b.hasOwnProperty('underlyingTokens')
         ? -1
-        : a.name.localeCompare(b.name),
+        : a.symbol.localeCompare(b.symbol),
   )
 
   await writeFile(path, formatDataToJson({ data: { tokens: sortedTokens } }))

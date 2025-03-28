@@ -11,21 +11,21 @@
       "address": "0x6fc6545d5cDE268D5C7f1e476D444F39c995120d",
       "decimals": 18,
       "image": "beraeth.svg",
-      "name": "beraETH",
+      "name": "Berachain Staked ETH",
       "symbol": "beraETH"
     },
     {
       "address": "0x656b95E550C07a9ffe548bd4085c72418Ceb1dba",
       "decimals": 18,
       "image": "bgt.svg",
-      "name": "BGT",
+      "name": "Bera Governance Token",
       "symbol": "BGT"
     },
     {
       "address": "0x6B26f778bfae56CFb4Bf9b62c678d9D40e725227",
       "decimals": 8,
       "image": "bitcoin.svg",
-      "name": "BITCOIN",
+      "name": "HarryPotterObamaSonic10Inu",
       "symbol": "BITCOIN"
     },
     {
@@ -46,14 +46,14 @@
       "address": "0x09D9420332bff75522a45FcFf4855F82a0a3ff50",
       "decimals": 18,
       "image": "dinero.svg",
-      "name": "DINERO",
+      "name": "Dinero OFT",
       "symbol": "DINERO"
     },
     {
       "address": "0xff0a636dfc44bb0129b631cdd38d21b613290c98",
       "decimals": 18,
       "image": "hold.svg",
-      "name": "HOLD",
+      "name": "Holdstation",
       "symbol": "HOLD"
     },
     {
@@ -67,42 +67,42 @@
       "address": "0xBaadCC2962417C01Af99fb2B7C75706B9bd6Babe",
       "decimals": 18,
       "image": "lbgt.svg",
-      "name": "LBGT",
+      "name": "Liquid BGT",
       "symbol": "LBGT"
     },
     {
       "address": "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a",
       "decimals": 18,
       "image": "mim.svg",
-      "name": "MIM",
+      "name": "Magic Internet Money",
       "symbol": "MIM"
     },
     {
       "address": "0x6536cEAD649249cae42FC9bfb1F999429b3ec755",
       "decimals": 18,
       "image": "nav.svg",
-      "name": "NAV",
+      "name": "NavFinance",
       "symbol": "NAV"
     },
     {
       "address": "0x1ce0a25d13ce4d52071ae7e02cf1f6606f4c79d3",
       "decimals": 18,
       "image": "nect.webp",
-      "name": "NECT",
+      "name": "Nectar",
       "symbol": "NECT"
     },
     {
       "address": "0x18878Df23e2a36f81e820e4b47b4A40576D3159C",
       "decimals": 9,
       "image": "ohm.svg",
-      "name": "OHM",
+      "name": "Olympus",
       "symbol": "OHM"
     },
     {
       "address": "0x231A6BD8eB88Cfa42776B7Ac575CeCAf82bf1E21",
       "decimals": 18,
       "image": "plug.webp",
-      "name": "PLUG",
+      "name": "Beraplug",
       "symbol": "PLUG"
     },
     {
@@ -116,21 +116,21 @@
       "address": "0x09D4214C03D01F49544C0448DBE3A27f768F2b34",
       "decimals": 18,
       "image": "rusd.svg",
-      "name": "rUSD",
+      "name": "Reservoir Stablecoin",
       "symbol": "rUSD"
     },
     {
       "address": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77",
       "decimals": 18,
       "image": "solvbtc.svg",
-      "name": "SolvBTC",
+      "name": "Solv BTC",
       "symbol": "SolvBTC"
     },
     {
       "address": "0xCC0966D8418d412c599A6421b760a847eB169A8c",
       "decimals": 18,
       "image": "solvbtcbbn.svg",
-      "name": "SolvBTC.BBN",
+      "name": "SolvBTC Babylon",
       "symbol": "SolvBTC.BBN"
     },
     {
@@ -144,14 +144,14 @@
       "address": "0xEc901DA9c68E90798BbBb74c11406A32A70652C3",
       "decimals": 18,
       "image": "stone.svg",
-      "name": "STONE",
+      "name": "StakeStone Ether",
       "symbol": "STONE"
     },
     {
       "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
       "decimals": 18,
       "image": "susde.svg",
-      "name": "sUSDe",
+      "name": "Staked USDe",
       "symbol": "sUSDe"
     },
     {
@@ -172,7 +172,7 @@
       "address": "0x549943e04f40284185054145c6E4e9568C1D3241",
       "decimals": 6,
       "image": "usdce.svg",
-      "name": "USDC.e",
+      "name": "Bridged USDC (Stargate)",
       "symbol": "USDC.e"
     },
     {
@@ -477,17 +477,6 @@
       "symbol": "dHONEY",
       "type": "cdp",
       "underlyingTokens": ["0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"]
-    },
-    {
-      "address": "0xf2d2d55daf93b0660297eaa10969ebe90ead5ce8",
-      "decimals": 6,
-      "image": "dusdt.svg",
-      "mintUrl": "https://app.dolomite.io/balances",
-      "name": "dUSD₮0",
-      "protocol": "dolomite",
-      "symbol": "dUSD₮0",
-      "type": "cdp",
-      "underlyingTokens": ["0x779Ded0c9e1022225f8E0630b35a9b54bE713736"]
     },
     {
       "address": "0xF2d2d55Daf93b0660297eaA10969eBe90ead5CE8",
