@@ -11,7 +11,17 @@ export const sortTokens = async ({
   path: string
   tokens: TokensSchema['tokens']
 }) => {
-  const sortedTokens = tokens.sort((a, b) => a.name.localeCompare(b.name))
+  const sortedTokens = tokens.sort((a, b) =>
+    a.hasOwnProperty('underlyingTokens')
+      ? b.hasOwnProperty('underlyingTokens')
+        ? 'protocol' in a && 'protocol' in b
+          ? a.protocol.localeCompare(b.protocol)
+          : 1
+        : 1
+      : b.hasOwnProperty('underlyingTokens')
+        ? -1
+        : a.name.localeCompare(b.name),
+  )
 
   await writeFile(path, formatDataToJson({ data: { tokens: sortedTokens } }))
 }
