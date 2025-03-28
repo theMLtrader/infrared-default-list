@@ -6,15 +6,10 @@
  */
 
 export interface VaultsSchema {
-  gauges: {
+  vaults: {
     beraRewardsVault: string
-    lpTokenAddress: string
-    mintUrl?: string
-    name: string
-    protocol: string
     slug: string
-    types: string[]
-    underlyingTokens: string[]
+    stakeTokenAddress: string
   }[]
   [k: string]: unknown
 }

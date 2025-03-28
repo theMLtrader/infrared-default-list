@@ -6,7 +6,7 @@ import { getJsonFile } from './_/get-json-file'
 import { isValidNetwork } from './_/is-valid-network'
 import { sortVaults } from './_/sort-vaults'
 
-const folderPath = 'src/gauges'
+const folderPath = 'src/vaults'
 
 readdirSync(folderPath).forEach(async (file) => {
   const network = file.replace('.json', '')
@@ -23,6 +23,6 @@ readdirSync(folderPath).forEach(async (file) => {
 
   await sortVaults({
     path,
-    vaults: vaults.gauges,
+    vaults: vaults.vaults,
   })
 })

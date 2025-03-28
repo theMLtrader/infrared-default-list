@@ -3,21 +3,56 @@
   "properties": {
     "tokens": {
       "items": {
-        "additionalProperties": false,
-        "properties": {
-          "address": {
-            "pattern": "^0x[a-fA-F0-9]{40}$",
-            "type": "string"
+        "oneOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "address": {
+                "pattern": "^0x[a-fA-F0-9]{40}$",
+                "type": "string"
+              },
+              "decimals": { "type": "number" },
+              "image": { "type": "string" },
+              "name": { "type": "string" },
+              "symbol": { "type": "string" }
+            },
+            "required": ["address", "decimals", "image", "name", "symbol"],
+            "type": "object"
           },
-          "decimals": { "type": "number" },
-          "image": { "type": "string" },
-          "symbol": { "type": "string" },
-          "tags": {
-            "items": { "type": "string" },
-            "type": "array"
+          {
+            "additionalProperties": false,
+            "properties": {
+              "address": {
+                "pattern": "^0x[a-fA-F0-9]{40}$",
+                "type": "string"
+              },
+              "decimals": { "type": "number" },
+              "image": { "type": "string" },
+              "mintUrl": { "format": "uri", "type": "string" },
+              "name": { "type": "string" },
+              "protocol": { "type": "string" },
+              "symbol": { "type": "string" },
+              "type": {
+                "enum": ["amm", "cdp", "perpetuals", "unknown", "vault"]
+              },
+              "underlyingTokens": {
+                "items": { "pattern": "^0x[a-fA-F0-9]{40}$", "type": "string" },
+                "type": "array"
+              }
+            },
+            "required": [
+              "address",
+              "decimals",
+              "mintUrl",
+              "name",
+              "protocol",
+              "symbol",
+              "type",
+              "underlyingTokens"
+            ],
+            "type": "object"
           }
-        },
-        "required": ["address", "decimals", "image", "symbol"],
+        ],
         "type": "object"
       },
       "type": "array"

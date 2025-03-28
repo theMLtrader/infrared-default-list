@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "properties": {
-    "gauges": {
+    "vaults": {
       "items": {
         "additionalProperties": false,
         "properties": {
@@ -9,38 +9,18 @@
             "pattern": "^0x[a-fA-F0-9]{40}$",
             "type": "string"
           },
-          "lpTokenAddress": {
+          "slug": { "type": "string" },
+          "stakeTokenAddress": {
             "pattern": "^0x[a-fA-F0-9]{40}$",
             "type": "string"
-          },
-          "mintUrl": { "format": "uri", "type": "string" },
-          "name": { "type": "string" },
-          "protocol": { "type": "string" },
-          "slug": { "type": "string" },
-          "types": {
-            "items": { "type": "string" },
-            "type": "array"
-          },
-          "underlyingTokens": {
-            "items": { "pattern": "^0x[a-fA-F0-9]{40}$", "type": "string" },
-            "type": "array"
           }
         },
-        "required": [
-          "beraRewardsVault",
-          "lpTokenAddress",
-          "mintUrl",
-          "name",
-          "protocol",
-          "slug",
-          "types",
-          "underlyingTokens"
-        ],
+        "required": ["beraRewardsVault", "slug", "stakeTokenAddress"],
         "type": "object"
       },
       "type": "array"
     }
   },
-  "required": ["gauges"],
+  "required": ["vaults"],
   "type": "object"
 }
