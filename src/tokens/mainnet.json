@@ -933,7 +933,7 @@
     {
       "address": "0xc95ab9eff8fb48760703c74416764b8f898afa1b",
       "decimals": 18,
-      "image": "sBERA.svg",
+      "image": "sbera.svg",
       "mintUrl": "https://app.wasabi.xyz/earn?vault=sWBERA&network=berachain",
       "name": "sWBERA",
       "protocol": "wasabi",
@@ -944,7 +944,7 @@
     {
       "address": "0xd948212f077e552533158becbc1882c1b19c40fe",
       "decimals": 18,
-      "image": "sHONEY.svg",
+      "image": "shoney.svg",
       "mintUrl": "https://app.wasabi.xyz/earn?vault=sHONEY&network=berachain",
       "name": "sHONEY",
       "protocol": "wasabi",
