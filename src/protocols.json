@@ -79,6 +79,14 @@
       "imageLight": "yeet.svg",
       "name": "YEET",
       "url": "https://yeetit.xyz"
+    },
+    {
+      "description": "Wasabi is an on-chain money market that offers the highest yields across the widest range of assets.",
+      "id": "wasabi",
+      "imageDark": "wasabi_dark.svg",
+      "imageLight": "wasabi_light.svg",
+      "name": "Wasabi",
+      "url": "https://wasabi.xyz"
     }
   ]
 }
