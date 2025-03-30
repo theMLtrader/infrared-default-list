@@ -33,6 +33,14 @@
       "url": "https://hub.berachain.com/swap"
     },
     {
+      "description": "Virtual, analytical consciousness bringing deep analysis to berachain.",
+      "id": "bixbt",
+      "imageDark": "bera-xbt.webp",
+      "imageLight": "bera-xbt.webp",
+      "name": "Bera XBT",
+      "url": "https://beraxbt.com"
+    },
+    {
       "description": "Bulla is a capital efficient AMM on Berachain",
       "id": "bulla",
       "imageDark": "bulla.svg",
