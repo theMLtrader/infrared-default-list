@@ -73,20 +73,20 @@
       "url": "https://app.kodiak.finance"
     },
     {
-      "description": "The premiere bonzi of Berachain",
-      "id": "yeet",
-      "imageDark": "yeet.svg",
-      "imageLight": "yeet.svg",
-      "name": "YEET",
-      "url": "https://yeetit.xyz"
-    },
-    {
       "description": "Wasabi is an on-chain money market that offers the highest yields across the widest range of assets.",
       "id": "wasabi",
       "imageDark": "wasabi_dark.svg",
       "imageLight": "wasabi_light.svg",
       "name": "Wasabi",
       "url": "https://wasabi.xyz"
+    },
+    {
+      "description": "The premiere bonzi of Berachain",
+      "id": "yeet",
+      "imageDark": "yeet.svg",
+      "imageLight": "yeet.svg",
+      "name": "YEET",
+      "url": "https://yeetit.xyz"
     }
   ]
 }
