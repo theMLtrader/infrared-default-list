@@ -935,9 +935,9 @@
       "decimals": 18,
       "image": "sBERA.svg",
       "mintUrl": "https://app.wasabi.xyz/earn?vault=sWBERA&network=berachain",
-      "name": "sBERA",
+      "name": "sWBERA",
       "protocol": "wasabi",
-      "symbol": "sBERA",
+      "symbol": "sWBERA",
       "type": "cdp",
       "underlyingTokens": ["0x6969696969696969696969696969696969696969"]
     },

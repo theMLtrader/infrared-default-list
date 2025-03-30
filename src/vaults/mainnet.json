@@ -272,12 +272,12 @@
     },
     {
       "beraRewardsVault": "0x49FCaA48e59e3d634Ae6c6953cc30ce953Dfba2c",
-      "slug": "wasabi-honey",
+      "slug": "wasabi-shoney",
       "stakeTokenAddress": "0xd948212f077e552533158becbc1882c1b19c40fe"
     },
     {
       "beraRewardsVault": "0x4eA84882228a5C881675151E951235e45256a484",
-      "slug": "wasabi-wbera",
+      "slug": "wasabi-swbera",
       "stakeTokenAddress": "0xc95ab9eff8fb48760703c74416764b8f898afa1b"
     }
   ]
