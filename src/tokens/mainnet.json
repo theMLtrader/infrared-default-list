@@ -493,11 +493,11 @@
       "mintUrl": "https://app.madhoney.fi/vault",
       "name": "HONEY-NECT",
       "protocol": "d8x",
-      "symbol": "HONEY-NECT",
+      "symbol": "dbUSD",
       "type": "perpetuals",
       "underlyingTokens": [
-        "0x1cE0a25D13CE4d52071aE7e02Cf1F6606F4C79d3",
-        "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce"
+        "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce",
+        "0x1cE0a25D13CE4d52071aE7e02Cf1F6606F4C79d3"
       ]
     },
     {
