@@ -160,7 +160,7 @@
       "image": "susda.svg",
       "name": "USDa Savings",
       "symbol": "sUSDa"
-    },    
+    },
     {
       "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
       "decimals": 18,
@@ -181,7 +181,7 @@
       "image": "usda.svg",
       "name": "USDa",
       "symbol": "USDa"
-    },    
+    },
     {
       "address": "0x6d4223dae2a8744a85a6d44e97f3f61679f87ee6",
       "decimals": 18,
@@ -712,6 +712,19 @@
       ]
     },
     {
+      "address": "0x7CeBCc76A2faecC0aE378b340815fcbb71eC1Fe0",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x7CeBCc76A2faecC0aE378b340815fcbb71eC1Fe0?chain=berachain_mainnet",
+      "name": "sUSDa-USDa",
+      "protocol": "kodiak",
+      "symbol": "KODI sUSDa-USDa",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x2840F9d9f96321435Ab0f977E7FDBf32EA8b304f",
+        "0xff12470a969Dd362EB6595FFB44C82c959Fe9ACc"
+      ]
+    },
+    {
       "address": "0xD5B6EA3544a51BfdDa7E6926BdF778339801dFe8",
       "decimals": 18,
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xD5B6EA3544a51BfdDa7E6926BdF778339801dFe8?chain=berachain_mainnet",
@@ -865,19 +878,6 @@
       "underlyingTokens": [
         "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
         "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77"
-      ]
-    },
-    {
-      "address": "0x7CeBCc76A2faecC0aE378b340815fcbb71eC1Fe0",
-      "decimals": 18,
-      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x7CeBCc76A2faecC0aE378b340815fcbb71eC1Fe0?chain=berachain_mainnet",
-      "name": "sUSDa-USDa",
-      "protocol": "kodiak",
-      "symbol": "KODI sUSDa-USDa",
-      "type": "amm",
-      "underlyingTokens": [
-        "0x2840F9d9f96321435Ab0f977E7FDBf32EA8b304f",
-        "0xff12470a969Dd362EB6595FFB44C82c959Fe9ACc"
       ]
     },
     {
