@@ -36,6 +36,13 @@
       "symbol": "BITCOIN"
     },
     {
+      "address": "0x147c9a7f5265d7ca9a671c3817b212a0cf88856e",
+      "decimals": 18,
+      "image": "beraxbt.webp",
+      "name": "BeraXBT",
+      "symbol": "BIXBT"
+    },
+    {
       "address": "0xb749584F9fC418Cf905d54f462fdbFdC7462011b",
       "decimals": 18,
       "image": "bm.webp",
@@ -592,6 +599,32 @@
       "underlyingTokens": [
         "0x6fc6545d5cDE268D5C7f1e476D444F39c995120d",
         "0xEc901DA9c68E90798BbBb74c11406A32A70652C3"
+      ]
+    },
+    {
+      "address": "0xe454C546C8F3875e928910Abc653De5f8c432F11",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xe454C546C8F3875e928910Abc653De5f8c432F11?chain=berachain_mainnet",
+      "name": "BIXBT-WBERA",
+      "protocol": "kodiak",
+      "symbol": "(BIXBT-WBERA) UNI-V2",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x147c9a7f5265d7ca9a671c3817b212a0cf88856e",
+        "0x6969696969696969696969696969696969696969"
+      ]
+    },
+    {
+      "address": "0xe454C546C8F3875e928910Abc653De5f8c432F11",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xe454C546C8F3875e928910Abc653De5f8c432F11?chain=berachain_mainnet",
+      "name": "BIXBT-WBERA",
+      "protocol": "kodiak",
+      "symbol": "UNI-V2",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x147c9a7f5265d7ca9a671c3817b212a0cf88856e",
+        "0x6969696969696969696969696969696969696969"
       ]
     },
     {
