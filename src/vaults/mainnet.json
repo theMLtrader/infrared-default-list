@@ -181,6 +181,11 @@
       "stakeTokenAddress": "0x8b161685135e9fbc5475169e1addc0f2c4b7c343"
     },
     {
+      "beraRewardsVault": "0xc196d595dece185ea39f8e1c3ce07a274ac31985",
+      "slug": "kodiak-susda-usda",
+      "stakeTokenAddress": "0x7CeBCc76A2faecC0aE378b340815fcbb71eC1Fe0"
+    },
+    {
       "beraRewardsVault": "0x09b113Ae50B5AF0988B9a1Dc50BFE602e7C24Ef7",
       "slug": "kodiak-susde-honey",
       "stakeTokenAddress": "0xD5B6EA3544a51BfdDa7E6926BdF778339801dFe8"

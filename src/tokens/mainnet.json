@@ -155,6 +155,13 @@
       "symbol": "STONE"
     },
     {
+      "address": "0x2840F9d9f96321435Ab0f977E7FDBf32EA8b304f",
+      "decimals": 18,
+      "image": "susda.svg",
+      "name": "USDa saving token",
+      "symbol": "sUSDa"
+    },
+    {
       "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
       "decimals": 18,
       "image": "susde.svg",
@@ -167,6 +174,13 @@
       "image": "usdt.svg",
       "name": "USD₮0",
       "symbol": "USD₮0"
+    },
+    {
+      "address": "0xff12470a969Dd362EB6595FFB44C82c959Fe9ACc",
+      "decimals": 18,
+      "image": "usda.svg",
+      "name": "USDa",
+      "symbol": "USDa"
     },
     {
       "address": "0x6d4223dae2a8744a85a6d44e97f3f61679f87ee6",
@@ -695,6 +709,19 @@
       "underlyingTokens": [
         "0x2CeC7f1ac87F5345ced3D6c74BBB61bfAE231Ffb",
         "0x6969696969696969696969696969696969696969"
+      ]
+    },
+    {
+      "address": "0x7CeBCc76A2faecC0aE378b340815fcbb71eC1Fe0",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x7CeBCc76A2faecC0aE378b340815fcbb71eC1Fe0?chain=berachain_mainnet",
+      "name": "sUSDa-USDa",
+      "protocol": "kodiak",
+      "symbol": "KODI sUSDa-USDa",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x2840F9d9f96321435Ab0f977E7FDBf32EA8b304f",
+        "0xff12470a969Dd362EB6595FFB44C82c959Fe9ACc"
       ]
     },
     {
