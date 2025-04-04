@@ -11,6 +11,11 @@
       "stakeTokenAddress": "0x6751C09113a83a83a43829fD0b3BC0D7bdbe07bf"
     },
     {
+      "beraRewardsVault": "0x1161e6a6600c08c21cff7ac689e781b41db56d85",
+      "slug": "beraborrow-staked-nectar",
+      "stakeTokenAddress": "0x597877Ccf65be938BD214C4c46907669e3E62128"
+    },
+    {
       "beraRewardsVault": "0x6649Bc987a7c0fB0199c523de1b1b330cd0457A8",
       "slug": "bex-byusd-honey",
       "stakeTokenAddress": "0xdE04c469Ad658163e2a5E860a03A86B52f6FA8C8"
