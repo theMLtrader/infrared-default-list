@@ -263,6 +263,17 @@
       "underlyingTokens": ["0x6969696969696969696969696969696969696969"]
     },
     {
+      "address": "0x597877Ccf65be938BD214C4c46907669e3E62128",
+      "decimals": 18,
+      "image": "snect.webp",
+      "mintUrl": "https://app.beraborrow.com/pool/deposit",
+      "name": "Staked Nectar",
+      "protocol": "beraborrow",
+      "symbol": "sNECT",
+      "type": "cdp",
+      "underlyingTokens": ["0x1cE0a25D13CE4d52071aE7e02Cf1F6606F4C79d3"]
+    },
+    {
       "address": "0x6969696969696969696969696969696969696969",
       "decimals": 18,
       "image": "wbera.svg",
