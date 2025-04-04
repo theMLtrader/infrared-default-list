@@ -1,4 +1,6 @@
-import { type Address, erc20Abi, type PublicClient, zeroAddress } from 'viem'
+import { type Address, erc20Abi, type PublicClient } from 'viem'
+
+import { BERA_TOKEN_ADDRESS } from './constants'
 
 export const getTokenName = async ({
   errors,
@@ -9,7 +11,7 @@ export const getTokenName = async ({
   publicClient: PublicClient
   tokenAddress: Address
 }) => {
-  if (tokenAddress === zeroAddress) {
+  if (tokenAddress === BERA_TOKEN_ADDRESS) {
     return 'BERA' // hack for BERA
   }
 

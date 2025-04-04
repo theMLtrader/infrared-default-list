@@ -1,7 +1,7 @@
 {
   "tokens": [
     {
-      "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       "decimals": 18,
       "image": "bera.svg",
       "name": "BERA",
@@ -271,7 +271,7 @@
       "protocol": "berachain",
       "symbol": "WBERA",
       "type": "unknown",
-      "underlyingTokens": ["0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"]
+      "underlyingTokens": ["0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"]
     },
     {
       "address": "0xdE04c469Ad658163e2a5E860a03A86B52f6FA8C8",
@@ -575,7 +575,7 @@
       "protocol": "infrared",
       "symbol": "iBERA",
       "type": "unknown",
-      "underlyingTokens": ["0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"]
+      "underlyingTokens": ["0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"]
     },
     {
       "address": "0xac03CABA51e17c86c921E1f6CBFBdC91F8BB2E6b",

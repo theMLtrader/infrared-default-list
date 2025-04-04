@@ -1,4 +1,6 @@
-import { type Address, erc20Abi, type PublicClient, zeroAddress } from 'viem'
+import { type Address, erc20Abi, type PublicClient } from 'viem'
+
+import { BERA_TOKEN_ADDRESS } from './constants'
 
 const BERA_DECIMALS = 18
 
@@ -11,7 +13,7 @@ export const getTokenDecimals = async ({
   publicClient: PublicClient
   tokenAddress: Address
 }) => {
-  if (tokenAddress === zeroAddress) {
+  if (tokenAddress === BERA_TOKEN_ADDRESS) {
     return BERA_DECIMALS // hack for BERA
   }
 
