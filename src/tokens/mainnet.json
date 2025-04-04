@@ -607,19 +607,6 @@
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xe454C546C8F3875e928910Abc653De5f8c432F11?chain=berachain_mainnet",
       "name": "BIXBT-WBERA",
       "protocol": "kodiak",
-      "symbol": "(BIXBT-WBERA) UNI-V2",
-      "type": "amm",
-      "underlyingTokens": [
-        "0x147c9a7f5265d7ca9a671c3817b212a0cf88856e",
-        "0x6969696969696969696969696969696969696969"
-      ]
-    },
-    {
-      "address": "0xe454C546C8F3875e928910Abc653De5f8c432F11",
-      "decimals": 18,
-      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xe454C546C8F3875e928910Abc653De5f8c432F11?chain=berachain_mainnet",
-      "name": "BIXBT-WBERA",
-      "protocol": "kodiak",
       "symbol": "UNI-V2",
       "type": "amm",
       "underlyingTokens": [
