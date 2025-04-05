@@ -50,6 +50,13 @@
       "symbol": "bm"
     },
     {
+      "address": "0x0003eEDFdd020bf60D10cf684ABAc7C4534B7eAd",
+      "decimals": 18,
+      "image": "bread.png",
+      "name": "Bread",
+      "symbol": "BREAD"
+    },    
+    {
       "address": "0x688e72142674041f8f6Af4c808a4045cA1D6aC82",
       "decimals": 6,
       "image": "byusd.svg",
@@ -636,6 +643,19 @@
       "underlyingTokens": [
         "0xb749584F9fC418Cf905d54f462fdbFdC7462011b",
         "0x6969696969696969696969696969696969696969"
+      ]
+    },
+    {
+      "address": "0xd9a747880393f7c33cEf1aea36909b36d421F7E5",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xd9a747880393f7c33cEf1aea36909b36d421F7E5?chain=berachain_mainnet",
+      "name": "BREAD-OHM",
+      "protocol": "kodiak",
+      "symbol": "KODI BREAD-OHM",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x0003eEDFdd020bf60D10cf684ABAc7C4534B7eAd",
+        "0x18878Df23e2a36f81e820e4b47b4A40576D3159C"
       ]
     },
     {
