@@ -71,6 +71,13 @@
       "symbol": "DINERO"
     },
     {
+      "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "decimals": 18,
+      "image": "ezeth.webp",
+      "name": "Renzo Restaked ETH",
+      "symbol": "ezETH"
+    },
+    {
       "address": "0xff0a636dfc44bb0129b631cdd38d21b613290c98",
       "decimals": 18,
       "image": "hold.svg",
@@ -663,6 +670,19 @@
       "underlyingTokens": [
         "0x0003eEDFdd020bf60D10cf684ABAc7C4534B7eAd",
         "0x18878Df23e2a36f81e820e4b47b4A40576D3159C"
+      ]
+    },
+    {
+      "address": "0x5fADc07d47D3dC1e81932eaFBE39fdEF9ba11865",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x5fADc07d47D3dC1e81932eaFBE39fdEF9ba11865?chain=berachain_mainnet",
+      "name": "ezETH-WETH",
+      "protocol": "kodiak",
+      "symbol": "KODI ezETH-WETH",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"
       ]
     },
     {
