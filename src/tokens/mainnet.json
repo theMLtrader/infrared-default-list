@@ -188,7 +188,7 @@
       "image": "unibtc.svg",
       "name": "uniBTC",
       "symbol": "uniBTC"
-    },    
+    },
     {
       "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
       "decimals": 6,
@@ -950,7 +950,7 @@
         "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
         "0xC3827A4BC8224ee2D116637023b124CED6db6e90"
       ]
-    },    
+    },
     {
       "address": "0xf06ea29fcf4765200742d29e685973a1870eac98",
       "decimals": 18,
