@@ -266,6 +266,11 @@
       "stakeTokenAddress": "0x3879451f4f69f0c2d37cad45319cff2e7d29c596"
     },
     {
+      "beraRewardsVault": "0x8ee2627aff73e285f1a83b6e8bb7e9945f404a1b",
+      "slug": "kodiak-wbtc-unibtc",
+      "stakeTokenAddress": "0xB67D60fc02E0870EdDca24D4fa8eA516c890152b"
+    },
+    {
       "beraRewardsVault": "0xeec2ad7bb37374229860265e644f4e2693b23fdd",
       "slug": "kodiak-wbtc-wbera",
       "stakeTokenAddress": "0xf06ea29fcf4765200742d29e685973a1870eac98"
