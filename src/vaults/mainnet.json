@@ -159,7 +159,7 @@
       "beraRewardsVault": "0xaa9c3d4ac242ab6eb9790861e1b4d6fbd6619cf4",
       "slug": "kodiak-ezeth-weth",
       "stakeTokenAddress": "0x5fADc07d47D3dC1e81932eaFBE39fdEF9ba11865"
-    },    
+    },
     {
       "beraRewardsVault": "0x4551c0e216f59cc081b6610637668b770ffdf843",
       "slug": "kodiak-hold-wbera",
