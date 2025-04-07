@@ -306,6 +306,11 @@
       "stakeTokenAddress": "0xec8ba456b4e009408d0776cde8b91f8717d13fa1"
     },
     {
+      "beraRewardsVault": "0xaf0c4454bb84c64b5c6ef9292b1527c5dfd2f8b7",
+      "slug": "wasabee-weth-wbera",
+      "stakeTokenAddress": "0xEC06041013b3a97c58b9ab61eAE9079Bc594EdA3"
+    },    
+    {
       "beraRewardsVault": "0x49FCaA48e59e3d634Ae6c6953cc30ce953Dfba2c",
       "slug": "wasabi-shoney",
       "stakeTokenAddress": "0xd948212f077e552533158becbc1882c1b19c40fe"
