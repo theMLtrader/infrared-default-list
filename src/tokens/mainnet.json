@@ -157,9 +157,9 @@
     {
       "address": "0xCC0966D8418d412c599A6421b760a847eB169A8c",
       "decimals": 18,
-      "image": "solvbtcbbn.svg",
-      "name": "SolvBTC Babylon",
-      "symbol": "SolvBTC.BBN"
+      "image": "xsolvbtc.svg",
+      "name": "xSolvBTC",
+      "symbol": "xSolvBTC"
     },
     {
       "address": "0x2CeC7f1ac87F5345ced3D6c74BBB61bfAE231Ffb",
@@ -767,7 +767,7 @@
       "address": "0x43e487126c4f37d1915cf02a90b5c5295afb1790",
       "decimals": 18,
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x43e487126c4f37d1915cf02a90b5c5295afb1790?chain=berachain_mainnet",
-      "name": "SolvBTC-SolvBTC.BBN",
+      "name": "SolvBTC-xSolvBTC",
       "protocol": "kodiak",
       "symbol": "KODI SolvBTC-SolvBTC.BBN",
       "type": "amm",
