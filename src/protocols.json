@@ -83,8 +83,8 @@
     {
       "description": "Wasabee is a DEX from Honeypot Finance powered by Algebra",
       "id": "wasabee",
-      "imageDark": "wasabee.svg",
-      "imageLight": "wasabee.svg",
+      "imageDark": "wasabee.webp",
+      "imageLight": "wasabee.webp",
       "name": "Wasabee",
       "url": "https://wasabee.honeypotfinance.xyz/"
     },
