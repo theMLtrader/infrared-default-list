@@ -71,6 +71,13 @@
       "symbol": "DINERO"
     },
     {
+      "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "decimals": 18,
+      "image": "ezeth.webp",
+      "name": "Renzo Restaked ETH",
+      "symbol": "ezETH"
+    },
+    {
       "address": "0xff0a636dfc44bb0129b631cdd38d21b613290c98",
       "decimals": 18,
       "image": "hold.svg",
@@ -148,13 +155,6 @@
       "symbol": "SolvBTC"
     },
     {
-      "address": "0xCC0966D8418d412c599A6421b760a847eB169A8c",
-      "decimals": 18,
-      "image": "solvbtcbbn.svg",
-      "name": "SolvBTC Babylon",
-      "symbol": "SolvBTC.BBN"
-    },
-    {
       "address": "0x2CeC7f1ac87F5345ced3D6c74BBB61bfAE231Ffb",
       "decimals": 18,
       "image": "stbgt.svg",
@@ -181,6 +181,13 @@
       "image": "susde.svg",
       "name": "Staked USDe",
       "symbol": "sUSDe"
+    },
+    {
+      "address": "0xC3827A4BC8224ee2D116637023b124CED6db6e90",
+      "decimals": 8,
+      "image": "unibtc.svg",
+      "name": "uniBTC",
+      "symbol": "uniBTC"
     },
     {
       "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
@@ -237,6 +244,13 @@
       "image": "wgbera.webp",
       "name": "wgBERA",
       "symbol": "wgBERA"
+    },
+    {
+      "address": "0xCC0966D8418d412c599A6421b760a847eB169A8c",
+      "decimals": 18,
+      "image": "xsolvbtc.svg",
+      "name": "xSolvBTC",
+      "symbol": "xSolvBTC"
     },
     {
       "address": "0x08A38Caa631DE329FF2DAD1656CE789F31AF3142",
@@ -659,6 +673,19 @@
       ]
     },
     {
+      "address": "0x5fADc07d47D3dC1e81932eaFBE39fdEF9ba11865",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x5fADc07d47D3dC1e81932eaFBE39fdEF9ba11865?chain=berachain_mainnet",
+      "name": "ezETH-WETH",
+      "protocol": "kodiak",
+      "symbol": "KODI ezETH-WETH",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"
+      ]
+    },
+    {
       "address": "0xdca120bd3a13250b67f6faa5c29c1f38ec6ebece",
       "decimals": 18,
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xdca120bd3a13250b67f6faa5c29c1f38ec6ebece?chain=berachain_mainnet",
@@ -740,7 +767,7 @@
       "address": "0x43e487126c4f37d1915cf02a90b5c5295afb1790",
       "decimals": 18,
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x43e487126c4f37d1915cf02a90b5c5295afb1790?chain=berachain_mainnet",
-      "name": "SolvBTC-SolvBTC.BBN",
+      "name": "SolvBTC-xSolvBTC",
       "protocol": "kodiak",
       "symbol": "KODI SolvBTC-SolvBTC.BBN",
       "type": "amm",
@@ -929,6 +956,19 @@
       "underlyingTokens": [
         "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
         "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77"
+      ]
+    },
+    {
+      "address": "0xB67D60fc02E0870EdDca24D4fa8eA516c890152b",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xB67D60fc02E0870EdDca24D4fa8eA516c890152b?chain=berachain_mainnet",
+      "name": "WBTC-uniBTC",
+      "protocol": "kodiak",
+      "symbol": "KODI WBTC-uniBTC",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+        "0xC3827A4BC8224ee2D116637023b124CED6db6e90"
       ]
     },
     {
