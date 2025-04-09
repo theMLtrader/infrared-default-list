@@ -81,6 +81,14 @@
       "url": "https://app.kodiak.finance"
     },
     {
+      "description": "Wasabee is a DEX from Honeypot Finance powered by Algebra",
+      "id": "wasabee",
+      "imageDark": "wasabee.webp",
+      "imageLight": "wasabee.webp",
+      "name": "Wasabee",
+      "url": "https://wasabee.honeypotfinance.xyz/"
+    },
+    {
       "description": "Wasabi is an on-chain money market that offers the highest yields across the widest range of assets.",
       "id": "wasabi",
       "imageDark": "wasabi_dark.svg",

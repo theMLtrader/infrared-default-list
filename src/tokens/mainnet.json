@@ -1063,6 +1063,19 @@
       ]
     },
     {
+      "address": "0xEC06041013b3a97c58b9ab61eAE9079Bc594EdA3",
+      "decimals": 18,
+      "mintUrl": "https://wasabee.honeypotfinance.xyz/vault/0xec06041013b3a97c58b9ab61eae9079bc594eda3",
+      "name": "WETH-WBERA",
+      "protocol": "wasabee",
+      "symbol": "IV-WASABEE-2-WETH-WBERA",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
+        "0x6969696969696969696969696969696969696969"
+      ]
+    },
+    {
       "address": "0xd948212f077e552533158becbc1882c1b19c40fe",
       "decimals": 18,
       "image": "shoney.svg",
