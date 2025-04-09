@@ -260,6 +260,20 @@
       "symbol": "YEET"
     },
     {
+      "address": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7",
+      "decimals": 18,
+      "image": "weeth.png",
+      "name": "Wrapped eETH",
+      "symbol": "weETH"
+    },
+    {
+      "address": "0x657e8C867D8B37dCC18fA4Caead9C45EB088C642",
+      "decimals": 18,
+      "image": "ebtc.png",
+      "name": "ether.fi BTC",
+      "symbol": "eBTC"
+    },
+    {
       "address": "0xf9845a03F7e6b06645A03a28b943C8A4B5fE7BCC",
       "decimals": 18,
       "mintUrl": "https://app.aquabera.com/vault/0xf9845a03F7e6b06645A03a28b943C8A4B5fE7BCC",
@@ -1096,6 +1110,32 @@
       "symbol": "sWBERA",
       "type": "cdp",
       "underlyingTokens": ["0x6969696969696969696969696969696969696969"]
+    },
+    {
+      "address": "0xA0cAbFc04Fc420b3d31BA431d18eB5bD33B3f334",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xa0cabfc04fc420b3d31ba431d18eb5bd33b3f334?chain=berachain_mainnet",
+      "name": "WETH-WeETH",
+      "protocol": "kodiak",
+      "symbol": "KODI WETH-weETH",
+      "type": "amm",
+      "underlyingTokens": [
+          "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
+          "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7"
+      ]
+    },
+    {
+      "address": "0xfC4994e0A4780ba7536d7e79611468B6bde14CaE",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xfc4994e0a4780ba7536d7e79611468b6bde14cae?chain=berachain_mainnet",
+      "name": "WBTC-eBTC",
+      "protocol": "kodiak",
+      "symbol": "KODI WBTC-eBTC",
+      "type": "amm",
+      "underlyingTokens": [
+          "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+          "0x657e8C867D8B37dCC18fA4Caead9C45EB088C642"
+      ]
     }
   ]
 }

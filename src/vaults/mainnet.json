@@ -319,6 +319,16 @@
       "beraRewardsVault": "0x4eA84882228a5C881675151E951235e45256a484",
       "slug": "wasabi-swbera",
       "stakeTokenAddress": "0xc95ab9eff8fb48760703c74416764b8f898afa1b"
+    },
+    {
+      "beraRewardsVault": "0x77304193647B9DC09338b5976ad4C674B350FA30",
+      "slug": "kodiak-weth-weeth",
+      "stakeTokenAddress": "0xA0cAbFc04Fc420b3d31BA431d18eB5bD33B3f334"
+    },
+    {
+      "beraRewardsVault": "0x8Aa4a546D6437067faB027904EAC0b7c78857737",
+      "slug": "kodiak-wbtc-ebtc",
+      "stakeTokenAddress": "0xfC4994e0A4780ba7536d7e79611468B6bde14CaE"
     }
   ]
 }
