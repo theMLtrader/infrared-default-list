@@ -306,9 +306,9 @@
       "stakeTokenAddress": "0x9659dc8c1565E0bd82627267e3b4eEd1a377ebE6"
     },
     {
-      "beraRewardsVault": "0x8Aa4a546D6437067faB027904EAC0b7c78857737",
-      "slug": "kodiak-wbtc-ebtc",
-      "stakeTokenAddress": "0xfC4994e0A4780ba7536d7e79611468B6bde14CaE"
+      "beraRewardsVault": "0x77304193647B9DC09338b5976ad4C674B350FA30",
+      "slug": "kodiak-weth-weeth",
+      "stakeTokenAddress": "0xA0cAbFc04Fc420b3d31BA431d18eB5bD33B3f334"
     },
     {
       "beraRewardsVault": "0x0710ABFfB1A54211a5e88d18Bf9854Cba86d0819",
