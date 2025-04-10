@@ -256,6 +256,11 @@
       "stakeTokenAddress": "0x93a913351cae2d8c82c4b85f699726947eb76d32"
     },
     {
+      "beraRewardsVault": "0x8Aa4a546D6437067faB027904EAC0b7c78857737",
+      "slug": "kodiak-wbtc-ebtc",
+      "stakeTokenAddress": "0xfC4994e0A4780ba7536d7e79611468B6bde14CaE"
+    },
+    {
       "beraRewardsVault": "0x9Df027Ed06635ecDfe811009f2291d347eA90357",
       "slug": "kodiak-wbtc-honey",
       "stakeTokenAddress": "0xf6b16E73d3b0e2784AAe8C4cd06099BE65d092Bf"
@@ -299,6 +304,11 @@
       "beraRewardsVault": "0xfb657cd154e661ddf3e229529d92545640b19292",
       "slug": "kodiak-weth-wbera",
       "stakeTokenAddress": "0x9659dc8c1565E0bd82627267e3b4eEd1a377ebE6"
+    },
+    {
+      "beraRewardsVault": "0x77304193647B9DC09338b5976ad4C674B350FA30",
+      "slug": "kodiak-weth-weeth",
+      "stakeTokenAddress": "0xA0cAbFc04Fc420b3d31BA431d18eB5bD33B3f334"
     },
     {
       "beraRewardsVault": "0x0710ABFfB1A54211a5e88d18Bf9854Cba86d0819",
