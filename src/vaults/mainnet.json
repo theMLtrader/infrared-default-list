@@ -154,6 +154,11 @@
       "beraRewardsVault": "0xf10f34547f4b8659058f10d29759a89eb790aa80",
       "slug": "kodiak-bread-ohm",
       "stakeTokenAddress": "0xd9a747880393f7c33cEf1aea36909b36d421F7E5"
+    },    
+    {
+      "beraRewardsVault": "0x359424085d84c490a7b276e4bc72cef90a04068b",
+      "slug": "kodiak-bread-lbgt",
+      "stakeTokenAddress": "0x54c603173CA92A42B81f8838d705fd3E0f98D5D4"
     },
     {
       "beraRewardsVault": "0xaa9c3d4ac242ab6eb9790861e1b4d6fbd6619cf4",
@@ -251,6 +256,11 @@
       "stakeTokenAddress": "0x564f011d557aad1ca09bfc956eb8a17c35d490e0"
     },
     {
+      "beraRewardsVault": "0x9d65da133391b2c055509d049c835a821d84e922",
+      "slug": "kodiak-wbera-lbgt",
+      "stakeTokenAddress": "0x337eF1eB6c8BBeD571170Fc2b468608ab9e2Aac8"
+    },    
+    {
       "beraRewardsVault": "0x6b23e121c6a13c959d69493ea5ca015a5847596a",
       "slug": "kodiak-wbera-ramen",
       "stakeTokenAddress": "0x93a913351cae2d8c82c4b85f699726947eb76d32"
@@ -315,11 +325,23 @@
       "slug": "kodiak-yeet-wbera",
       "stakeTokenAddress": "0xec8ba456b4e009408d0776cde8b91f8717d13fa1"
     },
+
+    {
+      "beraRewardsVault": "0x5aB58FD0c6e74ae10A74a5FD43E5B6D26e46a18f",
+      "slug": "wasabee-wbera-ibera",
+      "stakeTokenAddress": "0xe57d868d244d2cf2e9679eaba2a3048e58674565"
+    },    
+
+    {
+      "beraRewardsVault": "0x6Eb9bC8d1d8D6e94238c2D4f756F25A27FB34268",
+      "slug": "wasabee-wbera-wgbera",
+      "stakeTokenAddress": "0xac04b1abadf214b57f7ade1dd905ab7acac23a6b"
+    },    
     {
       "beraRewardsVault": "0xaf0c4454bb84c64b5c6ef9292b1527c5dfd2f8b7",
       "slug": "wasabee-weth-wbera",
       "stakeTokenAddress": "0xEC06041013b3a97c58b9ab61eAE9079Bc594EdA3"
-    },
+    }, 
     {
       "beraRewardsVault": "0x49FCaA48e59e3d634Ae6c6953cc30ce953Dfba2c",
       "slug": "wasabi-shoney",
