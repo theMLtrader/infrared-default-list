@@ -186,6 +186,11 @@
       "stakeTokenAddress": "0xc227c8639a41db8393dd1b4eac41464a62d64fb4"
     },
     {
+      "beraRewardsVault": "0x284f8D4B98FeD32f154911102053a0C1Ab621FC0",
+      "slug": "kodiak-pollen-wbera",
+      "stakeTokenAddress": "0xD6620E78B89E8fdB5dFA675D55001C7FaD424bDc"
+    },
+    {
       "beraRewardsVault": "0x34852c863d266100f573d4d1fd1d0cfe20602da0",
       "slug": "kodiak-rusd-honey",
       "stakeTokenAddress": "0x7fd165B73775884a38AA8f2B384A53A3Ca7400E6"
