@@ -136,11 +136,6 @@
       "stakeTokenAddress": "0xac03CABA51e17c86c921E1f6CBFBdC91F8BB2E6b"
     },
     {
-      "beraRewardsVault": "0x284f8D4B98FeD32f154911102053a0C1Ab621FC0",
-      "slug": "kodiak-pollen-wbera",
-      "stakeTokenAddress": "0xD6620E78B89E8fdB5dFA675D55001C7FaD424bDc"
-    },
-    {
       "beraRewardsVault": "0x19Ecf480652A7DE3A60dd7fd7012dAeD6C79E3E9",
       "slug": "kodiak-beraeth-stone",
       "stakeTokenAddress": "0x57161d6272F47cd48BA165646c802f001040C2E0"
@@ -189,6 +184,11 @@
       "beraRewardsVault": "0xde9d49a63fbb7c7d211b26a7d0dabdf8e0d4b4fe",
       "slug": "kodiak-ohm-wbera",
       "stakeTokenAddress": "0xc227c8639a41db8393dd1b4eac41464a62d64fb4"
+    },
+    {
+      "beraRewardsVault": "0x284f8D4B98FeD32f154911102053a0C1Ab621FC0",
+      "slug": "kodiak-pollen-wbera",
+      "stakeTokenAddress": "0xD6620E78B89E8fdB5dFA675D55001C7FaD424bDc"
     },
     {
       "beraRewardsVault": "0x34852c863d266100f573d4d1fd1d0cfe20602da0",
