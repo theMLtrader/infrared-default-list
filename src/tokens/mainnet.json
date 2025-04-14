@@ -655,20 +655,6 @@
       ]
     },
     {
-      "address": "0xD6620E78B89E8fdB5dFA675D55001C7FaD424bDc",
-      "decimals": 18,
-      "image": "pollen.webp",
-      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xd6620e78b89e8fdb5dfa675d55001c7fad424bdc?farm=0x284f8d4b98fed32f154911102053a0c1ab621fc0&chain=berachain_mainnet",
-      "name": "POLLEN-WBERA",
-      "protocol": "kodiak",
-      "symbol": "KODI WBERA-POLLEN",
-      "type": "AMM",
-      "underlyingTokens": [
-        "0xC99e948E9D183848a6c4F5E6C1d225F02f171d79",
-        "0x6969696969696969696969696969696969696969"
-      ]
-    },
-    {
       "address": "0xe454C546C8F3875e928910Abc653De5f8c432F11",
       "decimals": 18,
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xe454C546C8F3875e928910Abc653De5f8c432F11?chain=berachain_mainnet",
@@ -782,6 +768,20 @@
       "type": "amm",
       "underlyingTokens": [
         "0x18878Df23e2a36f81e820e4b47b4A40576D3159C",
+        "0x6969696969696969696969696969696969696969"
+      ]
+    },
+    {
+      "address": "0xD6620E78B89E8fdB5dFA675D55001C7FaD424bDc",
+      "decimals": 18,
+      "image": "pollen.webp",
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xd6620e78b89e8fdb5dfa675d55001c7fad424bdc?farm=0x284f8d4b98fed32f154911102053a0c1ab621fc0&chain=berachain_mainnet",
+      "name": "POLLEN-WBERA",
+      "protocol": "kodiak",
+      "symbol": "KODI WBERA-POLLEN",
+      "type": "AMM",
+      "underlyingTokens": [
+        "0xC99e948E9D183848a6c4F5E6C1d225F02f171d79",
         "0x6969696969696969696969696969696969696969"
       ]
     },
