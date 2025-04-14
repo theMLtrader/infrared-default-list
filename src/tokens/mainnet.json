@@ -50,6 +50,13 @@
       "symbol": "bm"
     },
     {
+      "address": "0xd352dc6e5F0c45E2F2b38eb5565EB286A1ea4087",
+      "decimals": 18,
+      "image": "br.webp",
+      "name": "Bedrock",
+      "symbol": "BR"
+    },
+    {
       "address": "0x0003eEDFdd020bf60D10cf684ABAc7C4534B7eAd",
       "decimals": 18,
       "image": "bread.webp",
@@ -83,6 +90,13 @@
       "image": "ezeth.webp",
       "name": "Renzo Restaked ETH",
       "symbol": "ezETH"
+    },
+    {
+      "address": "0xb2F776e9c1C926C4b2e54182Fac058dA9Af0B6A5",
+      "decimals": 18,
+      "image": "henlo.svg",
+      "name": "henlo",
+      "symbol": "HENLO"
     },
     {
       "address": "0xff0a636dfc44bb0129b631cdd38d21b613290c98",
@@ -132,6 +146,20 @@
       "image": "ohm.svg",
       "name": "Olympus",
       "symbol": "OHM"
+    },
+    {
+      "address": "0x009af46Df68DB0E76BFe9EA35663f6Ed17877956",
+      "decimals": 18,
+      "image": "ooga.webp",
+      "name": "Ooga Token",
+      "symbol": "OOGA"
+    },
+    {
+      "address": "0xD2C41BF4033A83C0FC3A7F58a392Bf37d6dCDb58",
+      "decimals": 18,
+      "image": "osbgt.webp",
+      "name": "OpenState BGT",
+      "symbol": "osBGT"
     },
     {
       "address": "0x231A6BD8eB88Cfa42776B7Ac575CeCAf82bf1E21",
@@ -267,6 +295,13 @@
       "symbol": "wgBERA"
     },
     {
+      "address": "0x01C8A5ccAD23A4D3764eF71c403862160Aa2913a",
+      "decimals": 18,
+      "image": "wizz.svg",
+      "name": "Wizzwoods Token",
+      "symbol": "WIZZ"
+    },
+    {
       "address": "0xCC0966D8418d412c599A6421b760a847eB169A8c",
       "decimals": 18,
       "image": "xsolvbtc.svg",
@@ -291,6 +326,19 @@
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
         "0x1F7210257FA157227D09449229a9266b0D581337"
+      ]
+    },
+    {
+      "address": "0x04fD6a7B02E2e48caedaD7135420604de5f834f8",
+      "decimals": 18,
+      "mintUrl": "https://app.aquabera.com/vault/0x04fD6a7B02E2e48caedaD7135420604de5f834f8",
+      "name": "WBERA-HENLO",
+      "protocol": "aquabera",
+      "symbol": "AB-KODIAK-WBERA-HENLO-10000",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x6969696969696969696969696969696969696969",
+        "0xb2F776e9c1C926C4b2e54182Fac058dA9Af0B6A5"
       ]
     },
     {
@@ -467,6 +515,19 @@
       "underlyingTokens": [
         "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
         "0x6fc6545d5cDE268D5C7f1e476D444F39c995120d"
+      ]
+    },
+    {
+      "address": "0x1b7B061091BD2C900723107889Fe44F825d6C921",
+      "decimals": 18,
+      "mintUrl": "https://hub.berachain.com/pools/0x1b7b061091bd2c900723107889fe44f825d6c92100020000000000000000010c/details",
+      "name": "WIZZ-WBERA",
+      "protocol": "bex",
+      "symbol": "50WIZZ-50WBERA-WEIGHTED",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x01C8A5ccAD23A4D3764eF71c403862160Aa2913a",
+        "0x6969696969696969696969696969696969696969"
       ]
     },
     {
@@ -733,6 +794,19 @@
       ]
     },
     {
+      "address": "0xaD445256Ff81171043A5e7Cd8831e4371B000176",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0xaD445256Ff81171043A5e7Cd8831e4371B000176?chain=berachain_mainnet",
+      "name": "iBERA-osBGT",
+      "protocol": "kodiak",
+      "symbol": "KODI iBERA-osBGT",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x9b6761bf2397Bb5a6624a856cC84A3A14Dcd3fe5",
+        "0xD2C41BF4033A83C0FC3A7F58a392Bf37d6dCDb58"
+      ]
+    },
+    {
       "address": "0x933b2e6a71edBF11BBA75C5Ad241D246b145E0b0",
       "decimals": 18,
       "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x933b2e6a71edBF11BBA75C5Ad241D246b145E0b0?chain=berachain_mainnet",
@@ -781,6 +855,19 @@
       "type": "amm",
       "underlyingTokens": [
         "0x18878Df23e2a36f81e820e4b47b4A40576D3159C",
+        "0x6969696969696969696969696969696969696969"
+      ]
+    },
+    {
+      "address": "0x9B155cF7a4E5911AC35AB2173D0f58e1d39570Fd",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x9B155cF7a4E5911AC35AB2173D0f58e1d39570Fd?chain=berachain_mainnet",
+      "name": "OOGA-WBERA",
+      "protocol": "kodiak",
+      "symbol": "KODI OOGA-WBERA",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x009af46Df68DB0E76BFe9EA35663f6Ed17877956",
         "0x6969696969696969696969696969696969696969"
       ]
     },
@@ -912,6 +999,19 @@
       "underlyingTokens": [
         "0x6969696969696969696969696969696969696969",
         "0x6B26f778bfae56CFb4Bf9b62c678d9D40e725227"
+      ]
+    },
+    {
+      "address": "0x56449b16ff2b1E5EE61F532ceFFDa8F408f718a1",
+      "decimals": 18,
+      "mintUrl": "https://app.kodiak.finance/#/liquidity/pools/0x56449b16ff2b1E5EE61F532ceFFDa8F408f718a1?chain=berachain_mainnet",
+      "name": "WBERA-BR",
+      "protocol": "kodiak",
+      "symbol": "KODI WBERA-BR",
+      "type": "amm",
+      "underlyingTokens": [
+        "0x6969696969696969696969696969696969696969",
+        "0xd352dc6e5F0c45E2F2b38eb5565EB286A1ea4087"
       ]
     },
     {
