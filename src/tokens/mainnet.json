@@ -141,18 +141,18 @@
       "symbol": "PLUG"
     },
     {
-      "address": "0xb8B1Af593Dc37B33a2c87C8Db1c9051FC32858B7",
-      "decimals": 18,
-      "image": "ramen.svg",
-      "name": "RAMEN",
-      "symbol": "RAMEN"
-    },
-    {
       "address": "0xC99e948E9D183848a6c4F5E6C1d225F02f171d79",
       "decimals": 18,
       "image": "pollen.svg",
       "name": "POLLEN",
       "symbol": "POLLEN"
+    },
+    {
+      "address": "0xb8B1Af593Dc37B33a2c87C8Db1c9051FC32858B7",
+      "decimals": 18,
+      "image": "ramen.svg",
+      "name": "RAMEN",
+      "symbol": "RAMEN"
     },
     {
       "address": "0x09D4214C03D01F49544C0448DBE3A27f768F2b34",
