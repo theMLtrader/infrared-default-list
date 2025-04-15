@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary, no-prototype-builtins */
 import { writeFile } from 'node:fs/promises'
 
 import type { TokensSchema } from '@/types/tokens'
@@ -12,19 +11,27 @@ export const sortTokens = async ({
   path: string
   tokens: TokensSchema['tokens']
 }) => {
-  const sortedTokens = tokens.sort((a, b) =>
-    a.hasOwnProperty('underlyingTokens')
-      ? b.hasOwnProperty('underlyingTokens')
-        ? 'protocol' in a && 'protocol' in b
-          ? a.protocol.localeCompare(b.protocol) ||
+  const sortedTokens = tokens.sort((a, b) => {
+    if (Object.prototype.hasOwnProperty.call(a, 'underlyingTokens')) {
+      if (Object.prototype.hasOwnProperty.call(b, 'underlyingTokens')) {
+        if ('protocol' in a && 'protocol' in b) {
+          return (
+            a.protocol.localeCompare(b.protocol) ||
             a.name.localeCompare(b.name) ||
             a.address.localeCompare(b.address)
-          : 1 // we will never get here
-        : 1
-      : b.hasOwnProperty('underlyingTokens')
-        ? -1
-        : a.symbol.localeCompare(b.symbol),
-  )
+          )
+        }
+        return 1 // we will never get here
+      }
+      return 1
+    }
+
+    if (Object.prototype.hasOwnProperty.call(b, 'underlyingTokens')) {
+      return -1
+    }
+
+    return a.symbol.localeCompare(b.symbol)
+  })
 
   await writeFile(path, formatDataToJson({ data: { tokens: sortedTokens } }))
 }
