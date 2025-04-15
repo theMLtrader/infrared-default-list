@@ -9,7 +9,7 @@ import { getTokenSymbol } from './get-token-symbol'
 import { validateDecimals } from './validate-decimals'
 import { validateImage } from './validate-image'
 
-const validateSymbol = async ({
+const validateSymbol = ({
   errors,
   onChainSymbol,
   token,
@@ -25,7 +25,7 @@ const validateSymbol = async ({
   }
 }
 
-const validateName = async ({
+const validateName = ({
   errors,
   onChainName,
   onChainSymbol,
@@ -165,8 +165,8 @@ export const validateTokenDetails = async ({
       tokenAddress: token.address as Address,
     })
 
-    await validateSymbol({ errors, onChainSymbol, token })
-    await validateName({
+    validateSymbol({ errors, onChainSymbol, token })
+    validateName({
       errors,
       onChainName,
       onChainSymbol,

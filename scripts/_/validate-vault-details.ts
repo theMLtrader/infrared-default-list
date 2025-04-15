@@ -60,7 +60,7 @@ const validateStakeTokenAndSlug = ({
   slugs.push(vault.slug)
 }
 
-export const validateVaultDetails = ({
+export const validateVaultDetails = async ({
   errors,
   network,
   publicClient,
@@ -76,7 +76,6 @@ export const validateVaultDetails = ({
     path: `src/tokens/${network}.json`,
   })
   const slugs: Array<string> = []
-
   const beraRewardsVaults = new Set<string>()
 
   for (const vault of vaults) {
@@ -88,7 +87,7 @@ export const validateVaultDetails = ({
     }
     beraRewardsVaults.add(lowerCasedBeraRewardsVaults)
     validateStakeTokenAndSlug({ errors, slugs, tokens, vault })
-    validateBeraRewardsVault({
+    await validateBeraRewardsVault({
       errors,
       publicClient,
       vault,

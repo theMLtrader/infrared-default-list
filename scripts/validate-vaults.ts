@@ -33,8 +33,12 @@ const validateVaults = async ({
   })
 
   validateList({ errors, list: vaults, schema, type: 'vaults' })
-  validateVaultDetails({ errors, network, publicClient, vaults: vaults.vaults })
-
+  await validateVaultDetails({
+    errors,
+    network,
+    publicClient,
+    vaults: vaults.vaults,
+  })
   outputScriptStatus({ errors, network, type: 'Vaults' })
 }
 
