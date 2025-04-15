@@ -11,11 +11,12 @@ import { resolve } from 'path'
 const INDENTATION_SPACES = 2
 
 const assetTypes = ['tokens', 'vaults', 'validators']
+const distDirName = 'dist'
 
 // Process asset types
 for (const assetType of assetTypes) {
   const srcDir = resolve(process.cwd(), `./src/${assetType}`)
-  const distDir = resolve(process.cwd(), `./output/${assetType}`)
+  const distDir = resolve(process.cwd(), `./${distDirName}/${assetType}`)
 
   // Skip if source directory doesn't exist
   if (!existsSync(srcDir)) {
@@ -50,7 +51,7 @@ for (const assetType of assetTypes) {
 
 // Process Protocols
 const srcPath = resolve(process.cwd(), `./src/protocols.json`)
-const distPath = resolve(process.cwd(), `./output/protocols.ts`)
+const distPath = resolve(process.cwd(), `./${distDirName}/protocols.ts`)
 
 const jsonContent = readFileSync(srcPath, 'utf-8')
 const data = JSON.parse(jsonContent)

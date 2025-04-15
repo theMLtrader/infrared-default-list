@@ -20,14 +20,14 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
-    "./protocols": "./output/protocols.ts",
-    "./tokens/mainnet": "./output/tokens/mainnet.ts",
+    "./protocols": "./dist/protocols.ts",
+    "./tokens/mainnet": "./dist/tokens/mainnet.ts",
     "./types/protocols": "./src/types/protocols.d.ts",
     "./types/tokens": "./src/types/tokens.d.ts",
     "./types/vaults": "./src/types/vaults.d.ts",
     "./types/validators": "./src/types/validators.d.ts",
-    "./vaults/mainnet": "./output/vaults/mainnet.ts",
-    "./vaults/validators": "./output/vaults/validators.ts"
+    "./vaults/mainnet": "./dist/vaults/mainnet.ts",
+    "./vaults/validators": "./dist/vaults/validators.ts"
   },
   "scripts": {
     "check": "concurrently \"pnpm schemas-to-typescript\" \"pnpm sort\" \"pnpm validate\" && pnpm lint",
