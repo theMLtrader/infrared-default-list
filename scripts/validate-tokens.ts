@@ -14,7 +14,7 @@ import { validateTokenDetails } from './_/validate-token-details'
 const schema = getFile('schema/tokens-schema.json')
 const folderPath = 'src/tokens'
 
-const validateTokens = async ({
+const validateTokensByChain = async ({
   chain,
 }: {
   chain: keyof typeof supportedChains
@@ -36,12 +36,17 @@ const validateTokens = async ({
   outputScriptStatus({ chain, errors, type: 'Token' })
 }
 
-readdirSync(folderPath).forEach(async (file) => {
-  const chain = file.replace('.json', '')
+const validateTokens = async () => {
+  const promises = readdirSync(folderPath).map(async (file) => {
+    const chain = file.replace('.json', '')
 
-  if (!isValidChain(chain)) {
-    throw new Error(`Unsupported chain: ${chain}`)
-  }
+    if (!isValidChain(chain)) {
+      throw new Error(`Unsupported chain: ${chain}`)
+    }
+    await validateTokensByChain({ chain })
+  })
 
-  await validateTokens({ chain })
-})
+  await Promise.all(promises)
+}
+
+await validateTokens()

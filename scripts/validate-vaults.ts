@@ -14,7 +14,7 @@ import { validateVaultDetails } from './_/validate-vault-details'
 const schema = getFile('schema/vaults-schema.json')
 const folderPath = 'src/vaults'
 
-const validateVaults = async ({
+const validateVaultsByChain = async ({
   chain,
 }: {
   chain: keyof typeof supportedChains
@@ -41,14 +41,17 @@ const validateVaults = async ({
   outputScriptStatus({ chain, errors, type: 'Vaults' })
 }
 
-readdirSync(folderPath).forEach(async (file) => {
-  const chain = file.replace('.json', '')
+const validateVaults = async () => {
+  const promises = readdirSync(folderPath).map(async (file) => {
+    const chain = file.replace('.json', '')
 
-  if (!isValidChain(chain)) {
-    throw new Error(`Unsupported chain: ${chain}`)
-  }
-
-  await validateVaults({
-    chain,
+    if (!isValidChain(chain)) {
+      throw new Error(`Unsupported chain: ${chain}`)
+    }
+    await validateVaultsByChain({ chain })
   })
-})
+
+  await Promise.all(promises)
+}
+
+await validateVaults()
