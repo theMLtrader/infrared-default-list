@@ -9,17 +9,17 @@ const protocols = getFile(path)
 
 const validateProtocols = async () => {
   const errors: Array<string> = []
-
   const protocolIds = new Set<string>()
 
   validateList({ errors, list: protocols, schema, type: 'protocols' })
   for (const protocol of protocols.protocols) {
     if (protocolIds.has(protocol.id)) {
       errors.push(
-        `Error in protocols: Duplicate protocol ID found: ${protocol.id}`,
+        `Error in protocols: Duplicate protocol id found: ${protocol.id}`,
       )
     }
     protocolIds.add(protocol.id)
+
     await validateProtocolImages({
       errors,
       protocol,
@@ -29,4 +29,4 @@ const validateProtocols = async () => {
   outputScriptStatus({ errors, type: 'Protocols' })
 }
 
-validateProtocols()
+await validateProtocols()
