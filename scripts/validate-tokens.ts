@@ -14,7 +14,7 @@ import { validateTokenDetails } from './_/validate-token-details'
 const schema = getFile('schema/tokens-schema.json')
 const folderPath = 'src/tokens'
 
-const validateTokens = async ({
+const validateTokensByChain = async ({
   chain,
 }: {
   chain: keyof typeof supportedChains
@@ -25,23 +25,39 @@ const validateTokens = async ({
     chain,
     path,
   })
-
   const publicClient = createPublicClient({
     chain: supportedChains[chain],
     transport: http(),
   })
+  const addresses = new Set<string>()
 
   validateList({ errors, list: tokens, schema, type: 'tokens' })
-  await validateTokenDetails({ errors, publicClient, tokens: tokens.tokens })
+  const promisedVaultDetails = tokens.tokens.map(
+    async (token) =>
+      await validateTokenDetails({
+        addresses,
+        errors,
+        publicClient,
+        token,
+        tokens: tokens.tokens,
+      }),
+  )
+  await Promise.all(promisedVaultDetails)
+
   outputScriptStatus({ chain, errors, type: 'Token' })
 }
 
-readdirSync(folderPath).forEach(async (file) => {
-  const chain = file.replace('.json', '')
+const validateTokens = async () => {
+  const promises = readdirSync(folderPath).map(async (file) => {
+    const chain = file.replace('.json', '')
 
-  if (!isValidChain(chain)) {
-    throw new Error(`Unsupported chain: ${chain}`)
-  }
+    if (!isValidChain(chain)) {
+      throw new Error(`Unsupported chain: ${chain}`)
+    }
+    await validateTokensByChain({ chain })
+  })
 
-  await validateTokens({ chain })
-})
+  await Promise.all(promises)
+}
+
+await validateTokens()

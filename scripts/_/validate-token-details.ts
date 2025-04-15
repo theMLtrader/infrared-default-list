@@ -125,53 +125,53 @@ const validateMintUrl = ({
 }
 
 export const validateTokenDetails = async ({
+  addresses,
   errors,
   publicClient,
+  token,
   tokens,
 }: {
+  addresses: Set<string>
   errors: Array<string>
   publicClient: PublicClient
+  token: TokensSchema['tokens'][number]
   tokens: TokensSchema['tokens']
 }) => {
-  const addresses = new Set<string>()
-
-  for (const token of tokens) {
-    const lowercasedAddress = token.address.toLowerCase()
-    if (addresses.has(lowercasedAddress)) {
-      errors.push(
-        `Error in tokens: Duplicate token address found: ${token.address}`,
-      )
-    }
-    addresses.add(lowercasedAddress)
-
-    await validateDecimals({ errors, publicClient, token })
-    await validateImage({
-      errors,
-      item: token,
-      required: false,
-      type: 'tokens',
-    })
-    validateMintUrl({ errors, token })
-    validateProtocol({ errors, token })
-
-    const onChainSymbol = await getTokenSymbol({
-      errors,
-      publicClient,
-      tokenAddress: token.address as Address,
-    })
-    const onChainName = await getTokenName({
-      errors,
-      publicClient,
-      tokenAddress: token.address as Address,
-    })
-
-    validateSymbol({ errors, onChainSymbol, token })
-    validateName({
-      errors,
-      onChainName,
-      onChainSymbol,
-      token,
-      tokens,
-    })
+  const lowercasedAddress = token.address.toLowerCase()
+  if (addresses.has(lowercasedAddress)) {
+    errors.push(
+      `Error in tokens: Duplicate token address found: ${token.address}`,
+    )
   }
+  addresses.add(lowercasedAddress)
+
+  await validateDecimals({ errors, publicClient, token })
+  await validateImage({
+    errors,
+    item: token,
+    required: false,
+    type: 'tokens',
+  })
+  validateMintUrl({ errors, token })
+  validateProtocol({ errors, token })
+
+  const onChainSymbol = await getTokenSymbol({
+    errors,
+    publicClient,
+    tokenAddress: token.address as Address,
+  })
+  const onChainName = await getTokenName({
+    errors,
+    publicClient,
+    tokenAddress: token.address as Address,
+  })
+
+  validateSymbol({ errors, onChainSymbol, token })
+  validateName({
+    errors,
+    onChainName,
+    onChainSymbol,
+    token,
+    tokens,
+  })
 }

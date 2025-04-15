@@ -12,7 +12,7 @@ import { validateList } from './_/validate-list'
 const schema = getFile('schema/validators-schema.json')
 const folderPath = 'src/validators'
 
-const validateValidators = async ({
+const validateValidatorsByChain = async ({
   chain,
 }: {
   chain: keyof typeof supportedChains
@@ -28,12 +28,18 @@ const validateValidators = async ({
   outputScriptStatus({ chain, errors, type: 'Validator' })
 }
 
-readdirSync(folderPath).forEach(async (file) => {
-  const chain = file.replace('.json', '')
+const validateValidators = async () => {
+  const promises = readdirSync(folderPath).map(async (file) => {
+    const chain = file.replace('.json', '')
 
-  if (!isValidChain(chain)) {
-    throw new Error(`Unsupported chain: ${chain}`)
-  }
+    if (!isValidChain(chain)) {
+      throw new Error(`Unsupported chain: ${chain}`)
+    }
 
-  await validateValidators({ chain })
-})
+    await validateValidatorsByChain({ chain })
+  })
+
+  await Promise.all(promises)
+}
+
+await validateValidators()
