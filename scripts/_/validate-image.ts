@@ -27,9 +27,7 @@ export const validateImage = async ({
   }
   const imagePath = path.join(`${ASSETS_FOLDER}/${type}`, item.image as string)
   if (path.extname(imagePath).toLowerCase() === '.png') {
-    errors.push(
-      `Image file "${item.image}" should be a webp file, not a png`,
-    )
+    errors.push(`Image file "${item.image}" should be a webp file, not a png`)
   }
   if (!existsSync(imagePath)) {
     errors.push(
