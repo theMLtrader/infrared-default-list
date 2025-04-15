@@ -131,6 +131,11 @@
       "stakeTokenAddress": "0xF2d2d55Daf93b0660297eaA10969eBe90ead5CE8"
     },
     {
+      "beraRewardsVault": "0x3d0D211365C8a483394426DAcd5A73b0154FEEDB",
+      "slug": "dolomite-dwbera",
+      "stakeTokenAddress": "0xAa97D791Afc02AF30cf0B046172bb05b3c306517"
+    },
+    {
       "beraRewardsVault": "0x7D960f4D9534aCb6f0fc963CC807b21655f35C76",
       "slug": "dolomite-dwbtc",
       "stakeTokenAddress": "0x29cF6e8eCeFb8d3c9dd2b727C1b7d1df1a754F6f"
