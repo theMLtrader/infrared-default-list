@@ -25,9 +25,9 @@ export const validateImage = async ({
     }
     return
   }
-  const imagePath = path.join(`${ASSETS_FOLDER}/${type}`, item.image as string)
+  const imagePath = path.join(`${ASSETS_FOLDER}/${type}`, item.image)
   if (path.extname(imagePath).toLowerCase() === '.png') {
-    errors.push(`Image file "${item.image}" should be a webp file, not a png`)
+    errors.push(`Image file "${item.image}" for ${type} "${item.symbol}" should be a webp file, not a png`)
   }
   if (!existsSync(imagePath)) {
     errors.push(
@@ -39,6 +39,12 @@ export const validateImage = async ({
     if (!isCorrectSize) {
       errors.push(
         `Image file "${item.image}" for ${type} "${item.symbol}" is not 128x128 pixels`,
+      )
+    }
+    const pngImagePath = path.join(`${ASSETS_FOLDER}/${type}/original`, item.image.replace('.webp', '.png'))
+    if (!existsSync(pngImagePath)) {
+      errors.push(
+        `Image file "${item.image}" for ${type} "${item.symbol}" does not have an original png file`,
       )
     }
   }
