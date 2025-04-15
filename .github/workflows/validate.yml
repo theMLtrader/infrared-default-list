@@ -8,6 +8,7 @@ on:
       - src/validator/**/*.json
       - src/schema/*.json
       - scripts/**/*.*
+      - package.json
 
 jobs:
   validate:
