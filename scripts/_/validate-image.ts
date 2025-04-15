@@ -26,12 +26,15 @@ export const validateImage = async ({
     return
   }
   const imagePath = path.join(`${ASSETS_FOLDER}/${type}`, item.image as string)
+  if (path.extname(imagePath).toLowerCase() === '.png') {
+    errors.push(`Image file "${item.image}" should be a webp file, not a png`)
+  }
   if (!existsSync(imagePath)) {
     errors.push(
       `Image file "${item.image}" not found for ${type} "${item.symbol}" at ${imagePath}`,
     )
   }
-  if (path.extname(imagePath).toLowerCase() === '.png') {
+  if (path.extname(imagePath).toLowerCase() === '.webp') {
     const isCorrectSize = await checkImageSize(imagePath)
     if (!isCorrectSize) {
       errors.push(
