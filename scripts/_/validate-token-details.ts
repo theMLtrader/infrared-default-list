@@ -151,7 +151,7 @@ export const validateTokenDetails = async ({
       required: false,
       type: 'tokens',
     })
-    await validateMintUrl({ errors, token })
+    validateMintUrl({ errors, token })
     validateProtocol({ errors, token })
 
     const onChainSymbol = await getTokenSymbol({
