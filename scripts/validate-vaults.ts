@@ -2,6 +2,7 @@ import { readdirSync } from 'node:fs'
 import { createPublicClient, http } from 'viem'
 
 import { supportedChains } from '@/config/chains'
+import type { TokensSchema } from '@/types/tokens'
 import type { VaultsSchema } from '@/types/vaults'
 
 import { getFile } from './_/get-file'
@@ -25,19 +26,30 @@ const validateVaultsByChain = async ({
     chain,
     path,
   })
-
+  const tokens: TokensSchema = getJsonFile({
+    chain,
+    path: `src/tokens/${chain}.json`,
+  })
   const publicClient = createPublicClient({
     chain: supportedChains[chain],
     transport: http(),
   })
+  const slugs: Array<string> = []
+  const beraRewardsVaults = new Set<string>()
 
   validateList({ errors, list: vaults, schema, type: 'vaults' })
-  await validateVaultDetails({
-    chain,
-    errors,
-    publicClient,
-    vaults: vaults.vaults,
-  })
+  const promisedVaultDetails = vaults.vaults.map(
+    async (vault) =>
+      await validateVaultDetails({
+        beraRewardsVaults,
+        errors,
+        publicClient,
+        slugs,
+        tokens,
+        vault,
+      }),
+  )
+  await Promise.all(promisedVaultDetails)
   outputScriptStatus({ chain, errors, type: 'Vaults' })
 }
 

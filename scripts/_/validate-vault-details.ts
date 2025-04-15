@@ -1,11 +1,9 @@
 import slug from 'slug'
 import { type Address, isAddressEqual, type PublicClient } from 'viem'
 
-import type { supportedChains } from '@/config/chains'
 import type { TokensSchema } from '@/types/tokens'
 import type { VaultsSchema } from '@/types/vaults'
 
-import { getJsonFile } from './get-json-file'
 import { validateBeraRewardsVault } from './validate-bera-rewards-vault'
 
 slug.charmap['.'] = '.' // allow periods in urls. They are valid
@@ -61,36 +59,31 @@ const validateStakeTokenAndSlug = ({
 }
 
 export const validateVaultDetails = async ({
-  chain,
+  beraRewardsVaults,
   errors,
   publicClient,
-  vaults,
+  slugs,
+  tokens,
+  vault,
 }: {
-  chain: keyof typeof supportedChains
+  beraRewardsVaults: Set<string>
   errors: Array<string>
   publicClient: PublicClient
-  vaults: VaultsSchema['vaults']
+  slugs: Array<string>
+  tokens: TokensSchema
+  vault: VaultsSchema['vaults'][number]
 }) => {
-  const tokens: TokensSchema = getJsonFile({
-    chain,
-    path: `src/tokens/${chain}.json`,
-  })
-  const slugs: Array<string> = []
-  const beraRewardsVaults = new Set<string>()
-
-  for (const vault of vaults) {
-    const lowerCasedBeraRewardsVaults = vault.beraRewardsVault.toLowerCase()
-    if (beraRewardsVaults.has(lowerCasedBeraRewardsVaults)) {
-      errors.push(
-        `Error in vaults: Duplicate beraRewardsVault found: ${vault.beraRewardsVault}`,
-      )
-    }
-    beraRewardsVaults.add(lowerCasedBeraRewardsVaults)
-    validateStakeTokenAndSlug({ errors, slugs, tokens, vault })
-    await validateBeraRewardsVault({
-      errors,
-      publicClient,
-      vault,
-    })
+  const lowerCasedBeraRewardsVaults = vault.beraRewardsVault.toLowerCase()
+  if (beraRewardsVaults.has(lowerCasedBeraRewardsVaults)) {
+    errors.push(
+      `Error in vaults: Duplicate beraRewardsVault found: ${vault.beraRewardsVault}`,
+    )
   }
+  beraRewardsVaults.add(lowerCasedBeraRewardsVaults)
+  validateStakeTokenAndSlug({ errors, slugs, tokens, vault })
+  await validateBeraRewardsVault({
+    errors,
+    publicClient,
+    vault,
+  })
 }
