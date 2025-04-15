@@ -42,7 +42,11 @@
     "sort-and-format": "pnpm sort && pnpm format",
     "sort-package-json": "pnpm dlx sort-package-json",
     "type-check": "tsc --noEmit",
-    "validate": "concurrently \"tsx scripts/validate-vaults.ts\" \"tsx scripts/validate-protocols.ts\" \"tsx scripts/validate-tokens.ts\" \"tsx scripts/validate-validators.ts\""
+    "validate": "concurrently \"pnpm validate-protocols\" \"pnpm validate-tokens\" \"pnpm validate-validators\" \"pnpm validate-vaults\"",
+    "validate-protocols": "tsx scripts/validate-protocols.ts",
+    "validate-tokens": "tsx scripts/validate-tokens.ts",
+    "validate-validators": "tsx scripts/validate-validators.ts",
+    "validate-vaults": "tsx scripts/validate-vaults.ts"
   },
   "devDependencies": {
     "@infrared-dao/eslint-config": "^0.0.6",
