@@ -6,7 +6,7 @@ import type { VaultsSchema } from '@/types/vaults'
 
 import { getFile } from './_/get-file'
 import { getJsonFile } from './_/get-json-file'
-import { isValidNetwork } from './_/is-valid-network'
+import { isValidChain } from './_/is-valid-chain'
 import { outputScriptStatus } from './_/output-script-status'
 import { validateList } from './_/validate-list'
 import { validateVaultDetails } from './_/validate-vault-details'
@@ -15,41 +15,40 @@ const schema = getFile('schema/vaults-schema.json')
 const folderPath = 'src/vaults'
 
 const validateVaults = async ({
-  network,
+  chain,
 }: {
-  network: keyof typeof supportedChains
+  chain: keyof typeof supportedChains
 }) => {
   const errors: Array<string> = []
-  const path = `${folderPath}/${network}.json`
+  const path = `${folderPath}/${chain}.json`
   const vaults: VaultsSchema = getJsonFile({
-    network,
+    chain,
     path,
   })
 
-  const chain = supportedChains[network]
   const publicClient = createPublicClient({
-    chain,
+    chain: supportedChains[chain],
     transport: http(),
   })
 
   validateList({ errors, list: vaults, schema, type: 'vaults' })
   await validateVaultDetails({
+    chain,
     errors,
-    network,
     publicClient,
     vaults: vaults.vaults,
   })
-  outputScriptStatus({ errors, network, type: 'Vaults' })
+  outputScriptStatus({ chain, errors, type: 'Vaults' })
 }
 
 readdirSync(folderPath).forEach(async (file) => {
-  const network = file.replace('.json', '')
+  const chain = file.replace('.json', '')
 
-  if (!isValidNetwork(network)) {
-    throw new Error(`Unsupported network: ${network}`)
+  if (!isValidChain(chain)) {
+    throw new Error(`Unsupported chain: ${chain}`)
   }
 
   await validateVaults({
-    network,
+    chain,
   })
 })
