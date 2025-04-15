@@ -61,19 +61,19 @@ const validateStakeTokenAndSlug = ({
 }
 
 export const validateVaultDetails = async ({
+  chain,
   errors,
-  network,
   publicClient,
   vaults,
 }: {
+  chain: keyof typeof supportedChains
   errors: Array<string>
-  network: keyof typeof supportedChains
   publicClient: PublicClient
   vaults: VaultsSchema['vaults']
 }) => {
   const tokens: TokensSchema = getJsonFile({
-    network,
-    path: `src/tokens/${network}.json`,
+    chain,
+    path: `src/tokens/${chain}.json`,
   })
   const slugs: Array<string> = []
   const beraRewardsVaults = new Set<string>()

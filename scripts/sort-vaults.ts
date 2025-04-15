@@ -3,21 +3,21 @@ import { readdirSync } from 'node:fs'
 import type { VaultsSchema } from '@/types/vaults'
 
 import { getJsonFile } from './_/get-json-file'
-import { isValidNetwork } from './_/is-valid-network'
+import { isValidChain } from './_/is-valid-chain'
 import { sortVaults } from './_/sort-vaults'
 
 const folderPath = 'src/vaults'
 
 readdirSync(folderPath).forEach(async (file) => {
-  const network = file.replace('.json', '')
+  const chain = file.replace('.json', '')
 
-  if (!isValidNetwork(network)) {
-    throw new Error(`Unsupported network: ${network}`)
+  if (!isValidChain(chain)) {
+    throw new Error(`Unsupported chain: ${chain}`)
   }
 
-  const path = `${folderPath}/${network}.json`
+  const path = `${folderPath}/${chain}.json`
   const vaults: VaultsSchema = getJsonFile({
-    network,
+    chain,
     path,
   })
 

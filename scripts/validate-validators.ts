@@ -5,7 +5,7 @@ import type { ValidatorsSchema } from '@/types/validators'
 
 import { getFile } from './_/get-file'
 import { getJsonFile } from './_/get-json-file'
-import { isValidNetwork } from './_/is-valid-network'
+import { isValidChain } from './_/is-valid-chain'
 import { outputScriptStatus } from './_/output-script-status'
 import { validateList } from './_/validate-list'
 
@@ -13,27 +13,27 @@ const schema = getFile('schema/validators-schema.json')
 const folderPath = 'src/validators'
 
 const validateValidators = async ({
-  network,
+  chain,
 }: {
-  network: keyof typeof supportedChains
+  chain: keyof typeof supportedChains
 }) => {
   const errors: Array<string> = []
-  const path = `${folderPath}/${network}.json`
+  const path = `${folderPath}/${chain}.json`
   const validators: ValidatorsSchema = getJsonFile({
-    network,
+    chain,
     path,
   })
 
   validateList({ errors, list: validators, schema, type: 'validators' })
-  outputScriptStatus({ errors, network, type: 'Validator' })
+  outputScriptStatus({ chain, errors, type: 'Validator' })
 }
 
 readdirSync(folderPath).forEach(async (file) => {
-  const network = file.replace('.json', '')
+  const chain = file.replace('.json', '')
 
-  if (!isValidNetwork(network)) {
-    throw new Error(`Unsupported network: ${network}`)
+  if (!isValidChain(chain)) {
+    throw new Error(`Unsupported chain: ${chain}`)
   }
 
-  await validateValidators({ network })
+  await validateValidators({ chain })
 })
