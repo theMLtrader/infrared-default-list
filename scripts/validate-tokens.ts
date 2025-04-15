@@ -25,14 +25,25 @@ const validateTokensByChain = async ({
     chain,
     path,
   })
-
   const publicClient = createPublicClient({
     chain: supportedChains[chain],
     transport: http(),
   })
+  const addresses = new Set<string>()
 
   validateList({ errors, list: tokens, schema, type: 'tokens' })
-  await validateTokenDetails({ errors, publicClient, tokens: tokens.tokens })
+  const promisedVaultDetails = tokens.tokens.map(
+    async (token) =>
+      await validateTokenDetails({
+        addresses,
+        errors,
+        publicClient,
+        token,
+        tokens: tokens.tokens,
+      }),
+  )
+  await Promise.all(promisedVaultDetails)
+
   outputScriptStatus({ chain, errors, type: 'Token' })
 }
 
